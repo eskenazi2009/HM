@@ -63,6 +63,15 @@
     display: flex; align-items: center; justify-content: center;
   }
   .marker-pin span { transform: rotate(45deg); color: #fff; font-size: 12px; font-weight: 700; }
+  .marker-pin--extra { background: #C98A3B; border-style: dashed; }
+
+  .num--extra { background: #C98A3B !important; }
+  .stop-extra { display:inline-block; margin-right:6px; font-size:9px; font-weight:800; letter-spacing:.05em;
+    text-transform:uppercase; color:#8a5a1f; background:#F6ECDD; border:1px solid #E6D3B3;
+    border-radius:100px; padding:1px 6px; vertical-align:middle; }
+  .stop--extra { border-left: 3px dashed #C98A3B; }
+  .pop .pe { font-size:10px; font-weight:800; letter-spacing:.04em; text-transform:uppercase;
+    color:#8a5a1f; margin-top:3px; }
 
   @media (max-width: 760px) {
     #app { flex-direction: column; }
@@ -132,6 +141,8 @@ const DAYS = [
         link: "https://www.viator.com/tours/Rotorua/Kaituna-River-White-Water-Rafting/d395-17658P1?pid=P00001955&uid=U00767249&mcid=58086&currency=USD" },
       { t: "~11:00 a.m.", n: "Centro de Rotorua", lat: -38.1379, lng: 176.2517,
         d: "Almuerzo y paseo libre por la ciudad." },
+      { t: "Tarde (opcional)", n: "Mt Kakaramea (Rainbow Mountain) Summit Track", lat: -38.2947, lng: 176.3661, extra: true,
+        d: "Caminata opcional a la cumbre. Vistas de los lagos cráter y la zona geotérmica. ~2 – 2.5 h ida y vuelta. Trailhead en la SH5 (Waiotapu), ~30 min al sur de Rotorua." },
       { t: "Tarde", n: "Polynesian Spa", lat: -38.1400, lng: 176.2570,
         d: "Deluxe Romantic Package. Abierto hasta las 7:00 p.m. ~10 min del hotel.",
         link: "https://www.polynesianspa.co.nz/vitality-day-escape-retreat-nz/" }
@@ -149,7 +160,8 @@ const markerRefs = [];
 const list = document.getElementById('list');
 
 DAYS.forEach((day, di) => {
-  const linePts = day.stops.filter(s => !s.hideMarker).map(s => {
+  // Route line connects only the main (non-extra) stops
+  const linePts = day.stops.filter(s => !s.hideMarker && !s.extra).map(s => {
     let la = s.lat, ln = s.lng;
     if (s.offset) { la += 0.004; ln += 0.004; }
     return [la, ln];
@@ -163,28 +175,36 @@ DAYS.forEach((day, di) => {
   block.innerHTML = `<div class="day-head"><span class="day-dot" style="background:${day.color}"></span>
     <div><h2>${day.name}</h2><span>${day.theme}</span></div></div>`;
 
-  day.stops.forEach((s, si) => {
+  let num = 0; // sequential counter for main stops; extras are marked with a star
+  day.stops.forEach((s) => {
     let la = s.lat, ln = s.lng;
     if (s.offset) { la += 0.004; ln += 0.004; }
     allLatLng.push([la, ln]);
+
+    const label = s.extra ? '★' : String(++num);
+    const pinStyle = s.extra ? '' : `background:${day.color}`;
+    const pinClass = s.extra ? 'marker-pin marker-pin--extra' : 'marker-pin';
 
     let marker = null;
     if (!s.hideMarker) {
       const icon = L.divIcon({
         className: '', iconSize: [26,26], iconAnchor: [13,26], popupAnchor: [0,-26],
-        html: `<div class="marker-pin" style="background:${day.color}"><span>${si+1}</span></div>`
+        html: `<div class="${pinClass}" style="${pinStyle}"><span>${label}</span></div>`
       });
       marker = L.marker([la, ln], { icon }).addTo(map);
       const resv = s.link ? `<br><a class="pr" href="${s.link}" target="_blank" rel="noopener">Reserva ›</a>` : '';
-      marker.bindPopup(`<div class="pop"><div class="pt">${s.t}</div><h4>${s.n}</h4><div class="pn">${s.d}${resv}</div></div>`);
+      const extraTag = s.extra ? `<div class="pe">Actividad extra · opcional</div>` : '';
+      marker.bindPopup(`<div class="pop"><div class="pt">${s.t}</div><h4>${s.n}</h4>${extraTag}<div class="pn">${s.d}${resv}</div></div>`);
     }
     markerRefs.push({ marker, lat: la, lng: ln });
 
     const resvRow = s.link ? `<a class="resv" href="${s.link}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Reserva</a>` : '';
+    const extraChip = s.extra ? `<span class="stop-extra">Extra</span>` : '';
+    const numClass = s.extra ? 'num num--extra' : 'num';
     const row = document.createElement('div');
-    row.className = 'stop';
-    row.innerHTML = `<div class="num" style="background:${day.color}">${si+1}</div>
-      <div class="body"><div class="time">${s.t}</div><h3>${s.n}</h3><div class="note">${s.d}</div>${resvRow}</div>`;
+    row.className = 'stop' + (s.extra ? ' stop--extra' : '');
+    row.innerHTML = `<div class="${numClass}" style="${pinStyle}">${label}</div>
+      <div class="body"><div class="time">${s.t}</div><h3>${extraChip}${s.n}</h3><div class="note">${s.d}</div>${resvRow}</div>`;
     row.addEventListener('click', () => {
       document.querySelectorAll('.stop').forEach(e => e.classList.remove('active'));
       row.classList.add('active');

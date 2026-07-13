@@ -14,11 +14,13 @@ function ActivityButton({ activity, onOpen }) {
   const cls =
     'tour-item tour-item--tappable' +
     (activity.travel ? ' tour-item--travel' : '') +
-    (activity.link ? ' tour-item--booking' : '')
+    (activity.link ? ' tour-item--booking' : '') +
+    (activity.extra ? ' tour-item--extra' : '')
   const tl = timeLine(activity)
   return (
     <button className={cls} onClick={() => onOpen(activity)}>
       <div className="tour-name">
+        {activity.extra && <span className="tour-extra">Extra</span>}
         {activity.name}
         <span className="tour-tap-hint">›</span>
       </div>
@@ -72,6 +74,7 @@ function Modal({ activity, onClose }) {
       <div className="modal-sheet" onClick={(e) => e.stopPropagation()}>
         <button className="modal-close" aria-label="Cerrar" onClick={onClose}>✕</button>
         <div className="modal-title">{activity.name}</div>
+        {activity.extra && <span className="modal-extra">Actividad extra · opcional</span>}
         {activity.operator && <div className="modal-operator">{activity.operator}</div>}
         {tl && <div className="modal-time">{tl}</div>}
         {activity.description && (

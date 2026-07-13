@@ -106,6 +106,12 @@ export const DAYS = [
         description: 'Tiempo libre para almorzar y pasear por el centro de Rotorua antes del spa.',
       },
       {
+        name: 'Mt Kakaramea (Rainbow Mountain) Summit Track',
+        extra: true,
+        meetingTime: 'Tarde (opcional)', meetingPlace: 'Rainbow Mountain car park (SH5, Waiotapu)', startEnd: '~2 – 2.5 h ida y vuelta',
+        description: 'Caminata opcional a la cumbre del Mt Kakaramea (Rainbow Mountain), con vistas panorámicas de los lagos cráter y la zona geotérmica. Aproximadamente 2 – 2.5 horas ida y vuelta, dificultad moderada. El inicio del sendero está sobre la SH5 en Waiotapu, a ~30 minutos en carro al sur de Rotorua. Sendero gratuito del DOC, no requiere reserva.',
+      },
+      {
         name: 'Polynesian Spa — Deluxe Romantic Package',
         operator: 'Polynesian Spa',
         meetingTime: 'Tarde', meetingPlace: 'Polynesian Spa', startEnd: 'Abierto hasta las 7:00 p.m.',
