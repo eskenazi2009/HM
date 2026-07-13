@@ -2,23 +2,38 @@
 
 Itinerario y mapa de la ruta para Auckland y Rotorua (11–14 de diciembre, 2026).
 
-Sitio estático — solo HTML, sin build ni dependencias.
+App **Vite + React**. El mapa es un asset estático servido desde `public/`.
 
-## Archivos
+## Desarrollo
 
-| Archivo | Qué es |
-|---|---|
-| `index.html` | Página principal: itinerario día por día. Toca una actividad para ver el detalle y el enlace de **Reserva**. |
-| `mapa.html`  | Mapa interactivo de la ruta (Leaflet + OpenStreetMap) con las paradas de cada día. |
+```bash
+npm install
+npm run dev       # servidor local en http://localhost:5173
+npm run build     # genera el sitio en dist/
+npm run preview   # previsualiza el build de dist/
+```
 
-`index.html` enlaza a `mapa.html` y viceversa.
+## Estructura
+
+```
+index.html            entrada de Vite (monta React en #root)
+src/
+  main.jsx            arranque de React
+  App.jsx             UI del itinerario (tarjetas de día + modal)
+  data.js             datos del itinerario (días, actividades, enlaces)
+  styles.css          estilos
+public/
+  mapa.html           mapa interactivo de la ruta (Leaflet + OpenStreetMap)
+vite.config.js        config de Vite (base './')
+netlify.toml          build para Netlify
+```
+
+`index.html` (itinerario) enlaza a `mapa.html` y viceversa.
 
 ## Publicar
 
-No requiere comando de build. La carpeta raíz **es** el sitio.
+**Netlify:** New site → Import from GitHub → este repo. El `netlify.toml` ya define:
+- Build command: `npm run build`
+- Publish directory: `dist`
 
-**Netlify:** New site → Import from GitHub → este repo →
-- Build command: *(vacío)*
-- Publish directory: `/` (raíz)
-
-**GitHub Pages:** Settings → Pages → Deploy from branch → `main` / `root`.
+**GitHub Pages:** requiere publicar la carpeta `dist` (por ejemplo con una GitHub Action). Como `vite.config.js` usa `base: './'`, el build funciona tanto en la raíz de un dominio como en un sub-path.
