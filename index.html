@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#10385B" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<title>Luna de Miel — Nueva Zelanda</title>
+<style>
+  :root{
+    --navy:#10385b;--blue:#2f6fb0;--soft-blue:#5b9bd5;--pale-blue:#e8f0f8;
+    --pale2:#d0e3f4;--white:#fff;--text:#1a2a3a;--text-muted:#5a7a9a;
+    --shadow:0 2px 8px #10385b1a;--radius:14px;--gold:#b08d57;
+  }
+  *,*:before,*:after{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--pale-blue);color:var(--text);-webkit-font-smoothing:antialiased;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.5}
+  button{cursor:pointer;font-family:inherit}
+  a{color:var(--blue)}
+  .app{flex-direction:column;min-height:100dvh;display:flex;max-width:640px;margin:0 auto;background:var(--pale-blue)}
+
+  /* Hero header */
+  .hero{background:linear-gradient(160deg,var(--navy) 0%,#1a5490 55%,var(--blue) 100%);
+    color:var(--white);padding:30px 24px 26px;text-align:center}
+  .hero-eyebrow{text-transform:uppercase;letter-spacing:.14em;color:var(--soft-blue);
+    font-size:13px;font-weight:700;margin-bottom:6px}
+  .hero-h1{letter-spacing:-.01em;font-size:34px;font-weight:900;line-height:1.05}
+  .hero-sub{color:var(--pale-blue);margin-top:6px;font-size:17px;font-weight:600}
+  .hero-dates{color:var(--soft-blue);margin-top:4px;font-size:14px;font-weight:500}
+  .hero-hotels{color:#cfe3f4;margin-top:14px;font-size:12.5px;line-height:1.5;opacity:.9}
+
+  /* Single tab bar */
+  .tab-bar{background:var(--white);border-bottom:2px solid var(--pale2);z-index:90;display:flex;
+    position:sticky;top:0}
+  .tab-btn{color:var(--navy);background:0 0;border:none;border-bottom:3px solid var(--blue);
+    flex:1;margin-bottom:-2px;padding:12px 8px;font-size:15px;font-weight:700}
+
+  /* Days */
+  .days-list{flex-direction:column;gap:14px;padding:16px 16px 40px;display:flex}
+  .day-card{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);
+    border:1.5px solid var(--pale2);overflow:hidden}
+  .day-card-header{background:var(--navy);align-items:flex-start;gap:12px;padding:14px 16px 12px;display:flex}
+  .day-date-block{text-align:center;min-width:48px}
+  .day-month{color:var(--soft-blue);text-transform:uppercase;letter-spacing:.06em;font-size:11px;font-weight:700}
+  .day-num{color:var(--white);font-size:32px;font-weight:900;line-height:1}
+  .day-dow{color:var(--soft-blue);font-size:11px;font-weight:600}
+  .day-port-block{flex:1}
+  .day-port{color:var(--white);font-size:18px;font-weight:800;line-height:1.2}
+  .day-type-badge{text-transform:uppercase;letter-spacing:.05em;border-radius:100px;margin-top:5px;
+    padding:2px 9px;font-size:11px;font-weight:700;display:inline-block}
+  .type-city{color:#fff;background:#1e7a4a}
+  .type-travel{color:#c8e4ff;background:#5b9bd559}
+  .type-adventure{color:#ffe58a;background:#ffc8504d}
+  .day-card-body{flex-direction:column;gap:12px;padding:14px 16px 16px;display:flex}
+  .tours-label{text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted);
+    margin-bottom:6px;font-size:12px;font-weight:700}
+
+  .tour-item{background:var(--pale-blue);border-left:3px solid var(--blue);
+    border-radius:0 8px 8px 0;margin-bottom:6px;padding:10px 12px}
+  .tour-item:last-child{margin-bottom:0}
+  .tour-item--travel{border-left-color:var(--soft-blue);background:#eef4fa}
+  .tour-item--tappable{text-align:left;cursor:pointer;border:none;border-left:3px solid var(--blue);
+    width:100%;margin-bottom:6px;padding:10px 12px;display:block}
+  .tour-item--tappable:active{background:var(--pale2)}
+  .tour-item--booking{border-left-color:var(--gold)}
+  .tour-name{color:var(--navy);font-size:15px;font-weight:700}
+  .tour-tap-hint{color:var(--soft-blue);vertical-align:middle;margin-left:6px;font-size:18px;font-weight:400}
+  .tour-operator{color:var(--text-muted);margin-top:2px;font-size:13px}
+  .tour-time{color:var(--blue);margin-top:4px;font-size:13px;font-weight:600}
+  .tour-reserva{display:inline-block;margin-top:6px;font-size:12.5px;font-weight:700;color:var(--gold);
+    text-decoration:none;border-bottom:1.5px solid var(--gold);padding-bottom:1px}
+
+  .notes-row{color:var(--text);border-top:1px solid var(--pale2);padding-top:10px;font-size:14px}
+  .notes-label{text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted);
+    margin-bottom:3px;font-size:12px;font-weight:700}
+
+  /* Modal */
+  .modal-overlay{z-index:300;background:#0a1e3299;align-items:flex-end;display:flex;position:fixed;inset:0}
+  .modal-overlay.hidden{display:none}
+  .modal-sheet{background:var(--white);border-radius:20px 20px 0 0;width:100%;max-width:640px;
+    margin:0 auto;max-height:82dvh;padding:24px 20px 44px;overflow-y:auto}
+  .modal-close{float:right;color:var(--text-muted);background:0 0;border:none;padding:0 4px;
+    font-size:22px;line-height:1}
+  .modal-title{color:var(--navy);margin-bottom:4px;padding-right:32px;font-size:20px;font-weight:800}
+  .modal-operator{color:var(--text-muted);margin-bottom:2px;font-size:14px}
+  .modal-time{color:var(--blue);margin-bottom:2px;font-size:14px;font-weight:600}
+  .modal-section{margin-top:18px}
+  .modal-section-label{text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted);
+    margin-bottom:6px;font-size:11px;font-weight:700}
+  .modal-body-text{color:var(--text);font-size:15px;line-height:1.55}
+  .modal-reserva{display:inline-block;margin-top:6px;background:var(--navy);color:var(--white);
+    border-radius:10px;padding:11px 22px;font-size:15px;font-weight:700;text-decoration:none}
+  .modal-reserva:active{background:var(--blue)}
+
+  .footer{text-align:center;color:var(--text-muted);padding:20px 16px 34px;font-size:12px;line-height:1.6}
+
+  .map-link{display:flex;align-items:center;justify-content:center;gap:8px;
+    margin:14px 16px 0;padding:13px 16px;background:var(--white);border:1.5px solid var(--pale2);
+    border-radius:var(--radius);color:var(--navy);box-shadow:var(--shadow);
+    font-size:15px;font-weight:700;text-decoration:none}
+  .map-link:active{background:var(--pale-blue);border-color:var(--soft-blue)}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="hero">
+    <div class="hero-eyebrow">Luna de Miel</div>
+    <div class="hero-h1">Nueva Zelanda</div>
+    <div class="hero-sub">Auckland &amp; Rotorua</div>
+    <div class="hero-dates">11 – 14 de Diciembre, 2026</div>
+    <div class="hero-hotels">
+      Hotel InterContinental · Auckland (11–12 Dic)<br>
+      Black Swan Lakeside Boutique Hotel · Rotorua (12–14 Dic)
+    </div>
+  </div>
+
+  <div class="tab-bar">
+    <button class="tab-btn">Itinerario</button>
+  </div>
+
+  <a class="map-link" href="mapa.html">🗺 Ver mapa de la ruta</a>
+
+  <div class="days-list" id="daysList"></div>
+
+  <div class="footer">
+    Toca cualquier actividad para ver el detalle y el enlace de reserva.<br>
+    Los horarios de traslado y almuerzo son aproximados.
+  </div>
+</div>
+
+<div class="modal-overlay hidden" id="modal">
+  <div class="modal-sheet" id="modalSheet"></div>
+</div>
+
+<script>
+const DAYS = [
+  {
+    month: "DIC", num: "11", dow: "Vie",
+    port: "Auckland", type: "city", typeLabel: "Waiheke Island",
+    activities: [
+      { name: "Salida del hotel + ferry a Waiheke", travel: true,
+        meetingTime: "9:00 a.m.", meetingPlace: "Downtown Ferry Terminal", startEnd: "Ferry ~45 min",
+        description: "El Downtown Ferry Terminal queda a ~2 minutos caminando del Hotel InterContinental. El ferry hasta Matiatia Ferry Terminal (Waiheke Island) dura unos 45 minutos. Recomendado salir del hotel alrededor de las 9:00 a.m." },
+      { name: "5-Hour Scenic Wine Tour with Private Guide & Up to 12 Tastings",
+        operator: "Viator · Tour privado",
+        meetingTime: "10:40 a.m.", meetingPlace: "Matiatia Ferry Terminal", startEnd: "10:40 a.m. – 3:40 p.m.",
+        description: "Tour privado de vinos por Waiheke Island con guía y hasta 12 degustaciones. No incluye almuerzo — pendiente confirmar con Viviana si se puede coordinar almuerzo en uno de los viñedos.",
+        link: "https://www.viator.com/tours/Waiheke-Island/4-hour-SCENIC-WINE-Tour-with-a-Private-Guide-and-12-tastings/d32653-62882P4?pid=P00001955&uid=U00767249&mcid=58086&currency=USD" },
+      { name: "Regreso a Auckland en ferry", travel: true,
+        meetingTime: "Tarde", meetingPlace: "Matiatia Ferry Terminal", startEnd: "",
+        description: "Ferry de regreso desde Matiatia al Downtown Ferry Terminal. Noche en Hotel InterContinental, Auckland." }
+    ],
+    notes: "Noche en Hotel InterContinental, Auckland."
+  },
+  {
+    month: "DIC", num: "12", dow: "Sáb",
+    port: "Auckland → Rotorua", type: "travel", typeLabel: "Día de traslado",
+    activities: [
+      { name: "Salida de Auckland hacia Waitomo", travel: true,
+        meetingTime: "7:00 a.m.", meetingPlace: "Hotel InterContinental", startEnd: "Auto ~3 h",
+        description: "Trayecto en auto de aproximadamente 3 horas desde Auckland hasta las Waitomo Glowworm Caves." },
+      { name: "Waitomo Glowworm Caves Guided Tour",
+        operator: "Viator",
+        meetingTime: "10:10 a.m.", meetingPlace: "39 Waitomo Village Road, Waitomo Caves", startEnd: "",
+        description: "Tour guiado por las cuevas de luciérnagas de Waitomo. Horario elegido: 10:10 a.m. (confirmar disponibilidad; la ventana general es de 8:00 a.m. a 6:00 p.m.).",
+        link: "https://www.viator.com/tours/Waitomo/Waitomo-Glowworm-Caves-Guided-Tour/d27469-3930P3?pid=P00001955&uid=U00767249&mcid=58086&currency=USD" },
+      { name: "Almuerzo en la zona de Waitomo", travel: true,
+        meetingTime: "~12:00 p.m.", meetingPlace: "", startEnd: "",
+        description: "Almuerzo en Waitomo antes de continuar hacia Blue Spring. Pendiente de recomendación de Viviana." },
+      { name: "Blue Spring — Te Waihou Walkway",
+        meetingTime: "~1:15 p.m.", meetingPlace: "Estacionamiento de Leslie Road", startEnd: "",
+        description: "Parada en el manantial Blue Spring, entrando por el estacionamiento de Leslie Road, que es el acceso corto al manantial. El traslado desde Waitomo es de aproximadamente 1 h 15 min." },
+      { name: "Traslado a Rotorua + check-in", travel: true,
+        meetingTime: "~2:15 p.m.", meetingPlace: "Blue Spring", startEnd: "Auto ~1 h",
+        description: "Traslado desde Blue Spring a Rotorua (~1 hora). Llegada estimada al Black Swan Lakeside Boutique Hotel entre 4:30 y 5:30 p.m." }
+    ],
+    notes: "Noche en Black Swan Lakeside Boutique Hotel, Rotorua."
+  },
+  {
+    month: "DIC", num: "13", dow: "Dom",
+    port: "Rotorua", type: "adventure", typeLabel: "Aventura",
+    activities: [
+      { name: "Jet Ski to Sacred Hot Pools on Lake Rotorua (Tandem)",
+        operator: "Reservado",
+        meetingTime: "9:00 a.m.", meetingPlace: "Lake Rotoiti – Okawa Bay Boat Ramp", startEnd: "",
+        description: "Jet ski en tándem hacia las Sacred Hot Pools. El punto de encuentro (Lake Rotoiti – Okawa Bay Boat Ramp) está a aproximadamente 25 minutos en carro del hotel." },
+      { name: "Almuerzo", travel: true,
+        meetingTime: "~11:00 a.m.", meetingPlace: "", startEnd: "",
+        description: "Almuerzo antes del hike de la tarde." },
+      { name: "Hike — Whakarewarewa Forest (The Redwoods)",
+        meetingTime: "Después del almuerzo", meetingPlace: "The Redwoods", startEnd: "~1 – 1.5 h",
+        description: "Caminata de aproximadamente 1 a 1.5 horas por el bosque de secuoyas. Queda justo al lado de Secret Spot Hot Tubs, así que se puede ir directo de la caminata a los hot tubs sin volver a manejar." },
+      { name: "Secret Spot Forest Hot Tub Soak",
+        operator: "Viator",
+        meetingTime: "~4:00 – 4:30 p.m.", meetingPlace: "Secret Spot Hot Tubs Rotorua", startEnd: "",
+        description: "Baño en los hot tubs del bosque. Disponibilidad durante toda la tarde; a ~15 minutos en carro del hotel (y junto a los Redwoods).",
+        link: "https://www.viator.com/tours/Rotorua/Secret-Spot-Hot-Tub-soak/d395-210014P1?pid=P00001955&uid=U00767249&mcid=58086&currency=USD" }
+    ],
+    notes: "Noche en Black Swan Lakeside Boutique Hotel, Rotorua."
+  },
+  {
+    month: "DIC", num: "14", dow: "Lun",
+    port: "Rotorua", type: "adventure", typeLabel: "Aventura & Spa",
+    activities: [
+      { name: "Kaituna River White Water Rafting",
+        operator: "Viator",
+        meetingTime: "9:00 / 10:00 / 10:30 a.m.", meetingPlace: "761 State Highway 33, Okere Falls", startEnd: "",
+        description: "Rafting en el río Kaituna. Horarios recomendados: 9:00, 10:00 o 10:30 a.m. El punto de encuentro está a aproximadamente 30 minutos en carro del hotel.",
+        link: "https://www.viator.com/tours/Rotorua/Kaituna-River-White-Water-Rafting/d395-17658P1?pid=P00001955&uid=U00767249&mcid=58086&currency=USD" },
+      { name: "Almuerzo + paseo por el centro de Rotorua", travel: true,
+        meetingTime: "~11:00 a.m.", meetingPlace: "Centro de Rotorua", startEnd: "",
+        description: "Tiempo libre para almorzar y pasear por el centro de Rotorua antes del spa." },
+      { name: "Polynesian Spa — Deluxe Romantic Package",
+        operator: "Polynesian Spa",
+        meetingTime: "Tarde", meetingPlace: "Polynesian Spa", startEnd: "Abierto hasta las 7:00 p.m.",
+        description: "Paquete sugerido: Deluxe Romantic Package. A ~10 minutos en carro del hotel. Otras opciones: Elevate & Renew, Family Massage & Facial, Indulgent Retreat, Pair & Pamper, Solo Restore.",
+        link: "https://www.polynesianspa.co.nz/vitality-day-escape-retreat-nz/" }
+    ],
+    notes: "Noche en Black Swan Lakeside Boutique Hotel, Rotorua."
+  }
+];
+
+const daysList = document.getElementById('daysList');
+const modal = document.getElementById('modal');
+const modalSheet = document.getElementById('modalSheet');
+
+function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function timeLine(a){
+  let parts = [];
+  if (a.meetingTime){
+    parts.push(a.meetingPlace ? `${a.meetingTime} · ${a.meetingPlace}` : a.meetingTime);
+  }
+  if (a.startEnd) parts.push(a.startEnd);
+  return parts.join(' · ');
+}
+
+DAYS.forEach((day, di) => {
+  const card = document.createElement('div');
+  card.className = 'day-card';
+
+  let acts = '';
+  day.activities.forEach((a, ai) => {
+    const cls = 'tour-item tour-item--tappable' +
+      (a.travel ? ' tour-item--travel' : '') +
+      (a.link ? ' tour-item--booking' : '');
+    const tl = timeLine(a);
+    acts += `<button class="${cls}" data-day="${di}" data-act="${ai}">
+      <div class="tour-name">${esc(a.name)}<span class="tour-tap-hint">›</span></div>
+      ${a.operator ? `<div class="tour-operator">${esc(a.operator)}</div>` : ''}
+      ${tl ? `<div class="tour-time">${esc(tl)}</div>` : ''}
+      ${a.link ? `<span class="tour-reserva">Reserva</span>` : ''}
+    </button>`;
+  });
+
+  card.innerHTML = `
+    <div class="day-card-header">
+      <div class="day-date-block">
+        <div class="day-month">${day.month}</div>
+        <div class="day-num">${day.num}</div>
+        <div class="day-dow">${day.dow}</div>
+      </div>
+      <div class="day-port-block">
+        <div class="day-port">${esc(day.port)}</div>
+        <span class="day-type-badge type-${day.type}">${esc(day.typeLabel)}</span>
+      </div>
+    </div>
+    <div class="day-card-body">
+      <div>
+        <div class="tours-label">Actividades del día</div>
+        ${acts}
+      </div>
+      <div class="notes-row">
+        <div class="notes-label">Notas</div>
+        <div>${esc(day.notes)}</div>
+      </div>
+    </div>`;
+  daysList.appendChild(card);
+});
+
+function openModal(di, ai){
+  const a = DAYS[di].activities[ai];
+  const tl = timeLine(a);
+  modalSheet.innerHTML = `
+    <button class="modal-close" aria-label="Cerrar">✕</button>
+    <div class="modal-title">${esc(a.name)}</div>
+    ${a.operator ? `<div class="modal-operator">${esc(a.operator)}</div>` : ''}
+    ${tl ? `<div class="modal-time">${esc(tl)}</div>` : ''}
+    ${a.description ? `<div class="modal-section">
+      <div class="modal-section-label">Detalle</div>
+      <div class="modal-body-text">${esc(a.description)}</div>
+    </div>` : ''}
+    ${a.link ? `<div class="modal-section">
+      <div class="modal-section-label">Reserva</div>
+      <a class="modal-reserva" href="${a.link}" target="_blank" rel="noopener">Reserva</a>
+    </div>` : ''}
+  `;
+  modalSheet.querySelector('.modal-close').addEventListener('click', closeModal);
+  modal.classList.remove('hidden');
+}
+function closeModal(){ modal.classList.add('hidden'); }
+
+daysList.addEventListener('click', (e) => {
+  const btn = e.target.closest('.tour-item--tappable');
+  if (!btn) return;
+  openModal(+btn.dataset.day, +btn.dataset.act);
+});
+modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+window.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+</script>
+</body>
+</html>

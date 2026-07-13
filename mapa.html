@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auckland & Rotorua — Mapa del Itinerario</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  #app { display: flex; height: 100vh; overflow: hidden; }
+
+  /* Sidebar */
+  #sidebar {
+    width: 360px; flex-shrink: 0; height: 100%; overflow-y: auto;
+    background: #FAFBFA; border-right: 1px solid #DCE3DD;
+  }
+  .header { background: #1F4D3D; color: #fff; padding: 20px 22px; }
+  .header h1 { font-size: 19px; font-weight: 600; letter-spacing: -0.2px; }
+  .header p { font-size: 12px; color: #BFE0D5; margin-top: 4px; }
+
+  .day-block { padding: 6px 0; }
+  .day-head {
+    display: flex; align-items: center; gap: 10px;
+    padding: 12px 22px 8px; position: sticky; top: 0; background: #FAFBFA; z-index: 5;
+  }
+  .day-dot { width: 13px; height: 13px; border-radius: 50%; flex-shrink: 0; }
+  .day-head h2 { font-size: 13px; font-weight: 700; color: #243029; }
+  .day-head span { font-size: 11px; color: #6B7770; font-weight: 500; }
+
+  .stop {
+    display: flex; gap: 12px; padding: 9px 22px; cursor: pointer;
+    border-left: 3px solid transparent; transition: background .15s;
+  }
+  .stop:hover { background: #EEF3EF; }
+  .stop.active { background: #E6F0EA; border-left-color: #1F4D3D; }
+  .stop .num {
+    width: 22px; height: 22px; border-radius: 6px; flex-shrink: 0;
+    color: #fff; font-size: 11px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center; margin-top: 1px;
+  }
+  .stop .body h3 { font-size: 13px; font-weight: 600; color: #1E2A23; line-height: 1.3; }
+  .stop .body .time { font-size: 11px; font-weight: 600; color: #0F6E6E; margin-bottom: 1px; }
+  .stop .body .note { font-size: 11px; color: #6B7770; line-height: 1.4; margin-top: 2px; }
+  .stop .body .resv { display:inline-block; margin-top:5px; font-size:11px; font-weight:700;
+    color:#B08D57; text-decoration:none; border-bottom:1.5px solid #B08D57; padding-bottom:1px; }
+
+  .footnote { padding: 16px 22px 28px; font-size: 10.5px; color: #8A938C; line-height: 1.5; border-top: 1px solid #E4EAE5; margin-top: 6px; }
+
+  /* Map */
+  #map { flex: 1; height: 100%; }
+  .leaflet-popup-content { font-family: inherit; margin: 12px 14px; }
+  .pop h4 { font-size: 13px; color: #1F4D3D; margin-bottom: 3px; }
+  .pop .pt { font-size: 11px; font-weight: 600; color: #0F6E6E; }
+  .pop .pn { font-size: 11px; color: #555; margin-top: 4px; line-height: 1.4; }
+  .pop .pr { display:inline-block; margin-top:6px; font-size:11px; font-weight:700; color:#B08D57; }
+
+  .marker-pin {
+    width: 26px; height: 26px; border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg); border: 2px solid #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,.4);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .marker-pin span { transform: rotate(45deg); color: #fff; font-size: 12px; font-weight: 700; }
+
+  @media (max-width: 760px) {
+    #app { flex-direction: column; }
+    #sidebar { width: 100%; height: 45%; }
+    #map { height: 55%; }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="sidebar">
+    <div class="header">
+      <a href="index.html" style="display:inline-block;color:#BFE0D5;font-size:12px;font-weight:600;text-decoration:none;margin-bottom:8px">← Itinerario</a>
+      <h1>Auckland &amp; Rotorua — Itinerario</h1>
+      <p>Vie 11 Dic &nbsp;—&nbsp; Lun 14 Dic, 2026 · Luna de Miel</p>
+    </div>
+    <div id="list"></div>
+    <div class="footnote">
+      Toca cualquier parada para volar a ella en el mapa. Las líneas muestran las conexiones por día.<br><br>
+      Los mosaicos del mapa requieren conexión a internet. © OpenStreetMap contributors.
+    </div>
+  </div>
+  <div id="map"></div>
+</div>
+
+<script>
+const DAYS = [
+  {
+    name: "Vie 11 Dic — Auckland", theme: "Waiheke Island · Vinos", color: "#2F6FB0",
+    stops: [
+      { t: "9:00 a.m.", n: "Downtown Ferry Terminal", lat: -36.8430, lng: 174.7680,
+        d: "A ~2 min del Hotel InterContinental. Ferry a Matiatia (~45 min)." },
+      { t: "10:40 a.m. – 3:40 p.m.", n: "Waiheke Island — Wine Tour", lat: -36.7847, lng: 175.0170,
+        d: "5-Hour Scenic Wine Tour con guía privado y hasta 12 degustaciones. Encuentro en Matiatia Ferry Terminal.",
+        link: "https://www.viator.com/tours/Waiheke-Island/4-hour-SCENIC-WINE-Tour-with-a-Private-Guide-and-12-tastings/d32653-62882P4?pid=P00001955&uid=U00767249&mcid=58086&currency=USD" }
+    ]
+  },
+  {
+    name: "Sáb 12 Dic — Auckland → Rotorua", theme: "Día de traslado", color: "#1F8A7A",
+    stops: [
+      { t: "10:10 a.m.", n: "Waitomo Glowworm Caves", lat: -38.2614, lng: 175.1003,
+        d: "39 Waitomo Village Road. ~3 h en auto desde Auckland.",
+        link: "https://www.viator.com/tours/Waitomo/Waitomo-Glowworm-Caves-Guided-Tour/d27469-3930P3?pid=P00001955&uid=U00767249&mcid=58086&currency=USD" },
+      { t: "~1:15 p.m.", n: "Blue Spring — Te Waihou Walkway", lat: -37.9758, lng: 175.6486,
+        d: "Parada en el manantial. Entrada por el estacionamiento de Leslie Road (acceso corto)." },
+      { t: "~4:30 p.m.", n: "Black Swan Lakeside Hotel", lat: -38.0928, lng: 176.2263,
+        d: "Check-in en Rotorua. 171 Kawaha Point Road." }
+    ]
+  },
+  {
+    name: "Dom 13 Dic — Rotorua", theme: "Aventura", color: "#7B5EA7",
+    stops: [
+      { t: "9:00 a.m.", n: "Jet Ski — Okawa Bay", lat: -38.0303, lng: 176.4033,
+        d: "Jet Ski a las Sacred Hot Pools (tándem). Lake Rotoiti – Okawa Bay Boat Ramp, ~25 min del hotel." },
+      { t: "Tarde", n: "Redwoods — Hike", lat: -38.1565, lng: 176.2717,
+        d: "Caminata de 1–1.5 h por Whakarewarewa Forest, junto a los hot tubs." },
+      { t: "~4:00 p.m.", n: "Secret Spot Hot Tubs", lat: -38.1636, lng: 176.2660,
+        d: "Baño en los hot tubs del bosque. ~15 min del hotel.",
+        link: "https://www.viator.com/tours/Rotorua/Secret-Spot-Hot-Tub-soak/d395-210014P1?pid=P00001955&uid=U00767249&mcid=58086&currency=USD" }
+    ]
+  },
+  {
+    name: "Lun 14 Dic — Rotorua", theme: "Aventura & Spa", color: "#C96A4B",
+    stops: [
+      { t: "9 – 10:30 a.m.", n: "Kaituna River Rafting", lat: -38.0347, lng: 176.3680,
+        d: "White water rafting. 761 State Highway 33, Okere Falls. ~30 min del hotel.",
+        link: "https://www.viator.com/tours/Rotorua/Kaituna-River-White-Water-Rafting/d395-17658P1?pid=P00001955&uid=U00767249&mcid=58086&currency=USD" },
+      { t: "~11:00 a.m.", n: "Centro de Rotorua", lat: -38.1379, lng: 176.2517,
+        d: "Almuerzo y paseo libre por la ciudad." },
+      { t: "Tarde", n: "Polynesian Spa", lat: -38.1400, lng: 176.2570,
+        d: "Deluxe Romantic Package. Abierto hasta las 7:00 p.m. ~10 min del hotel.",
+        link: "https://www.polynesianspa.co.nz/vitality-day-escape-retreat-nz/" }
+    ]
+  }
+];
+
+const map = L.map('map', { scrollWheelZoom: true });
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 19, attribution: '© OpenStreetMap'
+}).addTo(map);
+
+const allLatLng = [];
+const markerRefs = [];
+const list = document.getElementById('list');
+
+DAYS.forEach((day, di) => {
+  const linePts = day.stops.filter(s => !s.hideMarker).map(s => {
+    let la = s.lat, ln = s.lng;
+    if (s.offset) { la += 0.004; ln += 0.004; }
+    return [la, ln];
+  });
+  if (linePts.length > 1) {
+    L.polyline(linePts, { color: day.color, weight: 3, opacity: 0.55, dashArray: '6,8' }).addTo(map);
+  }
+
+  const block = document.createElement('div');
+  block.className = 'day-block';
+  block.innerHTML = `<div class="day-head"><span class="day-dot" style="background:${day.color}"></span>
+    <div><h2>${day.name}</h2><span>${day.theme}</span></div></div>`;
+
+  day.stops.forEach((s, si) => {
+    let la = s.lat, ln = s.lng;
+    if (s.offset) { la += 0.004; ln += 0.004; }
+    allLatLng.push([la, ln]);
+
+    let marker = null;
+    if (!s.hideMarker) {
+      const icon = L.divIcon({
+        className: '', iconSize: [26,26], iconAnchor: [13,26], popupAnchor: [0,-26],
+        html: `<div class="marker-pin" style="background:${day.color}"><span>${si+1}</span></div>`
+      });
+      marker = L.marker([la, ln], { icon }).addTo(map);
+      const resv = s.link ? `<br><a class="pr" href="${s.link}" target="_blank" rel="noopener">Reserva ›</a>` : '';
+      marker.bindPopup(`<div class="pop"><div class="pt">${s.t}</div><h4>${s.n}</h4><div class="pn">${s.d}${resv}</div></div>`);
+    }
+    markerRefs.push({ marker, lat: la, lng: ln });
+
+    const resvRow = s.link ? `<a class="resv" href="${s.link}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Reserva</a>` : '';
+    const row = document.createElement('div');
+    row.className = 'stop';
+    row.innerHTML = `<div class="num" style="background:${day.color}">${si+1}</div>
+      <div class="body"><div class="time">${s.t}</div><h3>${s.n}</h3><div class="note">${s.d}</div>${resvRow}</div>`;
+    row.addEventListener('click', () => {
+      document.querySelectorAll('.stop').forEach(e => e.classList.remove('active'));
+      row.classList.add('active');
+      map.flyTo([la, ln], 13, { duration: 0.8 });
+      if (marker) setTimeout(() => marker.openPopup(), 600);
+    });
+    block.appendChild(row);
+  });
+
+  list.appendChild(block);
+});
+
+map.fitBounds(allLatLng, { padding: [50, 50] });
+</script>
+</body>
+</html>
