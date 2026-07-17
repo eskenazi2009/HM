@@ -44,6 +44,17 @@ function DayCard({ day, onOpen }) {
           <div className="day-port">{day.port}</div>
           <span className={`day-type-badge type-${day.type}`}>{day.typeLabel}</span>
         </div>
+        {day.mapsUrl && (
+          <a
+            className="day-maps-btn"
+            href={day.mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Abrir la ruta completa del día en Google Maps"
+          >
+            🧭 Ruta del día
+          </a>
+        )}
       </div>
       <div className="day-card-body">
         <div>

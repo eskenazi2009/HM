@@ -5,6 +5,7 @@ export const DAYS = [
   {
     month: 'DIC', num: '11', dow: 'Vie',
     port: 'Auckland', type: 'city', typeLabel: 'Waiheke Island',
+    mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-36.84335,174.76654&destination=-36.78059,174.99168&travelmode=transit',
     activities: [
       {
         name: 'Salida del hotel + ferry a Waiheke', travel: true,
@@ -29,6 +30,7 @@ export const DAYS = [
   {
     month: 'DIC', num: '12', dow: 'Sáb',
     port: 'Auckland → Rotorua', type: 'travel', typeLabel: 'Día de traslado',
+    mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-36.84835,174.75927&destination=-38.10875,176.24180&waypoints=-38.26087,175.10354%7C-38.03574,175.84193&travelmode=driving',
     activities: [
       {
         name: 'Recoger auto de alquiler (Hertz) y salir hacia Waitomo', travel: true,
@@ -63,6 +65,7 @@ export const DAYS = [
   {
     month: 'DIC', num: '13', dow: 'Dom',
     port: 'Rotorua', type: 'adventure', typeLabel: 'Aventura',
+    mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-38.10875,176.24180&destination=-38.17578,176.25323&waypoints=-38.05189,176.33803%7C-38.15858,176.27019&travelmode=driving',
     activities: [
       {
         name: 'Jet Ski to Sacred Hot Pools on Lake Rotorua (Tandem)',
@@ -93,6 +96,7 @@ export const DAYS = [
   {
     month: 'DIC', num: '14', dow: 'Lun',
     port: 'Rotorua', type: 'adventure', typeLabel: 'Aventura & Spa',
+    mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-38.10875,176.24180&destination=-38.13798,176.25827&waypoints=-38.31539,176.37569%7C-38.01782,176.34348&travelmode=driving',
     activities: [
       {
         name: 'Mt Kakaramea (Rainbow Mountain) Summit Track',

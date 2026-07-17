@@ -26,8 +26,13 @@
     padding: 12px 22px 8px; position: sticky; top: 0; background: #FAFBFA; z-index: 5;
   }
   .day-dot { width: 13px; height: 13px; border-radius: 50%; flex-shrink: 0; }
+  .day-head-txt { flex: 1; min-width: 0; }
   .day-head h2 { font-size: 13px; font-weight: 700; color: #243029; }
   .day-head span { font-size: 11px; color: #6B7770; font-weight: 500; }
+  .day-route { flex-shrink: 0; align-self: center; font-size: 10.5px; font-weight: 700;
+    color: #1F4D3D; background: #E6F0EA; border: 1px solid #BFD8CB; border-radius: 100px;
+    padding: 4px 10px; text-decoration: none; white-space: nowrap; }
+  .day-route:hover { background: #D8E9DE; }
 
   .stop {
     display: flex; gap: 12px; padding: 9px 22px; cursor: pointer;
@@ -98,53 +103,58 @@
 </div>
 
 <script>
+// Coordenadas verificadas contra OpenStreetMap (objetos exactos: terminales, direcciones, parkings).
 const DAYS = [
   {
     name: "Vie 11 Dic — Auckland", theme: "Waiheke Island · Vinos", color: "#2F6FB0",
+    gmaps: "https://www.google.com/maps/dir/?api=1&origin=-36.84335,174.76654&destination=-36.78059,174.99168&travelmode=transit",
     stops: [
-      { t: "9:00 a.m.", n: "Downtown Ferry Terminal", lat: -36.8430, lng: 174.7680,
+      { t: "9:00 a.m.", n: "Downtown Ferry Terminal", lat: -36.84275, lng: 174.76704,
         d: "A ~2 min del Hotel InterContinental. Ferry a Matiatia (~45 min)." },
-      { t: "10:40 a.m. – ~3:10 p.m.", n: "Waiheke Island — Wine Tour", lat: -36.7847, lng: 175.0170,
+      { t: "10:40 a.m. – ~3:10 p.m.", n: "Wine Tour — Matiatia Ferry Terminal (Waiheke)", lat: -36.78059, lng: 174.99168,
         d: "Tour en grupo (4.5 h): 3 viñedos top y ~15 vinos. Sin almuerzo. USD 412.62. Encuentro en Matiatia Ferry Terminal.",
         link: "https://www.viator.com/tours/Waiheke-Island/4-hour-SCENIC-WINE-Tour-with-a-Private-Guide-and-12-tastings/d32653-62882P4?pid=P00001955&uid=U00767249&mcid=58086&currency=USD" }
     ]
   },
   {
     name: "Sáb 12 Dic — Auckland → Rotorua", theme: "Día de traslado", color: "#1F8A7A",
+    gmaps: "https://www.google.com/maps/dir/?api=1&origin=-36.84835,174.75927&destination=-38.10875,176.24180&waypoints=-38.26087,175.10354%7C-38.03574,175.84193&travelmode=driving",
     stops: [
-      { t: "7:30 a.m.", n: "Recoger auto — Hertz Auckland Downtown", lat: -36.8445, lng: 174.7665,
-        d: "Retiro del auto (Mazda MX-5 convertible) a las 7:30 a.m. Desde aquí ~3 h en auto hasta Waitomo. Devolución 15 dic en Auckland Airport." },
-      { t: "11:40 a.m.", n: "Waitomo Glowworm Caves", lat: -38.2614, lng: 175.1003,
+      { t: "7:30 a.m.", n: "Recoger auto — Hertz Auckland Downtown", lat: -36.84835, lng: 174.75927,
+        d: "154 Victoria Street West. Retiro del auto (Mazda MX-5 convertible) a las 7:30 a.m. Desde aquí ~3 h en auto hasta Waitomo. Devolución 15 dic en Auckland Airport." },
+      { t: "11:40 a.m.", n: "Waitomo Glowworm Caves", lat: -38.26087, lng: 175.10354,
         d: "39 Waitomo Village Road. Horario confirmado 11:40 a.m. USD 100.20.",
         link: "https://www.viator.com/tours/Waitomo/Waitomo-Glowworm-Caves-Guided-Tour/d27469-3930P3?pid=P00001955&uid=U00767249&mcid=58086&currency=USD" },
-      { t: "~1:15 p.m.", n: "Blue Spring — Te Waihou Walkway", lat: -37.9758, lng: 175.6486,
-        d: "Parada en el manantial. Entrada por el estacionamiento de Leslie Road (acceso corto)." },
-      { t: "~4:30 p.m.", n: "Black Swan Lakeside Hotel", lat: -38.0928, lng: 176.2263,
+      { t: "Tarde", n: "Blue Spring — Te Waihou Walkway", lat: -38.03574, lng: 175.84193,
+        d: "Estacionamiento oficial de Leslie Road (acceso corto al manantial). ~1 h 15 min desde Waitomo." },
+      { t: "Fin de la tarde", n: "Black Swan Lakeside Hotel", lat: -38.10875, lng: 176.24180,
         d: "Check-in en Rotorua. 171 Kawaha Point Road." }
     ]
   },
   {
     name: "Dom 13 Dic — Rotorua", theme: "Aventura", color: "#7B5EA7",
+    gmaps: "https://www.google.com/maps/dir/?api=1&origin=-38.10875,176.24180&destination=-38.17578,176.25323&waypoints=-38.05189,176.33803%7C-38.15858,176.27019&travelmode=driving",
     stops: [
-      { t: "9:00 a.m.", n: "Jet Ski — Okawa Bay", lat: -38.0303, lng: 176.4033,
-        d: "Jet Ski a las Sacred Hot Pools (tándem). Lake Rotoiti – Okawa Bay Boat Ramp, ~25 min del hotel." },
-      { t: "Tarde", n: "Redwoods — Hike", lat: -38.1565, lng: 176.2717,
-        d: "Caminata de 1–1.5 h por Whakarewarewa Forest, junto a los hot tubs." },
-      { t: "4:00 p.m.", n: "Secret Spot Hot Tubs", lat: -38.1636, lng: 176.2660,
-        d: "Baño en los hot tubs del bosque a las 4:00 p.m. ~15 min del hotel.",
+      { t: "9:00 a.m.", n: "Jet Ski — Okawa Bay Boat Ramp", lat: -38.05189, lng: 176.33803,
+        d: "Jet Ski a las Sacred Hot Pools (tándem). Rampa pública de Ōkawa Bay (Lake Rotoiti), ~25 min del hotel." },
+      { t: "Tarde", n: "Redwoods — Hike (Long Mile Rd)", lat: -38.15858, lng: 176.27019,
+        d: "Caminata de 1–1.5 h por Whakarewarewa Forest desde el visitor centre (Long Mile Rd / Tītokorangi Dr), junto a los hot tubs." },
+      { t: "4:00 p.m.", n: "Secret Spot Hot Tubs", lat: -38.17578, lng: 176.25323,
+        d: "Baño en los hot tubs del bosque a las 4:00 p.m. 13/33 Waipa State Mill Road, ~15 min del hotel.",
         link: "https://www.viator.com/tours/Rotorua/Secret-Spot-Hot-Tub-soak/d395-210014P1?pid=P00001955&uid=U00767249&mcid=58086&currency=USD" }
     ]
   },
   {
     name: "Lun 14 Dic — Rotorua", theme: "Aventura & Spa", color: "#C96A4B",
+    gmaps: "https://www.google.com/maps/dir/?api=1&origin=-38.10875,176.24180&destination=-38.13798,176.25827&waypoints=-38.31539,176.37569%7C-38.01782,176.34348&travelmode=driving",
     stops: [
-      { t: "7:00 a.m.", n: "Mt Kakaramea (Rainbow Mountain) Summit Track", lat: -38.2947, lng: 176.3661,
-        d: "Hike a la cumbre (~3 h). Vistas de los lagos cráter y la zona geotérmica. Trailhead en la SH5 (Waiotapu), ~30 min al sur de Rotorua. Sendero gratuito del DOC." },
-      { t: "~1:30 p.m.", n: "Kaituna River Rafting", lat: -38.0347, lng: 176.3680,
+      { t: "7:00 a.m.", n: "Mt Kakaramea (Rainbow Mountain) Summit Track", lat: -38.31539, lng: 176.37569,
+        d: "Hike a la cumbre (~3 h). Estacionamiento DOC del track sobre la SH5 (gratis), ~30 min al sur de Rotorua." },
+      { t: "~1:30 p.m.", n: "Kaituna River Rafting", lat: -38.01782, lng: 176.34348,
         d: "White water rafting a la ~1:30 p.m. 761 State Highway 33, Okere Falls. ~30 min del hotel.",
         link: "https://www.viator.com/tours/Rotorua/Kaituna-River-White-Water-Rafting/d395-17658P1?pid=P00001955&uid=U00767249&mcid=58086&currency=USD" },
-      { t: "5:45 p.m.", n: "Polynesian Spa", lat: -38.1400, lng: 176.2570,
-        d: "Deluxe Romantic Package, 5:45 p.m. Abierto hasta las 7:00 p.m. ~10 min del hotel.",
+      { t: "5:45 p.m.", n: "Polynesian Spa", lat: -38.13798, lng: 176.25827,
+        d: "Deluxe Romantic Package, 5:45 p.m. 1000 Hinemoa Street. Abierto hasta las 7:00 p.m. ~10 min del hotel.",
         link: "https://www.polynesianspa.co.nz/vitality-day-escape-retreat-nz/" }
     ]
   }
@@ -172,8 +182,11 @@ DAYS.forEach((day, di) => {
 
   const block = document.createElement('div');
   block.className = 'day-block';
+  const routeBtn = day.gmaps
+    ? `<a class="day-route" href="${day.gmaps}" target="_blank" rel="noopener" title="Abrir la ruta completa del día en Google Maps">🧭 Ruta del día</a>`
+    : '';
   block.innerHTML = `<div class="day-head"><span class="day-dot" style="background:${day.color}"></span>
-    <div><h2>${day.name}</h2><span>${day.theme}</span></div></div>`;
+    <div class="day-head-txt"><h2>${day.name}</h2><span>${day.theme}</span></div>${routeBtn}</div>`;
 
   let num = 0; // sequential counter for main stops; extras are marked with a star
   day.stops.forEach((s) => {
