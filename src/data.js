@@ -80,6 +80,7 @@ export const DAYS = [
       },
       {
         name: 'Hike — Whakarewarewa Forest (The Redwoods)',
+        swap: true,
         meetingTime: 'Después del almuerzo', meetingPlace: 'The Redwoods', startEnd: '~1.5 h',
         description: 'Caminata de aproximadamente 1.5 horas por el bosque de secuoyas. Queda justo al lado de Secret Spot Hot Tubs, así que se puede ir directo de la caminata a los hot tubs sin volver a manejar. Sendero gratuito.',
       },
@@ -100,6 +101,7 @@ export const DAYS = [
     activities: [
       {
         name: 'Mt Kakaramea (Rainbow Mountain) Summit Track',
+        swap: true,
         operator: 'Sendero DOC · gratuito',
         meetingTime: '7:00 a.m.', meetingPlace: 'Rainbow Mountain car park (SH5, Waiotapu)', startEnd: '~3 h ida y vuelta',
         description: 'Caminata a la cumbre del Mt Kakaramea (Rainbow Mountain), con vistas de los lagos cráter y la zona geotérmica. Dura ~3 horas; el trailhead está sobre la SH5 en Waiotapu, a ~30 minutos en carro al sur de Rotorua. Se hace temprano (~7:00 a.m.) para tener tiempo para el rafting y el spa. Sendero gratuito del DOC, no requiere reserva.',

@@ -21,6 +21,7 @@ function ActivityButton({ activity, onOpen }) {
     <button className={cls} onClick={() => onOpen(activity)}>
       <div className="tour-name">
         {activity.extra && <span className="tour-extra">Extra</span>}
+        {activity.swap && <span className="tour-swap">Intercambiar</span>}
         {activity.name}
         <span className="tour-tap-hint">›</span>
       </div>
