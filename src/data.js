@@ -33,9 +33,9 @@ export const DAYS = [
     mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-36.84835,174.75927&destination=-38.10875,176.24180&waypoints=-38.26087,175.10354%7C-38.03574,175.84193&travelmode=driving',
     activities: [
       {
-        name: 'Recoger auto de alquiler (Hertz) y salir hacia Waitomo', travel: true,
-        meetingTime: '7:30 a.m.', meetingPlace: 'Hertz — Auckland Downtown', startEnd: 'Auto ~3 h a Waitomo',
-        description: 'Retiro del auto a las 7:30 a.m. (horario más temprano disponible) en Hertz Auckland Downtown. Vehículo: Midsize Convertible — Mazda MX-5 Roadster o similar. Precio: USD 739.45 (12–15 dic; kilometraje ilimitado, no incluye combustible). Devolución: 15 dic, Auckland Airport, 12:00 p.m. Desde Auckland son ~3 h en auto hasta Waitomo.',
+        name: 'Recoger auto de alquiler (Divine Rentals) y salir hacia Waitomo', travel: true,
+        meetingTime: '7:30 a.m.', meetingPlace: 'Divine Rentals — Auckland Downtown', startEnd: 'Auto ~3 h a Waitomo',
+        description: 'Retiro del auto a las 7:30 a.m. (horario más temprano disponible) en Divine Rentals, Auckland Downtown. Vehículo: Midsize Convertible — Mazda MX-5 Roadster o similar. Precio: USD 739.45 (12–15 dic; kilometraje ilimitado, no incluye combustible). Devolución: 15 dic, Auckland Airport, 12:00 p.m. Desde Auckland son ~3 h en auto hasta Waitomo.',
       },
       {
         name: 'Waitomo Glowworm Caves Guided Tour',
@@ -88,8 +88,8 @@ export const DAYS = [
         name: 'Secret Spot Forest Hot Tub Soak',
         operator: 'Viator · Reservado',
         rebook: true,
-        meetingTime: '5:30 p.m.', meetingPlace: 'Secret Spot Hot Tubs Rotorua', startEnd: '',
-        description: 'Baño en los hot tubs del bosque a las 5:30 p.m. (atrasado desde las 4:00). 13/33 Waipa State Mill Road, ~15 min del hotel. Hay que actualizar la hora de la reserva con el operador.',
+        meetingTime: '6:00 p.m.', meetingPlace: 'Secret Spot Hot Tubs Rotorua', startEnd: '',
+        description: 'Baño en los hot tubs del bosque a las 6:00 p.m. (atrasado desde las 4:00). 13/33 Waipa State Mill Road, ~15 min del hotel. Hay que actualizar la hora de la reserva con el operador.',
         link: 'https://www.viator.com/tours/Rotorua/Secret-Spot-Hot-Tub-soak/d395-210014P1?pid=P00001955&uid=U00767249&mcid=58086&currency=USD',
       },
     ],
