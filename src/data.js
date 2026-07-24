@@ -15,8 +15,9 @@ export const DAYS = [
       {
         name: 'Scenic Wine Tour con guía y 12 degustaciones (Waiheke)',
         operator: 'Viator · Opción en grupo (4.5 h) · Reservado',
+        actionBadge: 'Comprar ferry',
         meetingTime: '10:40 a.m.', meetingPlace: 'Matiatia Ferry Terminal', startEnd: '4.5 h · hasta ~3:10 p.m.',
-        description: 'Opción elegida: tour en grupo (4.5 horas). Visita 3 de los mejores viñedos de la isla y se degustan ~15 vinos. No incluye almuerzo. Precio: USD 412.62 (2 personas). Encuentro en Matiatia Ferry Terminal.',
+        description: 'Opción elegida: tour en grupo (4.5 horas). Visita 3 de los mejores viñedos de la isla y se degustan ~15 vinos. No incluye almuerzo. Precio: USD 412.62 (2 personas). Encuentro en Matiatia Ferry Terminal. Falta comprar los pasajes de ferry ida y vuelta a Waiheke Island (no están incluidos en el tour).',
         link: 'https://www.viator.com/tours/Waiheke-Island/4-hour-SCENIC-WINE-Tour-with-a-Private-Guide-and-12-tastings/d32653-62882P4?pid=P00001955&uid=U00767249&mcid=58086&currency=USD',
       },
       {
@@ -33,9 +34,9 @@ export const DAYS = [
     mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-36.84835,174.75927&destination=-38.10875,176.24180&waypoints=-38.26087,175.10354%7C-38.03574,175.84193&travelmode=driving',
     activities: [
       {
-        name: 'Recoger auto de alquiler (Divine Rentals) y salir hacia Waitomo', travel: true,
-        meetingTime: '7:30 a.m.', meetingPlace: 'Divine Rentals — Auckland Downtown', startEnd: 'Auto ~3 h a Waitomo',
-        description: 'Retiro del auto a las 7:30 a.m. (horario más temprano disponible) en Divine Rentals, Auckland Downtown. Vehículo: Midsize Convertible — Mazda MX-5 Roadster o similar. Precio: USD 739.45 (12–15 dic; kilometraje ilimitado, no incluye combustible). Devolución: 15 dic, Auckland Airport, 12:00 p.m. Desde Auckland son ~3 h en auto hasta Waitomo.',
+        name: 'Salida del hotel + recoger auto de alquiler (Divine Rentals)', travel: true,
+        meetingTime: '7:00 a.m.', meetingPlace: 'Divine Rentals — Auckland Downtown', startEnd: 'Auto ~3 h a Waitomo',
+        description: 'Salida del hotel a las 7:00 a.m. para retirar el auto en Divine Rentals, Auckland Downtown. Vehículo: Midsize Convertible — Mazda MX-5 Roadster o similar. Precio: USD 739.45 (12–15 dic; kilometraje ilimitado, no incluye combustible). Devolución: 15 dic, Auckland Airport, 12:00 p.m. Desde Auckland son ~3 h en auto hasta Waitomo.',
       },
       {
         name: 'Waitomo Glowworm Caves Guided Tour',
@@ -87,7 +88,7 @@ export const DAYS = [
       {
         name: 'Secret Spot Forest Hot Tub Soak',
         operator: 'Viator · Reservado',
-        rebook: true,
+        actionBadge: 'Cambiar reserva',
         meetingTime: '6:00 p.m.', meetingPlace: 'Secret Spot Hot Tubs Rotorua', startEnd: '',
         description: 'Baño en los hot tubs del bosque a las 6:00 p.m. (atrasado desde las 4:00). 13/33 Waipa State Mill Road, ~15 min del hotel. Hay que actualizar la hora de la reserva con el operador.',
         link: 'https://www.viator.com/tours/Rotorua/Secret-Spot-Hot-Tub-soak/d395-210014P1?pid=P00001955&uid=U00767249&mcid=58086&currency=USD',
@@ -114,7 +115,7 @@ export const DAYS = [
       {
         name: 'Kaituna River White Water Rafting',
         operator: 'Viator · Reservado',
-        rebook: true,
+        actionBadge: 'Cambiar reserva',
         meetingTime: '1:00 p.m.', meetingPlace: '761 State Highway 33, Okere Falls', startEnd: '',
         description: 'Rafting en el río Kaituna a la 1:00 p.m. (adelantado desde la 1:30). El punto de encuentro (761 State Highway 33, Okere Falls) está a ~30 minutos en carro del hotel. Hay que actualizar la hora de la reserva con el operador.',
         link: 'https://www.viator.com/tours/Rotorua/Kaituna-River-White-Water-Rafting/d395-17658P1?pid=P00001955&uid=U00767249&mcid=58086&currency=USD',
