@@ -88,9 +88,8 @@ export const DAYS = [
       {
         name: 'Secret Spot Forest Hot Tub Soak',
         operator: 'Viator · Reservado',
-        actionBadge: 'Cambiar reserva',
         meetingTime: '6:00 p.m.', meetingPlace: 'Secret Spot Hot Tubs Rotorua', startEnd: '',
-        description: 'Baño en los hot tubs del bosque a las 6:00 p.m. (atrasado desde las 4:00). 13/33 Waipa State Mill Road, ~15 min del hotel. Hay que actualizar la hora de la reserva con el operador.',
+        description: 'Baño en los hot tubs del bosque a las 6:00 p.m. 13/33 Waipa State Mill Road, ~15 min del hotel.',
         link: 'https://www.viator.com/tours/Rotorua/Secret-Spot-Hot-Tub-soak/d395-210014P1?pid=P00001955&uid=U00767249&mcid=58086&currency=USD',
       },
     ],
@@ -115,9 +114,8 @@ export const DAYS = [
       {
         name: 'Kaituna River White Water Rafting',
         operator: 'Viator · Reservado',
-        actionBadge: 'Cambiar reserva',
         meetingTime: '1:00 p.m.', meetingPlace: '761 State Highway 33, Okere Falls', startEnd: '',
-        description: 'Rafting en el río Kaituna a la 1:00 p.m. (adelantado desde la 1:30). El punto de encuentro (761 State Highway 33, Okere Falls) está a ~30 minutos en carro del hotel. Hay que actualizar la hora de la reserva con el operador.',
+        description: 'Rafting en el río Kaituna a la 1:00 p.m. El punto de encuentro (761 State Highway 33, Okere Falls) está a ~30 minutos en carro del hotel.',
         link: 'https://www.viator.com/tours/Rotorua/Kaituna-River-White-Water-Rafting/d395-17658P1?pid=P00001955&uid=U00767249&mcid=58086&currency=USD',
       },
       {
