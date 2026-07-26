@@ -141,4 +141,16 @@ export const TODO = [
       'Buscar recomendaciones de la ciudad',
     ],
   },
+  {
+    city: 'Cape Town',
+    items: [
+      'Tour día libre (hot air balloon, four wheels)',
+    ],
+  },
+  {
+    city: 'Maldivas',
+    items: [
+      'Averiguar diving',
+    ],
+  },
 ]
