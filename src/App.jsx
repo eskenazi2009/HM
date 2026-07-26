@@ -1,5 +1,15 @@
 import { useState, useEffect } from 'react'
-import { DAYS } from './data.js'
+import { DAYS, TODO } from './data.js'
+
+const TODO_STORAGE_KEY = 'hm-todo-done-v1'
+
+function loadDone() {
+  try {
+    return JSON.parse(localStorage.getItem(TODO_STORAGE_KEY)) || {}
+  } catch {
+    return {}
+  }
+}
 
 function timeLine(a) {
   const parts = []
@@ -73,6 +83,57 @@ function DayCard({ day, onOpen }) {
   )
 }
 
+function TodoList() {
+  const [done, setDone] = useState(loadDone)
+
+  useEffect(() => {
+    localStorage.setItem(TODO_STORAGE_KEY, JSON.stringify(done))
+  }, [done])
+
+  const toggle = (key) => setDone((prev) => ({ ...prev, [key]: !prev[key] }))
+
+  const totalItems = TODO.reduce((sum, g) => sum + g.items.length, 0)
+  const doneCount = TODO.reduce(
+    (sum, g) => sum + g.items.filter((_, i) => done[`${g.city}-${i}`]).length,
+    0
+  )
+
+  return (
+    <div className="todo-page">
+      <div className="todo-hero">
+        <div className="todo-title">To Do List</div>
+        <div className="todo-progress-bar">
+          <div
+            className="todo-progress-fill"
+            style={{ width: totalItems ? `${(doneCount / totalItems) * 100}%` : '0%' }}
+          />
+        </div>
+        <div className="todo-progress-label">{doneCount} de {totalItems} completado{doneCount === 1 ? '' : 's'}</div>
+      </div>
+
+      {TODO.map((group) => (
+        <div className="todo-section" key={group.city}>
+          <div className="todo-section-title">{group.city}</div>
+          {group.items.map((item, i) => {
+            const key = `${group.city}-${i}`
+            const isDone = !!done[key]
+            return (
+              <div
+                key={key}
+                className={'todo-item' + (isDone ? ' todo-item--done' : '')}
+                onClick={() => toggle(key)}
+              >
+                <input type="checkbox" checked={isDone} readOnly />
+                <span className="todo-item-text">{item}</span>
+              </div>
+            )
+          })}
+        </div>
+      ))}
+    </div>
+  )
+}
+
 function Modal({ activity, onClose }) {
   useEffect(() => {
     const onKey = (e) => e.key === 'Escape' && onClose()
@@ -110,6 +171,7 @@ function Modal({ activity, onClose }) {
 
 export default function App() {
   const [selected, setSelected] = useState(null)
+  const [tab, setTab] = useState('itinerary')
 
   return (
     <div className="app">
@@ -126,22 +188,39 @@ export default function App() {
       </div>
 
       <div className="tab-bar">
-        <button className="tab-btn">Itinerario</button>
+        <button
+          className={'tab-btn' + (tab === 'itinerary' ? ' tab-btn--active' : '')}
+          onClick={() => setTab('itinerary')}
+        >
+          Itinerario
+        </button>
+        <button
+          className={'tab-btn' + (tab === 'todo' ? ' tab-btn--active' : '')}
+          onClick={() => setTab('todo')}
+        >
+          To Do List
+        </button>
       </div>
 
-      <a className="map-link" href="mapa.html">🗺 Ver mapa de la ruta</a>
+      {tab === 'itinerary' && (
+        <>
+          <a className="map-link" href="mapa.html">🗺 Ver mapa de la ruta</a>
 
-      <div className="days-list">
-        {DAYS.map((day, i) => (
-          <DayCard key={i} day={day} onOpen={setSelected} />
-        ))}
-      </div>
+          <div className="days-list">
+            {DAYS.map((day, i) => (
+              <DayCard key={i} day={day} onOpen={setSelected} />
+            ))}
+          </div>
 
-      <div className="footer">
-        Toca cualquier actividad para ver el detalle y el enlace de reserva.
-        <br />
-        Los horarios de traslado y almuerzo son aproximados.
-      </div>
+          <div className="footer">
+            Toca cualquier actividad para ver el detalle y el enlace de reserva.
+            <br />
+            Los horarios de traslado y almuerzo son aproximados.
+          </div>
+        </>
+      )}
+
+      {tab === 'todo' && <TodoList />}
 
       {selected && <Modal activity={selected} onClose={() => setSelected(null)} />}
     </div>

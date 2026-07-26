@@ -129,3 +129,16 @@ export const DAYS = [
     notes: 'Noche en Black Swan Lakeside Boutique Hotel, Rotorua. El 15 dic se devuelve el auto en Auckland Airport (12:00 p.m.).',
   },
 ]
+
+// Pendientes por ciudad — checklist independiente del itinerario.
+export const TODO = [
+  {
+    city: 'Auckland',
+    items: [
+      'Reservar wine tour',
+      'Comprar ferry',
+      'Alquilar carro',
+      'Buscar recomendaciones de la ciudad',
+    ],
+  },
+]

@@ -20,11 +20,30 @@ a{color:var(--blue)}
 .hero-dates{color:var(--soft-blue);margin-top:4px;font-size:14px;font-weight:500}
 .hero-hotels{color:#cfe3f4;margin-top:14px;font-size:12.5px;line-height:1.5;opacity:.9}
 
-/* Single tab bar */
+/* Tab bar */
 .tab-bar{background:var(--white);border-bottom:2px solid var(--pale2);z-index:90;display:flex;
   position:sticky;top:0}
-.tab-btn{color:var(--navy);background:0 0;border:none;border-bottom:3px solid var(--blue);
-  flex:1;margin-bottom:-2px;padding:12px 8px;font-size:15px;font-weight:700}
+.tab-btn{color:var(--text-muted);background:0 0;border:none;border-bottom:3px solid transparent;
+  flex:1;margin-bottom:-2px;padding:12px 8px;font-size:15px;font-weight:700;transition:color .15s,border-color .15s}
+.tab-btn--active{color:var(--navy);border-bottom-color:var(--blue)}
+
+/* To Do List */
+.todo-page{flex:1;padding-bottom:40px}
+.todo-hero{background:var(--navy);color:var(--white);padding:20px 20px 16px}
+.todo-title{margin:0 0 12px;font-size:22px;font-weight:800}
+.todo-progress-bar{background:#ffffff33;border-radius:999px;height:8px;overflow:hidden}
+.todo-progress-fill{background:var(--soft-blue);border-radius:999px;height:100%;transition:width .25s}
+.todo-progress-label{opacity:.75;margin-top:6px;font-size:13px}
+.todo-section{margin:18px 16px 0}
+.todo-section-title{text-transform:uppercase;letter-spacing:.06em;color:var(--navy);
+  border-bottom:2px solid var(--navy);margin-bottom:6px;padding-bottom:4px;font-size:13px;font-weight:700}
+.todo-item{cursor:pointer;color:var(--text);background:var(--white);border:1px solid var(--pale2);
+  border-bottom:none;align-items:center;gap:12px;padding:11px 12px;font-size:15px;display:flex}
+.todo-item:first-of-type{border-radius:var(--radius) var(--radius) 0 0}
+.todo-item:last-of-type{border-radius:0 0 var(--radius) var(--radius);border-bottom:1px solid var(--pale2)}
+.todo-item input[type="checkbox"]{width:18px;height:18px;flex-shrink:0;accent-color:var(--blue)}
+.todo-item-text{line-height:1.4}
+.todo-item--done .todo-item-text{opacity:.45;text-decoration:line-through}
 
 /* Map link */
 .map-link{display:flex;align-items:center;justify-content:center;gap:8px;
