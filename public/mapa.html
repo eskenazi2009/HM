@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Auckland & Rotorua — Mapa del Itinerario</title>
+<title>Nueva Zelanda — Mapa del Itinerario</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <style>
@@ -90,8 +90,8 @@
   <div id="sidebar">
     <div class="header">
       <a href="index.html" style="display:inline-block;color:#BFE0D5;font-size:12px;font-weight:600;text-decoration:none;margin-bottom:8px">← Itinerario</a>
-      <h1>Auckland &amp; Rotorua — Itinerario</h1>
-      <p>Vie 11 Dic &nbsp;—&nbsp; Lun 14 Dic, 2026 · Luna de Miel</p>
+      <h1>Nueva Zelanda — Itinerario</h1>
+      <p>Jue 10 Dic &nbsp;—&nbsp; Dom 20 Dic, 2026 · Auckland · Rotorua · Queenstown</p>
     </div>
     <div id="list"></div>
     <div class="footnote">
@@ -105,6 +105,16 @@
 <script>
 // Coordenadas verificadas contra OpenStreetMap (objetos exactos: terminales, direcciones, parkings).
 const DAYS = [
+  {
+    name: "Jue 10 Dic — Llegada", theme: "Auckland", color: "#6B8CAE",
+    gmaps: "https://www.google.com/maps/dir/?api=1&origin=-37.00655,174.79034&destination=-36.84335,174.76654&travelmode=driving",
+    stops: [
+      { t: "Por confirmar", n: "Llegada — Auckland Airport", lat: -37.00655, lng: 174.79034,
+        d: "Llegada a Nueva Zelanda. Falta confirmar vuelo y hora de aterrizaje." },
+      { t: "Por confirmar", n: "Check-in — Hotel InterContinental", lat: -36.84335, lng: 174.76654,
+        d: "Traslado al centro de Auckland (~30 min). Tarde libre para pasear." }
+    ]
+  },
   {
     name: "Vie 11 Dic — Auckland", theme: "Waiheke Island · Vinos", color: "#2F6FB0",
     gmaps: "https://www.google.com/maps/dir/?api=1&origin=-36.84335,174.76654&destination=-36.78059,174.99168&travelmode=transit",
@@ -156,6 +166,71 @@ const DAYS = [
       { t: "5:45 p.m.", n: "Polynesian Spa", lat: -38.13798, lng: 176.25827,
         d: "Deluxe Romantic Package, 5:45 p.m. 1000 Hinemoa Street. Abierto hasta las 7:00 p.m. ~10 min del hotel.",
         link: "https://www.polynesianspa.co.nz/vitality-day-escape-retreat-nz/" }
+    ]
+  },
+  {
+    name: "Mar 15 Dic — Rotorua → Queenstown", theme: "Día de traslado · vuelo", color: "#8A8F98",
+    gmaps: "https://www.google.com/maps/dir/?api=1&origin=-38.10875,176.24180&destination=-37.00655,174.79034&travelmode=driving",
+    stops: [
+      { t: "~7:30 a.m.", n: "Salida de Rotorua", lat: -38.10875, lng: 176.24180,
+        d: "Check-out del Black Swan y traslado en auto a Auckland Airport (~3 h / 230 km)." },
+      { t: "12:00 p.m.", n: "Devolución del auto — Auckland Airport", lat: -37.00655, lng: 174.79034,
+        d: "Entrega del auto de alquiler y vuelo doméstico a Queenstown (~2 h). Horario del vuelo por confirmar." },
+      { t: "Tarde", n: "Llegada — Queenstown Airport", lat: -45.01930, lng: 168.74344,
+        d: "Llegada a Queenstown. Del aeropuerto al hotel son ~10 min." },
+      { t: "Tarde", n: "Check-in — Sofitel Queenstown", lat: -45.03115, lng: 168.65901,
+        d: "Sofitel Queenstown Hotel & Spa, 8 Duke Street, en pleno centro." }
+    ]
+  },
+  {
+    name: "Mié 16 Dic — Milford Sound", theme: "Fiordos · vuelo escénico", color: "#2E7D8F",
+    gmaps: "https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-45.02487,168.74103&travelmode=driving",
+    stops: [
+      { t: "10:30 a.m.", n: "Milford Sound Fly-Cruise-Fly", lat: -45.02487, lng: 168.74103,
+        d: "Vuelo escénico + crucero por el fiordo + vuelo de regreso. Salida desde Frankton (punto exacto por confirmar). Pendiente que Viviana confirme esta opción.",
+        link: "https://www.viator.com/tours/Queenstown/Milford-Sound-Fly-Cruise-Fly/d407-171544P1?pid=P00050706&mcid=42383&medium=link&campaign=review-milford-sound-fly-cruise-fly" },
+      { t: "Referencia", n: "Milford Sound (destino del vuelo)", lat: -44.67139, lng: 167.92556,
+        d: "El fiordo de Milford Sound / Piopiotahi, en Fiordland — a ~1 h de vuelo desde Queenstown." }
+    ]
+  },
+  {
+    name: "Jue 17 Dic — Lake Tekapo", theme: "Excursión privada", color: "#4C6EA8",
+    gmaps: "https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-44.00452,170.47773&travelmode=driving",
+    stops: [
+      { t: "8:00 a.m.", n: "Pickup — Sofitel Queenstown", lat: -45.03115, lng: 168.65901,
+        d: "Pickup del tour privado en el hotel a las 8:00 a.m." },
+      { t: "Día completo", n: "Lake Tekapo", lat: -44.00452, lng: 170.47773,
+        d: "Lake Tekapo y la Church of the Good Shepherd. ~3.5 h de viaje en cada sentido; ruta y paradas por definir con Viviana.",
+        link: "https://www.viator.com/tours/Queenstown/Lake-Tekapo-Private-Day-Trip-from-Queenstown-TravelnGo/d407-5590256P5?pid=P00001955&uid=U00767249&mcid=58086&currency=USD" }
+    ]
+  },
+  {
+    name: "Vie 18 Dic — Kawarau Bungy", theme: "Adrenalina · Gibbston", color: "#B5533C",
+    gmaps: "https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-45.00941,168.90031&travelmode=driving",
+    stops: [
+      { t: "Por definir", n: "Kawarau Bungy & Swing Combo", lat: -45.00941, lng: 168.90031,
+        d: "Bungy de 43 m (el original del mundo) + swing, se puede hacer en pareja. Kawarau Bridge, Gibbston Highway (SH6), ~30 min de Queenstown.",
+        link: "https://www.bungy.co.nz/combos/kawarau-bungy-swing-combo/" }
+    ]
+  },
+  {
+    name: "Sáb 19 Dic — Por definir", theme: "Propuesta: Glenorchy", color: "#5E8C61",
+    gmaps: "https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-44.84975,168.38520&travelmode=driving",
+    stops: [
+      { t: "Propuesta", n: "Glenorchy + caminata Routeburn", lat: -44.84975, lng: 168.38520,
+        d: "Propuesta para el día libre: carretera escénica hasta Glenorchy (~45 min) y caminata en el Routeburn Track o la Glenorchy Lagoon Walk. Aún por confirmar." }
+    ]
+  },
+  {
+    name: "Dom 20 Dic — Queenstown", theme: "Jet boat & lago", color: "#C99A3B",
+    gmaps: "https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-45.03247,168.65918&waypoints=-44.98713,168.67137&travelmode=driving",
+    stops: [
+      { t: "10:00 a.m.", n: "Shotover Jet — Arthurs Point", lat: -44.98713, lng: 168.67137,
+        d: "Jet boat por el cañón del Shotover. Check-in 45 min antes en The Station Building (centro de QT); el transporte va incluido. USD 241.18.",
+        link: "https://www.viator.com/tours/Queenstown/Shotover-River-Extreme-Jet-Boat-Ride-from-Queenstown/d407-5626SHOTOVER?pid=P00001955&uid=U00767249&mcid=58086&currency=USD" },
+      { t: "4:00 p.m.", n: "Lake Wakatipu Scenic Cruise", lat: -45.03247, lng: 168.65918,
+        d: "Crucero escénico de 90 minutos, saliendo del muelle en 50 Beach Street.",
+        link: "https://www.viator.com/tours/Queenstown/Million-Dollar-Cruise/d407-71002P1?pid=P00001955&uid=U00767249&mcid=58086&currency=USD" }
     ]
   }
 ];

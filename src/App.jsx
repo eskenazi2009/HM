@@ -178,12 +178,14 @@ export default function App() {
       <div className="hero">
         <div className="hero-eyebrow">Luna de Miel</div>
         <div className="hero-h1">Nueva Zelanda</div>
-        <div className="hero-sub">Auckland &amp; Rotorua</div>
-        <div className="hero-dates">11 – 14 de Diciembre, 2026</div>
+        <div className="hero-sub">Auckland · Rotorua · Queenstown</div>
+        <div className="hero-dates">10 – 20 de Diciembre, 2026</div>
         <div className="hero-hotels">
-          Hotel InterContinental · Auckland (11–12 Dic)
+          Hotel InterContinental · Auckland (10–12 Dic)
           <br />
-          Black Swan Lakeside Boutique Hotel · Rotorua (12–14 Dic)
+          Black Swan Lakeside Boutique Hotel · Rotorua (12–15 Dic)
+          <br />
+          Sofitel Queenstown Hotel &amp; Spa · Queenstown (desde 15 Dic)
         </div>
       </div>
 
