@@ -322,6 +322,13 @@ export const TODO = [
     ],
   },
   {
+    city: 'Posibles actividades',
+    items: [
+      'Tour en caballo',
+      'Sauna u Onsen Hot Pools',
+    ],
+  },
+  {
     city: 'Cape Town',
     items: [
       'Tour día libre (hot air balloon, four wheels)',
