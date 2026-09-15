@@ -324,7 +324,7 @@ export const TODO = [
   {
     city: 'Posibles actividades',
     items: [
-      'Tour en caballo',
+      'Tour en caballo — LightHorse Adventures (Dart Valley, Glenorchy · ~1 h de QT)',
       'Sauna u Onsen Hot Pools',
     ],
   },
