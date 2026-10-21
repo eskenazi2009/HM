@@ -8,9 +8,9 @@ export const DAYS = [
     mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-37.00655,174.79034&destination=-36.84335,174.76654&travelmode=driving',
     activities: [
       {
-        name: 'Llegada a Auckland Airport', travel: true,
-        meetingTime: 'Por confirmar', meetingPlace: 'Auckland Airport (AKL)', startEnd: '',
-        description: 'Llegada a Nueva Zelanda. Falta confirmar el número de vuelo y la hora de aterrizaje para ajustar el resto del día.',
+        name: 'Vuelo MH145 — llegada a Auckland', travel: true,
+        meetingTime: '12:15 p.m.', meetingPlace: 'Auckland Airport (AKL)', startEnd: 'Vuelo 10 h 20 min',
+        description: 'Malaysia Airlines MH145, clase Business. Sale de Kuala Lumpur (KUL) a las 8:55 p.m. del 9 de diciembre y aterriza en Auckland a las 12:15 p.m. del 10. Localizador DTH4EG. Boletos: 232-4832787827 (Rachelle) y 232-4832787826 (Raymond).',
       },
       {
         name: 'Traslado y check-in — Hotel InterContinental', travel: true,
@@ -37,10 +37,10 @@ export const DAYS = [
       },
       {
         name: 'Scenic Wine Tour con guía y 12 degustaciones (Waiheke)',
-        operator: 'Viator · Opción en grupo (4.5 h) · Reservado',
+        operator: 'Viator · Tour en grupo · Reservado',
         actionBadge: 'Comprar ferry',
-        meetingTime: '10:40 a.m.', meetingPlace: 'Matiatia Ferry Terminal', startEnd: '4.5 h · hasta ~3:10 p.m.',
-        description: 'Opción elegida: tour en grupo (4.5 horas). Visita 3 de los mejores viñedos de la isla y se degustan ~15 vinos. No incluye almuerzo. Precio: USD 412.62 (2 personas). Encuentro en Matiatia Ferry Terminal. Falta comprar los pasajes de ferry ida y vuelta a Waiheke Island (no están incluidos en el tour).',
+        meetingTime: '10:40 a.m.', meetingPlace: 'Matiatia Wharf, Waiheke Island', startEnd: 'Hasta 3:40 p.m. · 5 h',
+        description: 'Tour en grupo de 5 horas, de 10:40 a.m. a 3:40 p.m. Visita 3 de los mejores viñedos de la isla y se degustan ~15 vinos. No incluye almuerzo. Precio: USD 392.38 (2 adultos). Confirmación 1806287245 · referencia 1424036657. El guía los recibe en el ferry en Matiatia Wharf con la van de Kiwi Connect. Falta comprar los pasajes de ferry ida y vuelta a Waiheke: no están incluidos y tampoco aparecen en el itinerario oficial.',
         link: 'https://www.viator.com/tours/Waiheke-Island/4-hour-SCENIC-WINE-Tour-with-a-Private-Guide-and-12-tastings/d32653-62882P4?pid=P00001955&uid=U00767249&mcid=58086&currency=USD',
       },
       {
@@ -143,9 +143,9 @@ export const DAYS = [
       },
       {
         name: 'Polynesian Spa — Deluxe Romantic Package',
-        operator: 'Polynesian Spa · Reserva en proceso',
-        meetingTime: '5:45 p.m.', meetingPlace: 'Polynesian Spa', startEnd: 'Abierto hasta las 7:00 p.m.',
-        description: 'Deluxe Romantic Package reservado para las 5:45 p.m. A ~10 minutos en carro del hotel.',
+        operator: 'Polynesian Spa · Reservado',
+        meetingTime: '5:45 p.m.', meetingPlace: 'Polynesian Spa, 1000 Hinemoa Street', startEnd: 'Hasta 8:45 p.m. · 3 h',
+        description: 'Deluxe Romantic Package (masaje, almuerzo, baño privado y regalo del spa), de 5:45 a 8:45 p.m. OJO: hay que llegar al menos UNA HORA antes, o sea a las 4:45 p.m., y cada uno debe llenar el formulario de consulta previa. Precio: NZD 818 (2 adultos). Confirmación 296082/296081. Llevar traje de baño, calzado para la piscina y una bolsa para la ropa mojada; batas, toallas, secadores y lockers los dan ellos. El paquete incluye comida, así que no hace falta comer antes.',
         link: 'https://www.polynesianspa.co.nz/vitality-day-escape-retreat-nz/',
       },
     ],
@@ -167,10 +167,9 @@ export const DAYS = [
         description: 'Devolución del auto de alquiler (Divine Rentals) en Auckland Airport a las 12:00 p.m., según la cotización. Recordar cargar combustible antes de entregarlo.',
       },
       {
-        name: 'Vuelo Auckland → Queenstown', travel: true,
-        actionBadge: 'Confirmar vuelo',
-        meetingTime: 'Por confirmar', meetingPlace: 'Auckland Airport (AKL) → Queenstown Airport (ZQN)', startEnd: 'Vuelo ~2 h',
-        description: 'Vuelo doméstico de Auckland a Queenstown (aproximadamente 2 horas). Falta confirmar aerolínea, número de vuelo y horario para cuadrar bien el día.',
+        name: 'Vuelo NZ623 — Auckland → Queenstown', travel: true,
+        meetingTime: '2:40 p.m.', meetingPlace: 'Auckland Airport (AKL) → Queenstown Airport (ZQN)', startEnd: 'Llega 4:35 p.m. · 1 h 55 min',
+        description: 'Air New Zealand NZ623, clase Economy. Sale de Auckland a las 2:40 p.m. y llega a Queenstown a las 4:35 p.m. Asientos 15D (Rachelle) y 15E (Raymond), una maleta documentada por persona. Localizador EIYQUH.',
       },
       {
         name: 'Check-in — Sofitel Queenstown Hotel & Spa', travel: true,
@@ -186,12 +185,10 @@ export const DAYS = [
     mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-45.02487,168.74103&travelmode=driving',
     activities: [
       {
-        name: 'Milford Sound Fly-Cruise-Fly',
-        operator: 'Viator · Opción elegida por Raymond',
-        actionBadge: 'Confirmar con Viviana',
-        meetingTime: '8:00 a.m.', meetingPlace: 'Queenstown / Frankton (punto exacto por confirmar)', startEnd: '~4 – 5 h',
-        description: 'Vuelo escénico a Milford Sound, crucero por el fiordo y vuelo de regreso, saliendo a las 8:00 a.m. Es la opción que le propusiste a Viviana (más económica y equivalente a las que ella mandó) — falta que ella confirme si conviene frente a sus dos opciones. El punto de encuentro de las opciones de Viviana era 3 Tex Smith Lane, Frankton; hay que confirmar el de este operador. Saliendo tan temprano, deberían estar de regreso alrededor del mediodía.',
-        link: 'https://www.viator.com/tours/Queenstown/Milford-Sound-Fly-Cruise-Fly/d407-171544P1?pid=P00050706&mcid=42383&medium=link&campaign=review-milford-sound-fly-cruise-fly',
+        name: 'Milford Sound Flight and Cruise Tour',
+        operator: 'True South Flights · Reservado',
+        meetingTime: '8:00 a.m.', meetingPlace: 'True South Flights, 12 Hawthorne Drive, Frankton', startEnd: 'Hasta 12:30 p.m. · 4 h 30 min',
+        description: 'Vuelo escénico de ida y vuelta entre Queenstown y Milford Sound más el crucero por el fiordo, de 8:00 a.m. a 12:30 p.m. Operado por True South Flights desde su base en Frankton (Bldg 8, Suite 1B / 12 Hawthorne Drive). Precio: USD 1,037.12 (2 adultos). Confirmación 1833845847 · referencia BR-1451827093. Ofrecen pickup desde Queenstown pero el itinerario oficial no indica la hora: hay que confirmarla.',
       },
       {
         name: 'Actividad por definir',
@@ -209,10 +206,9 @@ export const DAYS = [
     activities: [
       {
         name: 'NZONE Skydive — salto tándem',
-        operator: 'NZONE Skydive',
-        actionBadge: 'Por reservar',
-        meetingTime: 'Mañana', meetingPlace: 'NZONE Skydive, 35 Shotover Street', startEnd: '~3 – 4 h en total',
-        description: 'Salto tándem con NZONE por la mañana. El punto de encuentro es su oficina en 35 Shotover Street, en el centro de Queenstown: ahí se hace el registro y el briefing en video, y de ahí los llevan a la pista privada a ~20 minutos. La experiencia completa toma entre 3 y 4 horas, así que conviene tomar un turno temprano — idealmente antes de las 10:00 a.m. — para terminar con holgura antes del sendero de las 3:00 p.m. Falta confirmar el horario exacto al reservar.',
+        operator: 'NZONE Skydive · Reservado',
+        meetingTime: '9:00 a.m.', meetingPlace: 'NZONE Shop, 35 Shotover Street (check-in 8:50 a.m.)', startEnd: 'Hasta 12:30 p.m. · 3 h 30 min',
+        description: '15,000ft Tandem Skydive, de 9:00 a.m. a 12:30 p.m. Check-in a las 8:50 a.m. en la tienda de NZONE (35 Shotover Street) y de ahí un shuttle gratuito a la zona de salto — no hacen pickup en el hotel. Confirmación 187669. Incluye traje completo, gafas, casco y guantes. Mandan un mensaje 30 minutos antes con el estado del clima; si no llega, llamar al +64 3 442 5867. Llevar ropa cómoda y zapatos cerrados; lentes de contacto o anteojos no son problema. Termina a las 12:30, así que da tiempo de sobra para el sendero de las 3:00 p.m.',
         link: 'https://www.nzoneskydive.co.nz/tandem-skydive/skydiving-in-queenstown/',
       },
       {
@@ -237,10 +233,10 @@ export const DAYS = [
     activities: [
       {
         name: 'Nevis Bungy & Swing Combo',
-        operator: 'AJ Hackett · The Nevis',
-        actionBadge: 'Por reservar',
-        meetingTime: '8:40 a.m.', meetingPlace: 'The Station Building, 48 Camp Street (check-in 8:10 a.m.)', startEnd: '~4 h ida y vuelta',
-        description: 'Combo en The Nevis: el bungy de 134 m (el más alto de Nueva Zelanda, 8.5 segundos de caída libre) más el Nevis Swing, el columpio más grande del mundo — un arco de 300 m que se puede hacer en pareja. Se llega únicamente en el bus 4x4 de AJ Hackett, que sale de The Station Building (esquina Camp & Shotover). Las 8:40 a.m. es la primera salida del día; el check-in es 30 minutos antes, a las 8:10 a.m. El viaje completo toma unas 4 horas con transporte incluido, así que estarían de vuelta cerca de las 12:40 p.m.',
+        operator: 'AJ Hackett · The Nevis · Reservado',
+        actionBadge: 'Firmar waiver online',
+        meetingTime: '8:40 a.m.', meetingPlace: 'Queenstown Bungy Centre, 25 Shotover Street (check-in 8:10 a.m.)', startEnd: 'Hasta 12:40 p.m. · 4 h',
+        description: 'Nevis Combo: el bungy de 134 m (el más alto de Nueva Zelanda) más el Nevis Swing, el columpio más grande del mundo, que se puede hacer en pareja. De 8:40 a.m. a 12:40 p.m. Check-in a las 8:10 a.m. en el mostrador de AJ Hackett dentro del Queenstown Bungy Centre, 25 Shotover Street (esquina con Camp St), de donde sale el bus 4x4. Confirmación 2561743. Hay que completar el waiver en línea ANTES de llegar o el salto se puede retrasar. Estacionar en el centro es difícil y cuesta extra; no hay parking en Shotover St.',
         link: 'https://www.bungy.co.nz/queenstown/nevis/',
       },
       {
@@ -259,13 +255,13 @@ export const DAYS = [
     activities: [
       {
         name: 'Lake Tekapo Private Day Trip from Queenstown',
-        operator: 'Viator · Tour privado',
-        meetingTime: '8:00 a.m.', meetingPlace: 'Pickup en el Sofitel', startEnd: 'Día completo',
-        description: 'Excursión privada de día completo a Lake Tekapo, con pickup en el hotel a las 8:00 a.m. (los horarios disponibles iban de 7:00 a 9:00 a.m.). Pendiente revisar con Viviana la ruta y las paradas para aprovecharlo al máximo — en el camino suelen incluirse Lindis Pass, Lake Pukaki con vista al Mt Cook y la Church of the Good Shepherd.',
+        operator: 'Viator · Tour privado · Reservado',
+        meetingTime: '8:00 a.m.', meetingPlace: 'Pickup en recepción del Sofitel', startEnd: 'Hasta 7:00 p.m. · 11 h',
+        description: 'Excursión privada a Lake Tekapo de 8:00 a.m. a 7:00 p.m.: son 11 horas, el día más largo del viaje. El pickup es en la recepción del hotel y hay que estar listos 5 a 10 minutos antes. Precio: USD 738.74 (2 adultos). Confirmación 1833837917 · referencia BR-1451819055. Pendiente revisar con Viviana la ruta y las paradas para aprovecharlo al máximo — en el camino suelen incluirse Lindis Pass, Lake Pukaki con vista al Mt Cook y la Church of the Good Shepherd.',
         link: 'https://www.viator.com/tours/Queenstown/Lake-Tekapo-Private-Day-Trip-from-Queenstown-TravelnGo/d407-5590256P5?pid=P00001955&uid=U00767249&mcid=58086&currency=USD',
       },
     ],
-    notes: 'Noche en Sofitel Queenstown Hotel & Spa. Día largo — son ~3.5 h de viaje en cada sentido.',
+    notes: 'Noche en Sofitel Queenstown Hotel & Spa. Día muy largo: salen 8:00 a.m. y regresan 7:00 p.m.',
   },
   {
     month: 'DIC', num: '20', dow: 'Dom',
@@ -274,26 +270,43 @@ export const DAYS = [
     activities: [
       {
         name: 'Shotover River Extreme Jet Boat Ride',
-        operator: 'Viator · Shotover Jet + transporte',
-        meetingTime: '10:00 a.m.', meetingPlace: 'Check-in en The Station Building, Queenstown CBD', startEnd: 'Check-in 45 min antes (~9:15 a.m.)',
-        description: 'Jet boat por el cañón del río Shotover a las 10:00 a.m. La opción elegida incluye transporte de ida y vuelta desde Queenstown: el check-in es 45 minutos antes en The Station Building (centro de Queenstown), y de ahí los llevan a la base en Arthurs Point. Precio: USD 241.18 (2 adultos).',
+        operator: 'Viator · Shotover Jet + transporte · Reservado',
+        meetingTime: '10:00 a.m.', meetingPlace: 'The Station Building, Duke Street (check-in 9:15 a.m.)', startEnd: 'Paseo de 25 min · 10:00 – 10:25 a.m.',
+        description: 'Jet boat por el cañón del río Shotover. El paseo en sí dura solo 25 minutos (10:00 a 10:25 a.m.), pero el check-in es 45 minutos antes — a las 9:15 a.m. — en The Station Building, de donde sale el shuttle a la base en Arthurs Point. Confirmación 1833839411 · referencia BR-1451820557. Con el traslado de regreso estarían de vuelta en el centro antes del mediodía.',
         link: 'https://www.viator.com/tours/Queenstown/Shotover-River-Extreme-Jet-Boat-Ride-from-Queenstown/d407-5626SHOTOVER?pid=P00001955&uid=U00767249&mcid=58086&currency=USD',
       },
       {
         name: 'Almuerzo', travel: true,
-        meetingTime: '~12:30 p.m.', meetingPlace: 'Centro de Queenstown', startEnd: '',
-        description: 'Almuerzo al volver del jet boat, antes del crucero de las 2:00 p.m.',
+        meetingTime: '~11:30 a.m.', meetingPlace: 'Centro de Queenstown', startEnd: '',
+        description: 'Almuerzo al volver del jet boat. Como el paseo termina 10:25 a.m., queda bastante tiempo libre antes del crucero de las 2:00 p.m.',
       },
       {
         name: 'Lake Wakatipu Scenic Cruise (90 min)',
-        operator: 'Viator · Million Dollar Cruise',
-        actionBadge: 'Por reservar',
-        meetingTime: '2:00 p.m.', meetingPlace: '50 Beach Street, waterfront, Queenstown', startEnd: '90 minutos',
-        description: 'Crucero escénico de 90 minutos por Lake Wakatipu a las 2:00 p.m., saliendo del muelle en 50 Beach Street, sobre la costanera del centro.',
+        operator: 'Viator · Million Dollar Cruise · Reservado',
+        meetingTime: '2:00 p.m.', meetingPlace: '50 Beach Street, waterfront, Queenstown', startEnd: 'Hasta 3:30 p.m. · 90 min',
+        description: 'Crucero escénico de 90 minutos por Lake Wakatipu, de 2:00 a 3:30 p.m., saliendo del muelle en 50 Beach Street. Precio: USD 91.54 (2 adultos). Confirmación 1833840517 · referencia BR-1451821679. Tiene cubierta al aire libre, cabina con calefacción y bar a bordo.',
         link: 'https://www.viator.com/tours/Queenstown/Million-Dollar-Cruise/d407-71002P1?pid=P00001955&uid=U00767249&mcid=58086&currency=USD',
       },
     ],
-    notes: 'Noche en Sofitel Queenstown Hotel & Spa. Último día de actividades confirmadas — falta definir hasta cuándo se quedan en Queenstown.',
+    notes: 'Noche en Sofitel Queenstown Hotel & Spa. Última noche en Queenstown — mañana salen temprano hacia Sídney.',
+  },
+  {
+    month: 'DIC', num: '21', dow: 'Lun',
+    port: 'Queenstown → Sídney', type: 'travel', typeLabel: 'Salida de Nueva Zelanda',
+    mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-45.01930,168.74344&travelmode=driving',
+    activities: [
+      {
+        name: 'Check-out y traslado al aeropuerto', travel: true,
+        meetingTime: '~5:00 a.m.', meetingPlace: 'Sofitel Queenstown → Queenstown Airport (ZQN)', startEnd: 'Auto ~10 min',
+        description: 'Salida de madrugada para alcanzar el vuelo de las 7:00 a.m. El itinerario oficial muestra el check-out del Sofitel a las 11:00 a.m., así que hay que avisarle al hotel que salímos de madrugada y coordinar la cuenta la noche anterior.',
+      },
+      {
+        name: 'Vuelo QF124 — Queenstown → Sídney', travel: true,
+        meetingTime: '7:00 a.m.', meetingPlace: 'Queenstown Airport (ZQN) → Sydney (SYD)', startEnd: 'Llega 8:20 a.m. · 3 h 20 min',
+        description: 'Qantas QF124, clase Economy. Sale de Queenstown a las 7:00 a.m. y llega a Sídney a las 8:20 a.m. (hora local; son 3 h 20 min de vuelo por el cambio de huso). Asientos 16D (Rachelle) y 16E (Raymond), 30 kg de equipaje por persona. Localizador ADKP77.',
+      },
+    ],
+    notes: 'Último día en Nueva Zelanda. Desde Sídney continúa el viaje a Australia.',
   },
 ]
 

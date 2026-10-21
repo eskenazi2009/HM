@@ -91,7 +91,7 @@
     <div class="header">
       <a href="index.html" style="display:inline-block;color:#BFE0D5;font-size:12px;font-weight:600;text-decoration:none;margin-bottom:8px">← Itinerario</a>
       <h1>Nueva Zelanda — Itinerario</h1>
-      <p>Jue 10 Dic &nbsp;—&nbsp; Dom 20 Dic, 2026 · Auckland · Rotorua · Queenstown</p>
+      <p>Jue 10 Dic &nbsp;—&nbsp; Lun 21 Dic, 2026 · Auckland · Rotorua · Queenstown</p>
     </div>
     <div id="list"></div>
     <div class="footnote">
@@ -109,8 +109,8 @@ const DAYS = [
     name: "Jue 10 Dic — Llegada", theme: "Auckland", color: "#6B8CAE",
     gmaps: "https://www.google.com/maps/dir/?api=1&origin=-37.00655,174.79034&destination=-36.84335,174.76654&travelmode=driving",
     stops: [
-      { t: "Por confirmar", n: "Llegada — Auckland Airport", lat: -37.00655, lng: 174.79034,
-        d: "Llegada a Nueva Zelanda. Falta confirmar vuelo y hora de aterrizaje." },
+      { t: "12:15 p.m.", n: "Vuelo MH145 — llegada a Auckland", lat: -37.00655, lng: 174.79034,
+        d: "Malaysia Airlines MH145 desde Kuala Lumpur, clase Business. Aterriza 12:15 p.m. Localizador DTH4EG." },
       { t: "Por confirmar", n: "Check-in — Hotel InterContinental", lat: -36.84335, lng: 174.76654,
         d: "Traslado al centro de Auckland (~30 min). Tarde libre para pasear." }
     ]
@@ -174,10 +174,10 @@ const DAYS = [
     stops: [
       { t: "~7:30 a.m.", n: "Salida de Rotorua", lat: -38.10875, lng: 176.24180,
         d: "Check-out del Black Swan y traslado en auto a Auckland Airport (~3 h / 230 km)." },
-      { t: "12:00 p.m.", n: "Devolución del auto — Auckland Airport", lat: -37.00655, lng: 174.79034,
-        d: "Entrega del auto de alquiler y vuelo doméstico a Queenstown (~2 h). Horario del vuelo por confirmar." },
-      { t: "Tarde", n: "Llegada — Queenstown Airport", lat: -45.01930, lng: 168.74344,
-        d: "Llegada a Queenstown. Del aeropuerto al hotel son ~10 min." },
+      { t: "2:40 p.m.", n: "Vuelo NZ623 — Auckland → Queenstown", lat: -37.00655, lng: 174.79034,
+        d: "Air New Zealand NZ623. Sale 2:40 p.m. de Auckland. Asientos 15D y 15E. Localizador EIYQUH. (El auto se devuelve aquí antes del vuelo.)" },
+      { t: "4:35 p.m.", n: "Llegada — Queenstown Airport", lat: -45.01930, lng: 168.74344,
+        d: "Aterriza 4:35 p.m. Del aeropuerto al hotel son ~10 min." },
       { t: "Tarde", n: "Check-in — Sofitel Queenstown", lat: -45.03115, lng: 168.65901,
         d: "Sofitel Queenstown Hotel & Spa, 8 Duke Street, en pleno centro." }
     ]
@@ -186,9 +186,8 @@ const DAYS = [
     name: "Mié 16 Dic — Milford Sound", theme: "Fiordos · vuelo escénico", color: "#2E7D8F",
     gmaps: "https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-45.02487,168.74103&travelmode=driving",
     stops: [
-      { t: "8:00 a.m.", n: "Milford Sound Fly-Cruise-Fly", lat: -45.02487, lng: 168.74103,
-        d: "Vuelo escénico + crucero por el fiordo + vuelo de regreso, saliendo a las 8:00 a.m. (~4–5 h). Salida desde Frankton (punto exacto por confirmar). Pendiente que Viviana confirme esta opción.",
-        link: "https://www.viator.com/tours/Queenstown/Milford-Sound-Fly-Cruise-Fly/d407-171544P1?pid=P00050706&mcid=42383&medium=link&campaign=review-milford-sound-fly-cruise-fly" },
+      { t: "8:00 a.m.", n: "Milford Sound Flight and Cruise Tour", lat: -45.02659, lng: 168.74240,
+        d: "Vuelo escénico + crucero por el fiordo + vuelo de regreso, de 8:00 a.m. a 12:30 p.m. Operado por True South Flights, 12 Hawthorne Drive, Frankton. Confirmación 1833845847. Falta confirmar la hora del pickup." },
       { t: "Referencia", n: "Milford Sound (destino del vuelo)", lat: -44.67139, lng: 167.92556,
         d: "El fiordo de Milford Sound / Piopiotahi, en Fiordland — a ~1 h de vuelo desde Queenstown." }
     ]
@@ -197,8 +196,8 @@ const DAYS = [
     name: "Jue 17 Dic — Skydive & Wye Creek", theme: "Adrenalina & naturaleza", color: "#4C6EA8",
     gmaps: "https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-45.13257,168.75789&waypoints=-45.03122,168.65970&travelmode=driving",
     stops: [
-      { t: "Mañana", n: "NZONE Skydive — salto tándem", lat: -45.03122, lng: 168.65970,
-        d: "Punto de encuentro en 35 Shotover Street: registro y briefing, y de ahí traslado a la pista privada (~20 min). La experiencia completa toma 3–4 h; conviene un turno temprano para llegar al sendero de las 3:00 p.m.",
+      { t: "9:00 a.m.", n: "NZONE Skydive — salto tándem", lat: -45.03122, lng: 168.65970,
+        d: "15,000ft Tandem Skydive, de 9:00 a.m. a 12:30 p.m. Check-in 8:50 a.m. en la tienda NZONE (35 Shotover St); shuttle gratis a la zona de salto, no hacen pickup. Confirmación 187669.",
         link: "https://www.nzoneskydive.co.nz/tandem-skydive/skydiving-in-queenstown/" },
       { t: "3:00 p.m.", n: "Lower Wye Creek Track", lat: -45.13257, lng: 168.75789,
         d: "Caminata de ~4 h ida y vuelta en el Remarkables Conservation Area. Trailhead sobre la SH6, ~20 min al sur de Queenstown. Cascadas, un pasillo de tablones sobre la tubería en el acantilado y un helipuerto con vista al lago.",
@@ -207,10 +206,10 @@ const DAYS = [
   },
   {
     name: "Vie 18 Dic — The Nevis", theme: "Adrenalina", color: "#B5533C",
-    gmaps: "https://www.google.com/maps/dir/?api=1&origin=-45.03091,168.65965&destination=-45.06480,169.02888&travelmode=driving",
+    gmaps: "https://www.google.com/maps/dir/?api=1&origin=-45.03089,168.66014&destination=-45.06480,169.02888&travelmode=driving",
     stops: [
-      { t: "8:40 a.m.", n: "Salida del bus — The Station Building", lat: -45.03091, lng: 168.65965,
-        d: "48 Camp Street (esquina con Shotover). Primera salida del día del bus 4x4 de AJ Hackett; check-in 8:10 a.m." },
+      { t: "8:40 a.m.", n: "Salida del bus — Queenstown Bungy Centre", lat: -45.03089, lng: 168.66014,
+        d: "25 Shotover Street (esquina con Camp St). Check-in 8:10 a.m. en el mostrador de AJ Hackett; de ahí sale el bus 4x4. Confirmación 2561743. Firmar el waiver online antes de llegar." },
       { t: "~10:00 a.m.", n: "Nevis Bungy & Swing", lat: -45.06480, lng: 169.02888,
         d: "Bungy de 134 m (el más alto de NZ) + el Nevis Swing, el columpio más grande del mundo, que se puede hacer en pareja. Viaje total ~4 h con transporte incluido.",
         link: "https://www.bungy.co.nz/queenstown/nevis/" }
@@ -222,8 +221,8 @@ const DAYS = [
     stops: [
       { t: "8:00 a.m.", n: "Pickup — Sofitel Queenstown", lat: -45.03115, lng: 168.65901,
         d: "Pickup del tour privado en el hotel a las 8:00 a.m." },
-      { t: "Día completo", n: "Lake Tekapo", lat: -44.00452, lng: 170.47773,
-        d: "Lake Tekapo y la Church of the Good Shepherd. ~3.5 h de viaje en cada sentido; ruta y paradas por definir con Viviana.",
+      { t: "Hasta 7:00 p.m.", n: "Lake Tekapo", lat: -44.00452, lng: 170.47773,
+        d: "Excursión privada de 11 h (8:00 a.m. a 7:00 p.m.). Confirmación 1833837917. Ruta y paradas por definir con Viviana.",
         link: "https://www.viator.com/tours/Queenstown/Lake-Tekapo-Private-Day-Trip-from-Queenstown-TravelnGo/d407-5590256P5?pid=P00001955&uid=U00767249&mcid=58086&currency=USD" }
     ]
   },
@@ -231,12 +230,22 @@ const DAYS = [
     name: "Dom 20 Dic — Queenstown", theme: "Jet boat & lago", color: "#C99A3B",
     gmaps: "https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-45.03247,168.65918&waypoints=-44.98713,168.67137&travelmode=driving",
     stops: [
-      { t: "10:00 a.m.", n: "Shotover Jet — Arthurs Point", lat: -44.98713, lng: 168.67137,
-        d: "Jet boat por el cañón del Shotover. Check-in 45 min antes en The Station Building (centro de QT); el transporte va incluido. USD 241.18.",
+      { t: "10:00 – 10:25 a.m.", n: "Shotover Jet — Arthurs Point", lat: -44.98713, lng: 168.67137,
+        d: "El paseo dura 25 min. Check-in 9:15 a.m. en The Station Building (Duke Street), de donde sale el shuttle; transporte incluido. Confirmación 1833839411.",
         link: "https://www.viator.com/tours/Queenstown/Shotover-River-Extreme-Jet-Boat-Ride-from-Queenstown/d407-5626SHOTOVER?pid=P00001955&uid=U00767249&mcid=58086&currency=USD" },
-      { t: "2:00 p.m.", n: "Lake Wakatipu Scenic Cruise", lat: -45.03247, lng: 168.65918,
-        d: "Crucero escénico de 90 minutos a las 2:00 p.m., saliendo del muelle en 50 Beach Street.",
+      { t: "2:00 – 3:30 p.m.", n: "Lake Wakatipu Scenic Cruise", lat: -45.03247, lng: 168.65918,
+        d: "Crucero escénico de 90 minutos desde el muelle en 50 Beach Street. Confirmación 1833840517. Cubierta al aire libre, cabina con calefacción y bar a bordo.",
         link: "https://www.viator.com/tours/Queenstown/Million-Dollar-Cruise/d407-71002P1?pid=P00001955&uid=U00767249&mcid=58086&currency=USD" }
+    ]
+  },
+  {
+    name: "Lun 21 Dic — Salida a Sídney", theme: "Fin de Nueva Zelanda", color: "#7D8B99",
+    gmaps: "https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-45.01930,168.74344&travelmode=driving",
+    stops: [
+      { t: "~5:00 a.m.", n: "Check-out — Sofitel Queenstown", lat: -45.03115, lng: 168.65901,
+        d: "Salida de madrugada hacia el aeropuerto (~10 min). Avisar al hotel el check-out temprano: el oficial lo muestra a las 11:00 a.m." },
+      { t: "7:00 a.m.", n: "Vuelo QF124 — Queenstown → Sídney", lat: -45.01930, lng: 168.74344,
+        d: "Qantas QF124. Sale 7:00 a.m. y llega a Sídney 8:20 a.m. Asientos 16D y 16E, 30 kg por persona. Localizador ADKP77." }
     ]
   }
 ];
