@@ -178,12 +178,14 @@ export default function App() {
       <div className="hero">
         <div className="hero-eyebrow">Luna de Miel</div>
         <div className="hero-h1">Nueva Zelanda</div>
-        <div className="hero-sub">Sudáfrica · Maldivas · Nueva Zelanda</div>
-        <div className="hero-dates">24 de Noviembre – 21 de Diciembre, 2026</div>
+        <div className="hero-sub">Sudáfrica · Maldivas · Nueva Zelanda · Australia</div>
+        <div className="hero-dates">24 de Noviembre – 27 de Diciembre, 2026</div>
         <div className="hero-hotels">
           Southern Sun The Cullinan · Ciudad del Cabo (25–29 Nov)
           <br />
           andBeyond Ngala Tented Camp · Safari (29 Nov–2 Dic)
+          <br />
+          City Lodge OR Tambo · Johannesburgo (2–3 Dic)
           <br />
           Alila Kothaifaru · Maldivas (4–9 Dic)
           <br />
@@ -192,6 +194,10 @@ export default function App() {
           Black Swan Lakeside · Rotorua (12–15 Dic)
           <br />
           Sofitel Queenstown · Queenstown (15–21 Dic)
+          <br />
+          Hotel Beach Club · Whitsundays (21–25 Dic)
+          <br />
+          Pier One Sydney Harbour · Sídney (25–27 Dic)
         </div>
       </div>
 

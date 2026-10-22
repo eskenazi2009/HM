@@ -9,13 +9,13 @@ export const DAYS = [
       {
         name: 'Vuelo UA727 — Panamá → Newark', travel: true,
         meetingTime: '10:00 a.m.', meetingPlace: 'Tocumen (PTY) → Newark (EWR)', startEnd: 'Llega 3:16 p.m. · 5 h 16 min',
-        description: 'United Airlines UA727, clase Economy. Localizador MWGCVT. Boletos 0162396255338 (Rachelle) y 0162396255337 (Raymond). Asientos no asignados todavía.',
+        description: 'United Airlines UA727. Localizador MWGCVT. Boletos 0162396255338 (Rachelle) y 0162396255337 (Raymond).',
       },
       {
         name: 'Vuelo UA1122 — Newark → Ciudad del Cabo', travel: true,
         actionBadge: 'Corregir nombre',
         meetingTime: '8:35 p.m.', meetingPlace: 'Newark (EWR) → Cape Town (CPT)', startEnd: 'Llega 6:00 p.m. del 25 · 14 h 25 min',
-        description: 'United Airlines UA1122, clase Business, vuelo nocturno que aterriza en Ciudad del Cabo a las 6:00 p.m. del miércoles 25. Está cargado como DOS reservas separadas: ABW3PE (Rachelle, asiento 07F) y MV4Q4R (Raymond). OJO: en la reserva MV4Q4R el nombre aparece como “Raymind Eskenazi Michaan” — hay que pedirle a Viviana que lo corrija antes de emitir.',
+        description: 'United Airlines UA1122, vuelo nocturno que aterriza en Ciudad del Cabo a las 6:00 p.m. del miércoles 25. Está cargado como DOS reservas separadas: ABW3PE (Rachelle) y MV4Q4R (Raymond). OJO: en la reserva MV4Q4R el nombre aparece como “Raymind Eskenazi Michaan” — hay que pedirle a Viviana que lo corrija antes de emitir.',
       },
     ],
     notes: 'Noche a bordo. Entre los dos vuelos hay unas 5 horas de conexión en Newark.',
@@ -162,7 +162,7 @@ export const DAYS = [
         name: 'Vuelo SQ479 — Johannesburgo → Singapur', travel: true,
         actionBadge: 'Falta Rachelle',
         meetingTime: '1:40 p.m.', meetingPlace: 'O.R. Tambo (JNB) → Singapur Changi (SIN)', startEnd: 'Llega 6:15 a.m. del 4 · 10 h 35 min',
-        description: 'Singapore Airlines SQ479, clase Premium Economy, vuelo nocturno. Localizador FBNPDT. PROBLEMA: en el itinerario oficial este segmento aparece Únicamente a nombre de Raymond — Rachelle no figura en el vuelo. Hay que verificarlo con Viviana con urgencia. Incluye asistencia en el aeropuerto a la salida.',
+        description: 'Singapore Airlines SQ479, vuelo nocturno. Localizador FBNPDT. PROBLEMA: en el itinerario oficial este segmento aparece Únicamente a nombre de Raymond — Rachelle no figura en el vuelo. Hay que verificarlo con Viviana con urgencia. Incluye asistencia en el aeropuerto a la salida.',
       },
     ],
     notes: 'Noche a bordo rumbo a Singapur.',
@@ -175,7 +175,7 @@ export const DAYS = [
         name: 'Vuelo SQ432 — Singapur → Malé', travel: true,
         actionBadge: 'Confirmar fecha',
         meetingTime: '10:05 a.m.', meetingPlace: 'Singapur Changi (SIN) → Malé (MLE)', startEnd: 'Llega 11:40 a.m. · 4 h 35 min',
-        description: 'Singapore Airlines SQ432, clase Economy. Localizador FBNPDT. OJO: el itinerario oficial lista este vuelo bajo el 3 de diciembre, pero el SQ479 no aterriza en Singapur hasta las 6:15 a.m. del 4 — así que la fecha correcta debería ser el 4. Hay que confirmarlo.',
+        description: 'Singapore Airlines SQ432. Localizador FBNPDT. OJO: el itinerario oficial lista este vuelo bajo el 3 de diciembre, pero el SQ479 no aterriza en Singapur hasta las 6:15 a.m. del 4 — así que la fecha correcta debería ser el 4. Hay que confirmarlo.',
       },
       {
         name: 'Traslado al resort', travel: true,
@@ -252,13 +252,13 @@ export const DAYS = [
       {
         name: 'Vuelo MH484 — Malé → Kuala Lumpur', travel: true,
         meetingTime: '12:00 p.m.', meetingPlace: 'Malé (MLE) → Kuala Lumpur (KUL)', startEnd: 'Llega 7:45 p.m. · 4 h 45 min',
-        description: 'Malaysia Airlines MH484, clase Business. Localizador DTH4EG. Boletos 232-4832787827 (Rachelle) y 232-4832787826 (Raymond).',
+        description: 'Malaysia Airlines MH484. Localizador DTH4EG. Boletos 232-4832787827 (Rachelle) y 232-4832787826 (Raymond).',
       },
       {
         name: 'Vuelo MH145 — Kuala Lumpur → Auckland', travel: true,
         actionBadge: 'Conexión corta',
         meetingTime: '8:55 p.m.', meetingPlace: 'Kuala Lumpur (KUL) → Auckland (AKL)', startEnd: 'Llega 12:15 p.m. del 10 · 10 h 20 min',
-        description: 'Malaysia Airlines MH145, clase Business, mismo localizador DTH4EG. OJO: el MH484 aterriza en Kuala Lumpur a las 7:45 p.m. y este sale a las 8:55 p.m. — solo 1 hora 10 minutos de conexión. Van en la misma reserva, así que la aerolínea responde si se atrasa, pero es ajustada.',
+        description: 'Malaysia Airlines MH145, mismo localizador DTH4EG. OJO: el MH484 aterriza en Kuala Lumpur a las 7:45 p.m. y este sale a las 8:55 p.m. — solo 1 hora 10 minutos de conexión. Van en la misma reserva, así que la aerolínea responde si se atrasa, pero es ajustada.',
       },
     ],
     notes: 'Noche a bordo rumbo a Auckland. Llegan a Nueva Zelanda al mediodía del 10.',
@@ -271,12 +271,12 @@ export const DAYS = [
       {
         name: 'Vuelo MH145 — llegada a Auckland', travel: true,
         meetingTime: '12:15 p.m.', meetingPlace: 'Auckland Airport (AKL)', startEnd: 'Vuelo 10 h 20 min',
-        description: 'Malaysia Airlines MH145, clase Business. Sale de Kuala Lumpur (KUL) a las 8:55 p.m. del 9 de diciembre y aterriza en Auckland a las 12:15 p.m. del 10. Localizador DTH4EG. Boletos: 232-4832787827 (Rachelle) y 232-4832787826 (Raymond).',
+        description: 'Malaysia Airlines MH145. Sale de Kuala Lumpur (KUL) a las 8:55 p.m. del 9 de diciembre y aterriza en Auckland a las 12:15 p.m. del 10. Localizador DTH4EG. Boletos: 232-4832787827 (Rachelle) y 232-4832787826 (Raymond).',
       },
       {
         name: 'Traslado y check-in — Hotel InterContinental', travel: true,
-        meetingTime: 'Por confirmar', meetingPlace: 'Hotel InterContinental Auckland', startEnd: 'Auto ~30 min desde el aeropuerto',
-        description: 'Traslado del aeropuerto al Hotel InterContinental en el centro de Auckland (~30 minutos). El auto de alquiler se recoge recién el 12 dic, así que este traslado sería en taxi o transfer.',
+        meetingTime: 'Por confirmar', meetingPlace: 'InterContinental Auckland, 1 Queen Street', startEnd: '2 noches',
+        description: 'Traslado del aeropuerto al hotel (~30 minutos) y check-in. Habitación Classic, cama King, del 10 al 12 de diciembre (check-out 3:00 p.m.). Confirmación 28546839. El auto de alquiler se recoge recién el 12 dic, así que este traslado sería en taxi o transfer — no hay ninguno reservado.',
       },
       {
         name: 'Tarde libre en Auckland',
@@ -301,7 +301,7 @@ export const DAYS = [
         operator: 'Viator · Tour en grupo · Reservado',
         actionBadge: 'Comprar ferry',
         meetingTime: '10:40 a.m.', meetingPlace: 'Matiatia Wharf, Waiheke Island', startEnd: 'Hasta 3:40 p.m. · 5 h',
-        description: 'Tour en grupo de 5 horas, de 10:40 a.m. a 3:40 p.m. Visita 3 de los mejores viñedos de la isla y se degustan ~15 vinos. No incluye almuerzo. Precio: USD 392.38 (2 adultos). Confirmación 1806287245 · referencia 1424036657. El guía los recibe en el ferry en Matiatia Wharf con la van de Kiwi Connect. Falta comprar los pasajes de ferry ida y vuelta a Waiheke: no están incluidos y tampoco aparecen en el itinerario oficial.',
+        description: 'Tour en grupo de 5 horas, de 10:40 a.m. a 3:40 p.m. Visita 3 de los mejores viñedos de la isla y se degustan ~15 vinos. No incluye almuerzo. Confirmación 1806287245 · referencia 1424036657. El guía los recibe en el ferry en Matiatia Wharf con la van de Kiwi Connect. Falta comprar los pasajes de ferry ida y vuelta a Waiheke: no están incluidos y tampoco aparecen en el itinerario oficial.',
         link: 'https://www.viator.com/tours/Waiheke-Island/4-hour-SCENIC-WINE-Tour-with-a-Private-Guide-and-12-tastings/d32653-62882P4?pid=P00001955&uid=U00767249&mcid=58086&currency=USD',
       },
       {
@@ -320,13 +320,13 @@ export const DAYS = [
       {
         name: 'Salida del hotel + recoger auto de alquiler (Divine Rentals)', travel: true,
         meetingTime: '7:00 a.m.', meetingPlace: 'Divine Rentals — Auckland Downtown', startEnd: 'Auto ~3 h a Waitomo',
-        description: 'Salida del hotel a las 7:00 a.m. para retirar el auto en Divine Rentals, Auckland Downtown. Vehículo: Midsize Convertible — Mazda MX-5 Roadster o similar. Precio: USD 739.45 (12–15 dic; kilometraje ilimitado, no incluye combustible). Devolución: 15 dic, Auckland Airport, 12:00 p.m. Desde Auckland son ~3 h en auto hasta Waitomo.',
+        description: 'Salida del hotel a las 7:00 a.m. para retirar el auto en Divine Rentals, Auckland Downtown. Vehículo: Midsize Convertible — Mazda MX-5 Roadster o similar, del 12 al 15 de diciembre, con kilometraje ilimitado y sin combustible incluido. Devolución: 15 dic, Auckland Airport, 12:00 p.m. Desde Auckland son ~3 h en auto hasta Waitomo.',
       },
       {
         name: 'Waitomo Glowworm Caves Guided Tour',
         operator: 'Viator · Reservado',
         meetingTime: '11:40 a.m.', meetingPlace: '39 Waitomo Village Road, Waitomo Caves', startEnd: '',
-        description: 'Tour guiado por las cuevas de luciérnagas de Waitomo. Horario confirmado: 11:40 a.m. (Viviana lo recomendó en vez de 10:10 para no ir corriendo). Precio: USD 100.20 (2 personas).',
+        description: 'Tour guiado por las cuevas de luciérnagas de Waitomo. Horario confirmado: 11:40 a.m. (Viviana lo recomendó en vez de 10:10 para no ir corriendo).',
         link: 'https://www.viator.com/tours/Waitomo/Waitomo-Glowworm-Caves-Guided-Tour/d27469-3930P3?pid=P00001955&uid=U00767249&mcid=58086&currency=USD',
       },
       {
@@ -341,8 +341,8 @@ export const DAYS = [
       },
       {
         name: 'Traslado a Rotorua + check-in', travel: true,
-        meetingTime: 'Fin de la tarde', meetingPlace: 'Blue Spring', startEnd: 'Auto ~1 h',
-        description: 'Traslado desde Blue Spring a Rotorua (~1 hora). Check-in en el Black Swan Lakeside Boutique Hotel.',
+        meetingTime: 'Fin de la tarde', meetingPlace: 'Black Swan Lakeside, 171 Kawaha Point Rd', startEnd: '3 noches',
+        description: 'Traslado desde Blue Spring a Rotorua (~1 hora) y check-in a partir de las 3:00 p.m. Habitación Lake Front, cama King, del 12 al 15 de diciembre (check-out 11:00 a.m.). Confirmación 73471838798067. Teléfono 64 7-346-3602. Incluye desayuno y estacionamiento.',
       },
     ],
     notes: 'Noche en Black Swan Lakeside Boutique Hotel, Rotorua.',
@@ -406,7 +406,7 @@ export const DAYS = [
         name: 'Polynesian Spa — Deluxe Romantic Package',
         operator: 'Polynesian Spa · Reservado',
         meetingTime: '5:45 p.m.', meetingPlace: 'Polynesian Spa, 1000 Hinemoa Street', startEnd: 'Hasta 8:45 p.m. · 3 h',
-        description: 'Deluxe Romantic Package (masaje, almuerzo, baño privado y regalo del spa), de 5:45 a 8:45 p.m. OJO: hay que llegar al menos UNA HORA antes, o sea a las 4:45 p.m., y cada uno debe llenar el formulario de consulta previa. Precio: NZD 818 (2 adultos). Confirmación 296082/296081. Llevar traje de baño, calzado para la piscina y una bolsa para la ropa mojada; batas, toallas, secadores y lockers los dan ellos. El paquete incluye comida, así que no hace falta comer antes.',
+        description: 'Deluxe Romantic Package (masaje, almuerzo, baño privado y regalo del spa), de 5:45 a 8:45 p.m. OJO: hay que llegar al menos UNA HORA antes, o sea a las 4:45 p.m., y cada uno debe llenar el formulario de consulta previa. Confirmación 296082/296081. Llevar traje de baño, calzado para la piscina y una bolsa para la ropa mojada; batas, toallas, secadores y lockers los dan ellos. El paquete incluye comida, así que no hace falta comer antes.',
         link: 'https://www.polynesianspa.co.nz/vitality-day-escape-retreat-nz/',
       },
     ],
@@ -430,12 +430,12 @@ export const DAYS = [
       {
         name: 'Vuelo NZ623 — Auckland → Queenstown', travel: true,
         meetingTime: '2:40 p.m.', meetingPlace: 'Auckland Airport (AKL) → Queenstown Airport (ZQN)', startEnd: 'Llega 4:35 p.m. · 1 h 55 min',
-        description: 'Air New Zealand NZ623, clase Economy. Sale de Auckland a las 2:40 p.m. y llega a Queenstown a las 4:35 p.m. Asientos 15D (Rachelle) y 15E (Raymond), una maleta documentada por persona. Localizador EIYQUH.',
+        description: 'Air New Zealand NZ623. Sale de Auckland a las 2:40 p.m. y llega a Queenstown a las 4:35 p.m. Una maleta documentada por persona. Localizador EIYQUH.',
       },
       {
         name: 'Check-in — Sofitel Queenstown Hotel & Spa', travel: true,
-        meetingTime: 'Tarde', meetingPlace: 'Sofitel Queenstown, 8 Duke Street', startEnd: 'Auto ~10 min desde ZQN',
-        description: 'Llegada a Queenstown y check-in en el Sofitel Queenstown Hotel & Spa (8 Duke Street), en pleno centro. Del aeropuerto al hotel son ~10 minutos.',
+        meetingTime: 'Tarde', meetingPlace: 'Sofitel Queenstown, 8 Duke Street', startEnd: '6 noches',
+        description: 'Del aeropuerto al hotel son ~10 minutos. Habitación Superior, cama King, del 15 al 21 de diciembre (check-out 11:00 a.m.). Confirmación 5688ALE0502. Teléfono 64 3-450-0045.',
       },
     ],
     notes: 'Noche en Sofitel Queenstown Hotel & Spa. Primera noche en Queenstown.',
@@ -449,7 +449,7 @@ export const DAYS = [
         name: 'Milford Sound Flight and Cruise Tour',
         operator: 'True South Flights · Reservado',
         meetingTime: '8:00 a.m.', meetingPlace: 'True South Flights, 12 Hawthorne Drive, Frankton', startEnd: 'Hasta 12:30 p.m. · 4 h 30 min',
-        description: 'Vuelo escénico de ida y vuelta entre Queenstown y Milford Sound más el crucero por el fiordo, de 8:00 a.m. a 12:30 p.m. Operado por True South Flights desde su base en Frankton (Bldg 8, Suite 1B / 12 Hawthorne Drive). Precio: USD 1,037.12 (2 adultos). Confirmación 1833845847 · referencia BR-1451827093. Ofrecen pickup desde Queenstown pero el itinerario oficial no indica la hora: hay que confirmarla.',
+        description: 'Vuelo escénico de ida y vuelta entre Queenstown y Milford Sound más el crucero por el fiordo, de 8:00 a.m. a 12:30 p.m. Operado por True South Flights desde su base en Frankton (Bldg 8, Suite 1B / 12 Hawthorne Drive). Confirmación 1833845847 · referencia BR-1451827093. Ofrecen pickup desde Queenstown pero el itinerario oficial no indica la hora: hay que confirmarla.',
       },
       {
         name: 'Actividad por definir',
@@ -518,7 +518,7 @@ export const DAYS = [
         name: 'Lake Tekapo Private Day Trip from Queenstown',
         operator: 'Viator · Tour privado · Reservado',
         meetingTime: '8:00 a.m.', meetingPlace: 'Pickup en recepción del Sofitel', startEnd: 'Hasta 7:00 p.m. · 11 h',
-        description: 'Excursión privada a Lake Tekapo de 8:00 a.m. a 7:00 p.m.: son 11 horas, el día más largo del viaje. El pickup es en la recepción del hotel y hay que estar listos 5 a 10 minutos antes. Precio: USD 738.74 (2 adultos). Confirmación 1833837917 · referencia BR-1451819055. Pendiente revisar con Viviana la ruta y las paradas para aprovecharlo al máximo — en el camino suelen incluirse Lindis Pass, Lake Pukaki con vista al Mt Cook y la Church of the Good Shepherd.',
+        description: 'Excursión privada a Lake Tekapo de 8:00 a.m. a 7:00 p.m.: son 11 horas, el día más largo del viaje. El pickup es en la recepción del hotel y hay que estar listos 5 a 10 minutos antes. Confirmación 1833837917 · referencia BR-1451819055. Pendiente revisar con Viviana la ruta y las paradas para aprovecharlo al máximo — en el camino suelen incluirse Lindis Pass, Lake Pukaki con vista al Mt Cook y la Church of the Good Shepherd.',
         link: 'https://www.viator.com/tours/Queenstown/Lake-Tekapo-Private-Day-Trip-from-Queenstown-TravelnGo/d407-5590256P5?pid=P00001955&uid=U00767249&mcid=58086&currency=USD',
       },
     ],
@@ -545,7 +545,7 @@ export const DAYS = [
         name: 'Lake Wakatipu Scenic Cruise (90 min)',
         operator: 'Viator · Million Dollar Cruise · Reservado',
         meetingTime: '2:00 p.m.', meetingPlace: '50 Beach Street, waterfront, Queenstown', startEnd: 'Hasta 3:30 p.m. · 90 min',
-        description: 'Crucero escénico de 90 minutos por Lake Wakatipu, de 2:00 a 3:30 p.m., saliendo del muelle en 50 Beach Street. Precio: USD 91.54 (2 adultos). Confirmación 1833840517 · referencia BR-1451821679. Tiene cubierta al aire libre, cabina con calefacción y bar a bordo.',
+        description: 'Crucero escénico de 90 minutos por Lake Wakatipu, de 2:00 a 3:30 p.m., saliendo del muelle en 50 Beach Street. Confirmación 1833840517 · referencia BR-1451821679. Tiene cubierta al aire libre, cabina con calefacción y bar a bordo.',
         link: 'https://www.viator.com/tours/Queenstown/Million-Dollar-Cruise/d407-71002P1?pid=P00001955&uid=U00767249&mcid=58086&currency=USD',
       },
     ],
@@ -553,22 +553,131 @@ export const DAYS = [
   },
   {
     month: 'DIC', num: '21', dow: 'Lun',
-    port: 'Queenstown → Sídney', type: 'travel', typeLabel: 'Salida de Nueva Zelanda',
+    port: 'Queenstown → Sídney → Whitsundays', type: 'travel', typeLabel: 'Nueva Zelanda → Australia',
     mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-45.01930,168.74344&travelmode=driving',
     activities: [
       {
         name: 'Check-out y traslado al aeropuerto', travel: true,
         meetingTime: '~5:00 a.m.', meetingPlace: 'Sofitel Queenstown → Queenstown Airport (ZQN)', startEnd: 'Auto ~10 min',
-        description: 'Salida de madrugada para alcanzar el vuelo de las 7:00 a.m. El itinerario oficial muestra el check-out del Sofitel a las 11:00 a.m., así que hay que avisarle al hotel que salímos de madrugada y coordinar la cuenta la noche anterior.',
+        description: 'Salida de madrugada para alcanzar el vuelo de las 7:00 a.m. El itinerario oficial muestra el check-out del Sofitel a las 11:00 a.m., así que hay que avisarle al hotel que salimos de madrugada y coordinar la cuenta la noche anterior.',
       },
       {
         name: 'Vuelo QF124 — Queenstown → Sídney', travel: true,
-        meetingTime: '7:00 a.m.', meetingPlace: 'Queenstown Airport (ZQN) → Sydney (SYD)', startEnd: 'Llega 8:20 a.m. · 3 h 20 min',
-        description: 'Qantas QF124, clase Economy. Sale de Queenstown a las 7:00 a.m. y llega a Sídney a las 8:20 a.m. (hora local; son 3 h 20 min de vuelo por el cambio de huso). Asientos 16D (Rachelle) y 16E (Raymond), 30 kg de equipaje por persona. Localizador ADKP77.',
+        meetingTime: '7:00 a.m.', meetingPlace: 'Queenstown (ZQN) → Sydney (SYD)', startEnd: 'Llega 8:20 a.m. · 3 h 20 min',
+        description: 'Qantas QF124. Sale de Queenstown a las 7:00 a.m. y llega a Sídney a las 8:20 a.m. (hora local; son 3 h 20 min de vuelo por el cambio de huso). 30 kg de equipaje por persona. Localizador ADKP77.',
+      },
+      {
+        name: 'Vuelo QF5840 — Sídney → Proserpine', travel: true,
+        meetingTime: '11:45 a.m.', meetingPlace: 'Sydney (SYD) → Whitsunday Coast (PPP)', startEnd: 'Llega 1:15 p.m. · 2 h 30 min',
+        description: 'Qantas QF5840, operado por Jetstar como JQ840. Sale de Sídney a las 11:45 a.m. y llega al aeropuerto de Whitsunday Coast (Proserpine) a la 1:15 p.m. Mismo localizador ADKP77 que el QF124, con unas 3 h 25 min de conexión en Sídney. 30 kg de equipaje por persona.',
+      },
+      {
+        name: 'Check-in — Hotel Beach Club, Whitsundays', travel: true,
+        actionBadge: 'Penalidad 100%',
+        meetingTime: '4:00 p.m.', meetingPlace: 'Hotel Beach Club, 9 Resort Dr, Whitsundays QLD', startEnd: '4 noches',
+        description: 'Habitación Beach Club Room, cama King, del 21 al 25 de diciembre (check-out 11:00 a.m.). Confirmación SH30025471. Incluye desayuno y traslado gratuito desde el aeropuerto y el ferry, pero hay que contactar al hotel 24 horas antes para coordinarlo — no hay traslado reservado. OJO con la política de cancelación: la ventana con 20% de penalidad vencía el 22 de octubre a la 1:00 a.m. hora local del hotel; después de esa fecha cualquier cambio o cancelación cuesta el 100%.',
       },
     ],
-    notes: 'Último día en Nueva Zelanda. Desde Sídney continúa el viaje a Australia.',
+    notes: 'Noche en Hotel Beach Club, Whitsundays. Día largo: tres vuelos y dos países.',
   },
+  {
+    month: 'DIC', num: '22', dow: 'Mar',
+    port: 'Whitsundays', type: 'city', typeLabel: 'Día libre',
+    activities: [
+      {
+        name: 'Día libre en Whitsundays',
+        meetingTime: 'Todo el día', meetingPlace: 'Hotel Beach Club', startEnd: '',
+        description: 'No hay nada reservado. Zona de la Gran Barrera de Coral: Whitehaven Beach, snorkel y salidas en barco son los planes habituales desde aquí.',
+      },
+    ],
+    notes: 'Noche en Hotel Beach Club, Whitsundays.',
+  },
+  {
+    month: 'DIC', num: '23', dow: 'Mié',
+    port: 'Whitsundays', type: 'city', typeLabel: 'Día libre',
+    activities: [
+      {
+        name: 'Día libre en Whitsundays',
+        meetingTime: 'Todo el día', meetingPlace: 'Hotel Beach Club', startEnd: '',
+        description: 'No hay nada reservado en el itinerario oficial.',
+      },
+    ],
+    notes: 'Noche en Hotel Beach Club, Whitsundays.',
+  },
+  {
+    month: 'DIC', num: '24', dow: 'Jue',
+    port: 'Whitsundays', type: 'city', typeLabel: 'Nochebuena',
+    activities: [
+      {
+        name: 'Día libre en Whitsundays',
+        meetingTime: 'Todo el día', meetingPlace: 'Hotel Beach Club', startEnd: '',
+        description: 'Nochebuena. No hay nada reservado — si quieren cena especial en el hotel conviene reservarla con tiempo.',
+      },
+    ],
+    notes: 'Noche en Hotel Beach Club, Whitsundays. Última noche en las islas.',
+  },
+  {
+    month: 'DIC', num: '25', dow: 'Vie',
+    port: 'Whitsundays → Sídney', type: 'travel', typeLabel: 'Navidad · traslado',
+    activities: [
+      {
+        name: 'Check-out y traslado a Hamilton Island', travel: true,
+        actionBadge: 'Aeropuertos distintos',
+        meetingTime: '11:00 a.m.', meetingPlace: 'Hotel Beach Club → Hamilton Island (HTI)', startEnd: '',
+        description: 'OJO: llegaron por el aeropuerto de Proserpine (PPP) pero el vuelo de salida es desde Hamilton Island (HTI), que es otro aeropuerto — se llega en ferry. Además el check-out es a las 11:00 a.m. y el vuelo sale a las 11:55 a.m., así que el margen es muy corto. No hay ningún traslado reservado: hay que resolverlo con Viviana.',
+      },
+      {
+        name: 'Vuelo QF579 — Hamilton Island → Sídney', travel: true,
+        actionBadge: 'Verificar boleto',
+        meetingTime: '11:55 a.m.', meetingPlace: 'Hamilton Island (HTI) → Sydney (SYD)', startEnd: 'Llega 3:15 p.m. · 2 h 20 min',
+        description: 'Qantas QF579. Localizador CBE5RE. Una pieza de equipaje por persona. Boletos: 081-7497103738 (Rachelle) y 081-749710373 (Raymond) — el de Raymond tiene un dígito menos que el de Rachelle, hay que verificarlo.',
+      },
+      {
+        name: 'Check-in — Pier One Sydney Harbour', travel: true,
+        actionBadge: 'Corregir nombre',
+        meetingTime: '3:00 p.m.', meetingPlace: 'Pier One, 11 Hickson Road, Walsh Bay', startEnd: 'Hasta el 27 dic',
+        description: 'Habitación Partial Water View, cama King, en un muelle histórico debajo del Harbour Bridge. Confirmación 97130874. Teléfono 61 2-8298-9999. El huesped figura como “Raymond Eskenazi”, sin “Michaan”: conviene corregirlo. El itinerario tampoco imprime la fecha de check-out, solo la hora (11:00 a.m.).',
+      },
+    ],
+    notes: 'Navidad en Sídney. Noche en Pier One Sydney Harbour.',
+  },
+  {
+    month: 'DIC', num: '26', dow: 'Sáb',
+    port: 'Sídney', type: 'city', typeLabel: 'Día libre',
+    activities: [
+      {
+        name: 'Día libre en Sídney',
+        meetingTime: 'Todo el día', meetingPlace: 'Sídney', startEnd: '',
+        description: 'Único día completo en Sídney y no hay nada reservado. El hotel está en Walsh Bay, a pasos del Harbour Bridge y The Rocks; la Ópera queda cruzando Circular Quay.',
+      },
+    ],
+    notes: 'Noche en Pier One Sydney Harbour.',
+  },
+  {
+    month: 'DIC', num: '27', dow: 'Dom',
+    port: 'Sídney → Houston → Panamá', type: 'travel', typeLabel: 'Regreso a casa',
+    activities: [
+      {
+        name: 'Check-out — Pier One', travel: true,
+        actionBadge: 'Revisar horario',
+        meetingTime: 'Madrugada', meetingPlace: 'Pier One → Sydney (SYD)', startEnd: '',
+        description: 'El vuelo sale a las 9:15 a.m., así que hay que salir del hotel de madrugada. El itinerario muestra el check-out a las 11:00 a.m. (sin fecha), lo cual no cuadra con el vuelo: hay que coordinar la salida temprana. No hay traslado reservado al aeropuerto.',
+      },
+      {
+        name: 'Vuelo UA100 — Sídney → Houston', travel: true,
+        actionBadge: 'Falta boleto de Rachelle',
+        meetingTime: '9:15 a.m.', meetingPlace: 'Sydney (SYD) → Houston (IAH)', startEnd: 'Llega 7:55 a.m. · 15 h 40 min',
+        description: 'United Airlines UA100. Por cruzar la línea de cambio de fecha, llegan a Houston la mañana del mismo 27. Localizador ABX40E. Boleto de Raymond: 2302155054681. En el itinerario oficial no aparece el número de boleto de Rachelle en este tramo — hay que pedirlo.',
+      },
+      {
+        name: 'Vuelo UA1034 — Houston → Panamá', travel: true,
+        meetingTime: '2:27 p.m.', meetingPlace: 'Houston (IAH) → Tocumen (PTY)', startEnd: 'Llega 7:38 p.m. · 4 h 11 min',
+        description: 'United Airlines UA1034, con unas 6 h 30 min de conexión en Houston. Está cargado como dos reservas separadas, una por pasajero: LNEPF6 (Rachelle, boleto 0162101807267) y MX6VH4 (Raymond, boleto 0162396262460).',
+      },
+    ],
+    notes: 'Fin del viaje — llegada a Panamá a las 7:38 p.m.',
+  },
+
 ]
 
 // Pendientes por ciudad — checklist independiente del itinerario.
