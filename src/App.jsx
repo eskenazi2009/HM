@@ -240,9 +240,9 @@ export default function App() {
             Los horarios de traslado y almuerzo son aproximados.
             <br />
             <br />
-            El clima mostrado es el <strong>promedio histórico</strong> de cada destino para esas
-            fechas, no un pronóstico: los pronósticos reales solo llegan a 10–15 días vista. Sirve
-            para empacar, no para decidir el día.
+            El clima mostrado es el <strong>promedio histórico 1991–2020</strong> de la estación
+            oficial más cercana (SAWS, WMO, NIWA y BoM), no un pronóstico: los pronósticos reales
+            solo llegan a 10–15 días vista. Sirve para empacar, no para decidir el día.
           </div>
         </>
       )}
