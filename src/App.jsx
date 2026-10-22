@@ -178,14 +178,20 @@ export default function App() {
       <div className="hero">
         <div className="hero-eyebrow">Luna de Miel</div>
         <div className="hero-h1">Nueva Zelanda</div>
-        <div className="hero-sub">Auckland · Rotorua · Queenstown</div>
-        <div className="hero-dates">10 – 20 de Diciembre, 2026</div>
+        <div className="hero-sub">Sudáfrica · Maldivas · Nueva Zelanda</div>
+        <div className="hero-dates">24 de Noviembre – 21 de Diciembre, 2026</div>
         <div className="hero-hotels">
-          Hotel InterContinental · Auckland (10–12 Dic)
+          Southern Sun The Cullinan · Ciudad del Cabo (25–29 Nov)
           <br />
-          Black Swan Lakeside Boutique Hotel · Rotorua (12–15 Dic)
+          andBeyond Ngala Tented Camp · Safari (29 Nov–2 Dic)
           <br />
-          Sofitel Queenstown Hotel &amp; Spa · Queenstown (desde 15 Dic)
+          Alila Kothaifaru · Maldivas (4–9 Dic)
+          <br />
+          InterContinental · Auckland (10–12 Dic)
+          <br />
+          Black Swan Lakeside · Rotorua (12–15 Dic)
+          <br />
+          Sofitel Queenstown · Queenstown (15–21 Dic)
         </div>
       </div>
 
@@ -206,7 +212,7 @@ export default function App() {
 
       {tab === 'itinerary' && (
         <>
-          <a className="map-link" href="mapa.html">🗺 Ver mapa de la ruta</a>
+          <a className="map-link" href="mapa.html">🗺 Ver mapa de Nueva Zelanda</a>
 
           <div className="days-list">
             {DAYS.map((day, i) => (

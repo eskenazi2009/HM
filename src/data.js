@@ -3,6 +3,267 @@
 // Viviana ya reservó por Viator todas las actividades; el spa está en proceso y el auto es cotización.
 export const DAYS = [
   {
+    month: 'NOV', num: '24', dow: 'Mar',
+    port: 'Panamá → Newark → Ciudad del Cabo', type: 'travel', typeLabel: 'Inicio del viaje',
+    activities: [
+      {
+        name: 'Vuelo UA727 — Panamá → Newark', travel: true,
+        meetingTime: '10:00 a.m.', meetingPlace: 'Tocumen (PTY) → Newark (EWR)', startEnd: 'Llega 3:16 p.m. · 5 h 16 min',
+        description: 'United Airlines UA727, clase Economy. Localizador MWGCVT. Boletos 0162396255338 (Rachelle) y 0162396255337 (Raymond). Asientos no asignados todavía.',
+      },
+      {
+        name: 'Vuelo UA1122 — Newark → Ciudad del Cabo', travel: true,
+        actionBadge: 'Corregir nombre',
+        meetingTime: '8:35 p.m.', meetingPlace: 'Newark (EWR) → Cape Town (CPT)', startEnd: 'Llega 6:00 p.m. del 25 · 14 h 25 min',
+        description: 'United Airlines UA1122, clase Business, vuelo nocturno que aterriza en Ciudad del Cabo a las 6:00 p.m. del miércoles 25. Está cargado como DOS reservas separadas: ABW3PE (Rachelle, asiento 07F) y MV4Q4R (Raymond). OJO: en la reserva MV4Q4R el nombre aparece como “Raymind Eskenazi Michaan” — hay que pedirle a Viviana que lo corrija antes de emitir.',
+      },
+    ],
+    notes: 'Noche a bordo. Entre los dos vuelos hay unas 5 horas de conexión en Newark.',
+  },
+  {
+    month: 'NOV', num: '25', dow: 'Mié',
+    port: 'Ciudad del Cabo', type: 'city', typeLabel: 'Llegada',
+    activities: [
+      {
+        name: 'Llegada a Ciudad del Cabo', travel: true,
+        meetingTime: '6:00 p.m.', meetingPlace: 'Cape Town International (CPT)', startEnd: '',
+        description: 'Llegada del UA1122. Incluye asistencia en el aeropuerto a la llegada y traslado hasta el hotel.',
+      },
+      {
+        name: 'Check-in — Southern Sun The Cullinan', travel: true,
+        meetingTime: 'Al llegar', meetingPlace: 'Southern Sun The Cullinan', startEnd: '4 noches',
+        description: 'Habitación Standard con desayuno incluido, del 25 al 29 de noviembre. Este hotel no aparece en el itinerario oficial de Axus — viene del itinerario de &Beyond.',
+      },
+    ],
+    notes: 'Noche en Southern Sun The Cullinan, Ciudad del Cabo.',
+  },
+  {
+    month: 'NOV', num: '26', dow: 'Jue',
+    port: 'Cape Point & Table Mountain', type: 'city', typeLabel: 'Tour privado',
+    activities: [
+      {
+        name: 'Tour privado de día completo — Cape Point y Boulders Beach',
+        operator: '&Beyond · Vehículo y guía privados',
+        meetingTime: 'Día completo', meetingPlace: 'Pickup en el hotel', startEnd: '',
+        description: 'Recorrido por la península del Cabo con vehículo y guía privados. Incluye las entradas a Cape Point y a Boulders Beach (la colonia de pingüinos). Horario exacto por confirmar.',
+      },
+      {
+        name: 'Table Mountain — entradas fast track',
+        meetingTime: 'Mismo día', meetingPlace: 'Table Mountain', startEnd: '',
+        description: 'Entradas fast track al teleférico de Table Mountain incluidas en el tour.',
+      },
+    ],
+    notes: 'Noche en Southern Sun The Cullinan, Ciudad del Cabo.',
+  },
+  {
+    month: 'NOV', num: '27', dow: 'Vie',
+    port: 'Winelands', type: 'city', typeLabel: 'Viñedos',
+    activities: [
+      {
+        name: 'Tour privado de día completo por los Winelands',
+        operator: '&Beyond · Vehículo y guía privados',
+        meetingTime: 'Día completo', meetingPlace: 'Pickup en el hotel', startEnd: '',
+        description: 'Recorrido privado por la región de los viñedos (Stellenbosch, Franschhoek y alrededores) con las entradas incluidas. Horario exacto por confirmar.',
+      },
+    ],
+    notes: 'Noche en Southern Sun The Cullinan, Ciudad del Cabo.',
+  },
+  {
+    month: 'NOV', num: '28', dow: 'Sáb',
+    port: 'Ciudad del Cabo', type: 'city', typeLabel: 'Día libre',
+    activities: [
+      {
+        name: 'Día libre en Ciudad del Cabo',
+        meetingTime: 'Todo el día', meetingPlace: '', startEnd: '',
+        description: 'No hay nada reservado este día en ninguno de los dos itinerarios. Queda libre para la ciudad: V&A Waterfront, Bo-Kaap, Robben Island o la playa de Camps Bay.',
+      },
+    ],
+    notes: 'Noche en Southern Sun The Cullinan, Ciudad del Cabo. Última noche en la ciudad.',
+  },
+  {
+    month: 'NOV', num: '29', dow: 'Dom',
+    port: 'Ciudad del Cabo → Safari', type: 'travel', typeLabel: 'Vuelo al safari',
+    activities: [
+      {
+        name: 'Traslado al aeropuerto de Ciudad del Cabo', travel: true,
+        meetingTime: 'Por confirmar', meetingPlace: 'Hotel → Cape Town International (CPT)', startEnd: '',
+        description: 'Traslado desde el hotel, con asistencia en el aeropuerto a la salida.',
+      },
+      {
+        name: 'Vuelo Ciudad del Cabo → Hoedspruit', travel: true,
+        operator: 'Bateleur Travel',
+        actionBadge: 'Falta número de vuelo',
+        meetingTime: 'Por confirmar', meetingPlace: 'Cape Town (CPT) → Hoedspruit (HDS)', startEnd: '',
+        description: 'Vuelo regular reservado vía Bateleur Travel. Este vuelo NO aparece en el itinerario oficial de Axus: falta la aerolínea, el número de vuelo y los horarios. Hay que pedirlos.',
+      },
+      {
+        name: 'Traslado a Ngala Tented Camp', travel: true,
+        meetingTime: 'Al llegar', meetingPlace: 'Hoedspruit → andBeyond Ngala Tented Camp', startEnd: '',
+        description: 'Traslado terrestre desde el aeropuerto de Hoedspruit hasta el campamento, dentro de la reserva privada de Ngala.',
+      },
+    ],
+    notes: 'Noche en andBeyond Ngala Tented Camp — Tented Suite, todo incluido, 3 noches.',
+  },
+  {
+    month: 'NOV', num: '30', dow: 'Lun',
+    port: 'Safari — Ngala', type: 'adventure', typeLabel: 'Safari',
+    activities: [
+      {
+        name: 'Día de safari en Ngala',
+        operator: 'andBeyond · Todo incluido',
+        meetingTime: 'Todo el día', meetingPlace: 'andBeyond Ngala Tented Camp', startEnd: '',
+        description: 'Día completo en la reserva privada de Ngala, con el régimen todo incluido del campamento. Los game drives suelen ser al amanecer y al atardecer, pero los horarios los fija el campamento — no vienen detallados en el itinerario.',
+      },
+    ],
+    notes: 'Noche en andBeyond Ngala Tented Camp.',
+  },
+  {
+    month: 'DIC', num: '1', dow: 'Mar',
+    port: 'Safari — Ngala', type: 'adventure', typeLabel: 'Safari',
+    activities: [
+      {
+        name: 'Día de safari en Ngala',
+        operator: 'andBeyond · Todo incluido',
+        meetingTime: 'Todo el día', meetingPlace: 'andBeyond Ngala Tented Camp', startEnd: '',
+        description: 'Último día completo de safari, con el régimen todo incluido del campamento.',
+      },
+    ],
+    notes: 'Noche en andBeyond Ngala Tented Camp. Última noche del safari.',
+  },
+  {
+    month: 'DIC', num: '2', dow: 'Mié',
+    port: 'Safari → Johannesburgo', type: 'travel', typeLabel: 'Día de traslado',
+    activities: [
+      {
+        name: 'Traslado al aeropuerto de Hoedspruit', travel: true,
+        meetingTime: 'Por confirmar', meetingPlace: 'Ngala Tented Camp → Hoedspruit (HDS)', startEnd: '',
+        description: 'Traslado terrestre desde el campamento hasta el aeropuerto.',
+      },
+      {
+        name: 'Vuelo Hoedspruit → Johannesburgo', travel: true,
+        operator: 'Bateleur Travel',
+        actionBadge: 'Falta número de vuelo',
+        meetingTime: 'Por confirmar', meetingPlace: 'Hoedspruit (HDS) → O.R. Tambo (JNB)', startEnd: '',
+        description: 'Vuelo regular vía Bateleur Travel, con la modificación de vuelo ya aplicada según el itinerario de &Beyond. Tampoco aparece en el itinerario oficial de Axus: faltan aerolínea, número y horarios. Incluye asistencia a la llegada en O.R. Tambo.',
+      },
+      {
+        name: 'Check-in — City Lodge OR Tambo', travel: true,
+        meetingTime: 'Al llegar', meetingPlace: 'City Lodge OR Tambo International Airport', startEnd: '1 noche',
+        description: 'Habitación Standard con desayuno, dentro del aeropuerto. Una sola noche para conectar con el vuelo a Singapur del día siguiente.',
+      },
+    ],
+    notes: 'Noche en City Lodge OR Tambo, Johannesburgo.',
+  },
+  {
+    month: 'DIC', num: '3', dow: 'Jue',
+    port: 'Johannesburgo → Singapur', type: 'travel', typeLabel: 'Vuelo largo',
+    activities: [
+      {
+        name: 'Vuelo SQ479 — Johannesburgo → Singapur', travel: true,
+        actionBadge: 'Falta Rachelle',
+        meetingTime: '1:40 p.m.', meetingPlace: 'O.R. Tambo (JNB) → Singapur Changi (SIN)', startEnd: 'Llega 6:15 a.m. del 4 · 10 h 35 min',
+        description: 'Singapore Airlines SQ479, clase Premium Economy, vuelo nocturno. Localizador FBNPDT. PROBLEMA: en el itinerario oficial este segmento aparece Únicamente a nombre de Raymond — Rachelle no figura en el vuelo. Hay que verificarlo con Viviana con urgencia. Incluye asistencia en el aeropuerto a la salida.',
+      },
+    ],
+    notes: 'Noche a bordo rumbo a Singapur.',
+  },
+  {
+    month: 'DIC', num: '4', dow: 'Vie',
+    port: 'Singapur → Maldivas', type: 'travel', typeLabel: 'Llegada a Maldivas',
+    activities: [
+      {
+        name: 'Vuelo SQ432 — Singapur → Malé', travel: true,
+        actionBadge: 'Confirmar fecha',
+        meetingTime: '10:05 a.m.', meetingPlace: 'Singapur Changi (SIN) → Malé (MLE)', startEnd: 'Llega 11:40 a.m. · 4 h 35 min',
+        description: 'Singapore Airlines SQ432, clase Economy. Localizador FBNPDT. OJO: el itinerario oficial lista este vuelo bajo el 3 de diciembre, pero el SQ479 no aterriza en Singapur hasta las 6:15 a.m. del 4 — así que la fecha correcta debería ser el 4. Hay que confirmarlo.',
+      },
+      {
+        name: 'Traslado al resort', travel: true,
+        actionBadge: 'Falta traslado',
+        meetingTime: 'Por confirmar', meetingPlace: 'Malé (MLE) → Kothaifaru, Raa Atoll', startEnd: '',
+        description: 'El Raa Atoll se alcanza en hidroavión o vuelo doméstico más lancha. No hay ningún traslado reservado en el itinerario oficial — hay que confirmarlo con el resort o con Viviana.',
+      },
+      {
+        name: 'Check-in — Alila Kothaifaru Maldives', travel: true,
+        meetingTime: '2:00 p.m.', meetingPlace: 'Kothaifaru Island, Raa Atoll', startEnd: '5 noches',
+        description: 'Ocean Water Villa, cama King, del 4 al 9 de diciembre. Confirmación 150754RA003580. Teléfono 960 659-1234. OJO: la tarifa es totalmente no reembolsable y no admite cambios.',
+      },
+    ],
+    notes: 'Noche en Alila Kothaifaru Maldives, Raa Atoll.',
+  },
+  {
+    month: 'DIC', num: '5', dow: 'Sáb',
+    port: 'Maldivas', type: 'city', typeLabel: 'Resort',
+    activities: [
+      {
+        name: 'Día libre en Alila Kothaifaru',
+        meetingTime: 'Todo el día', meetingPlace: 'Raa Atoll', startEnd: '',
+        description: 'Día libre en el resort. Pendiente averiguar las opciones de buceo.',
+      },
+    ],
+    notes: 'Noche en Alila Kothaifaru Maldives.',
+  },
+  {
+    month: 'DIC', num: '6', dow: 'Dom',
+    port: 'Maldivas', type: 'city', typeLabel: 'Resort',
+    activities: [
+      {
+        name: 'Día libre en Alila Kothaifaru',
+        meetingTime: 'Todo el día', meetingPlace: 'Raa Atoll', startEnd: '',
+        description: 'Día libre en el resort.',
+      },
+    ],
+    notes: 'Noche en Alila Kothaifaru Maldives.',
+  },
+  {
+    month: 'DIC', num: '7', dow: 'Lun',
+    port: 'Maldivas', type: 'city', typeLabel: 'Resort',
+    activities: [
+      {
+        name: 'Día libre en Alila Kothaifaru',
+        meetingTime: 'Todo el día', meetingPlace: 'Raa Atoll', startEnd: '',
+        description: 'Día libre en el resort.',
+      },
+    ],
+    notes: 'Noche en Alila Kothaifaru Maldives.',
+  },
+  {
+    month: 'DIC', num: '8', dow: 'Mar',
+    port: 'Maldivas', type: 'city', typeLabel: 'Resort',
+    activities: [
+      {
+        name: 'Día libre en Alila Kothaifaru',
+        meetingTime: 'Todo el día', meetingPlace: 'Raa Atoll', startEnd: '',
+        description: 'Último día completo en el resort.',
+      },
+    ],
+    notes: 'Noche en Alila Kothaifaru Maldives. Última noche en Maldivas.',
+  },
+  {
+    month: 'DIC', num: '9', dow: 'Mié',
+    port: 'Maldivas → Kuala Lumpur → Auckland', type: 'travel', typeLabel: 'Día de vuelos',
+    activities: [
+      {
+        name: 'Check-out y salida de la isla', travel: true,
+        actionBadge: 'Revisar horario',
+        meetingTime: 'Temprano', meetingPlace: 'Alila Kothaifaru → Malé (MLE)', startEnd: '',
+        description: 'El check-out figura a las 12:00 p.m., pero el vuelo a Kuala Lumpur sale de Malé también a las 12:00 p.m. Como del Raa Atoll a Malé hay hidroavión o vuelo doméstico, tienen que salir de la isla temprano en la mañana. Hay que coordinar el check-out anticipado y el traslado.',
+      },
+      {
+        name: 'Vuelo MH484 — Malé → Kuala Lumpur', travel: true,
+        meetingTime: '12:00 p.m.', meetingPlace: 'Malé (MLE) → Kuala Lumpur (KUL)', startEnd: 'Llega 7:45 p.m. · 4 h 45 min',
+        description: 'Malaysia Airlines MH484, clase Business. Localizador DTH4EG. Boletos 232-4832787827 (Rachelle) y 232-4832787826 (Raymond).',
+      },
+      {
+        name: 'Vuelo MH145 — Kuala Lumpur → Auckland', travel: true,
+        actionBadge: 'Conexión corta',
+        meetingTime: '8:55 p.m.', meetingPlace: 'Kuala Lumpur (KUL) → Auckland (AKL)', startEnd: 'Llega 12:15 p.m. del 10 · 10 h 20 min',
+        description: 'Malaysia Airlines MH145, clase Business, mismo localizador DTH4EG. OJO: el MH484 aterriza en Kuala Lumpur a las 7:45 p.m. y este sale a las 8:55 p.m. — solo 1 hora 10 minutos de conexión. Van en la misma reserva, así que la aerolínea responde si se atrasa, pero es ajustada.',
+      },
+    ],
+    notes: 'Noche a bordo rumbo a Auckland. Llegan a Nueva Zelanda al mediodía del 10.',
+  },
+  {
     month: 'DIC', num: '10', dow: 'Jue',
     port: 'Llegada a Auckland', type: 'city', typeLabel: 'Llegada',
     mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-37.00655,174.79034&destination=-36.84335,174.76654&travelmode=driving',
