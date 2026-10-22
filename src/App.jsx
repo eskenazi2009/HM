@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { DAYS, TODO } from './data.js'
+import heroImg from './assets/hero.jpg'
 
 const TODO_STORAGE_KEY = 'hm-todo-done-v1'
 
@@ -183,7 +184,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <div className="hero">
+      <div className="hero" style={{ '--hero-img': `url(${heroImg})` }}>
         <div className="hero-eyebrow">Luna de Miel</div>
         <div className="hero-h1">Nueva Zelanda</div>
         <div className="hero-sub">Sudáfrica · Maldivas · Nueva Zelanda · Australia</div>
