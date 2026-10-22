@@ -101,6 +101,14 @@ a{color:var(--blue)}
   text-transform:uppercase;color:#9a6b2f;background:#f6ecdd;border:1px solid #e6d3b3;
   border-radius:100px;padding:3px 10px}
 
+.weather-row{display:flex;align-items:center;flex-wrap:wrap;gap:8px;
+  border-top:1px solid var(--pale2);padding-top:10px}
+.weather-emoji{font-size:19px;line-height:1}
+.weather-temps{color:var(--navy);font-weight:800;font-size:14px;font-variant-numeric:tabular-nums}
+.weather-desc{color:var(--text-muted);font-size:13px;flex:1;min-width:140px}
+.weather-src{color:var(--text-muted);font-size:10.5px;font-style:italic;
+  background:var(--pale-blue);border-radius:100px;padding:2px 8px;white-space:nowrap}
+
 .notes-row{color:var(--text);border-top:1px solid var(--pale2);padding-top:10px;font-size:14px}
 .notes-label{text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted);
   margin-bottom:3px;font-size:12px;font-weight:700}

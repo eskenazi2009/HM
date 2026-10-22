@@ -74,6 +74,14 @@ function DayCard({ day, onOpen }) {
             <ActivityButton key={i} activity={a} onOpen={onOpen} />
           ))}
         </div>
+        {day.weather && (
+          <div className="weather-row">
+            <span className="weather-emoji">{day.weather.i}</span>
+            <span className="weather-temps">{day.weather.t}</span>
+            <span className="weather-desc">{day.weather.d}</span>
+            <span className="weather-src">promedio histórico</span>
+          </div>
+        )}
         <div className="notes-row">
           <div className="notes-label">Notas</div>
           <div>{day.notes}</div>
@@ -230,6 +238,11 @@ export default function App() {
             Toca cualquier actividad para ver el detalle y el enlace de reserva.
             <br />
             Los horarios de traslado y almuerzo son aproximados.
+            <br />
+            <br />
+            El clima mostrado es el <strong>promedio histórico</strong> de cada destino para esas
+            fechas, no un pronóstico: los pronósticos reales solo llegan a 10–15 días vista. Sirve
+            para empacar, no para decidir el día.
           </div>
         </>
       )}

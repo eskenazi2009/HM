@@ -23,6 +23,7 @@ export const DAYS = [
   {
     month: 'NOV', num: '25', dow: 'Mié',
     port: 'Ciudad del Cabo', type: 'city', typeLabel: 'Llegada',
+    weather: { i: '☀️', t: '22° / 14°', d: 'Primavera tardía: seco, soleado y con viento del sureste' },
     activities: [
       {
         name: 'Llegada a Ciudad del Cabo', travel: true,
@@ -40,6 +41,7 @@ export const DAYS = [
   {
     month: 'NOV', num: '26', dow: 'Jue',
     port: 'Cape Point & Table Mountain', type: 'city', typeLabel: 'Tour privado',
+    weather: { i: '☀️', t: '22° / 14°', d: 'Primavera tardía: seco, soleado y con viento del sureste' },
     activities: [
       {
         name: 'Tour privado de día completo — Cape Point y Boulders Beach',
@@ -58,6 +60,7 @@ export const DAYS = [
   {
     month: 'NOV', num: '27', dow: 'Vie',
     port: 'Winelands', type: 'city', typeLabel: 'Viñedos',
+    weather: { i: '☀️', t: '22° / 14°', d: 'Primavera tardía: seco, soleado y con viento del sureste' },
     activities: [
       {
         name: 'Tour privado de día completo por los Winelands',
@@ -71,6 +74,7 @@ export const DAYS = [
   {
     month: 'NOV', num: '28', dow: 'Sáb',
     port: 'Ciudad del Cabo', type: 'city', typeLabel: 'Día libre',
+    weather: { i: '☀️', t: '22° / 14°', d: 'Primavera tardía: seco, soleado y con viento del sureste' },
     activities: [
       {
         name: 'Día libre en Ciudad del Cabo',
@@ -83,6 +87,7 @@ export const DAYS = [
   {
     month: 'NOV', num: '29', dow: 'Dom',
     port: 'Ciudad del Cabo → Safari', type: 'travel', typeLabel: 'Vuelo al safari',
+    weather: { i: '⛈️', t: '31° / 20°', d: 'Verano del bushveld: calor fuerte y tormentas por la tarde' },
     activities: [
       {
         name: 'Traslado al aeropuerto de Ciudad del Cabo', travel: true,
@@ -107,6 +112,7 @@ export const DAYS = [
   {
     month: 'NOV', num: '30', dow: 'Lun',
     port: 'Safari — Ngala', type: 'adventure', typeLabel: 'Safari',
+    weather: { i: '⛈️', t: '31° / 20°', d: 'Verano del bushveld: calor fuerte y tormentas por la tarde' },
     activities: [
       {
         name: 'Día de safari en Ngala',
@@ -120,6 +126,7 @@ export const DAYS = [
   {
     month: 'DIC', num: '1', dow: 'Mar',
     port: 'Safari — Ngala', type: 'adventure', typeLabel: 'Safari',
+    weather: { i: '⛈️', t: '31° / 20°', d: 'Verano del bushveld: calor fuerte y tormentas por la tarde' },
     activities: [
       {
         name: 'Día de safari en Ngala',
@@ -133,6 +140,7 @@ export const DAYS = [
   {
     month: 'DIC', num: '2', dow: 'Mié',
     port: 'Safari → Johannesburgo', type: 'travel', typeLabel: 'Día de traslado',
+    weather: { i: '⛈️', t: '26° / 15°', d: 'Verano en el Highveld, con tormentas eléctricas al caer la tarde' },
     activities: [
       {
         name: 'Traslado al aeropuerto de Hoedspruit', travel: true,
@@ -157,6 +165,7 @@ export const DAYS = [
   {
     month: 'DIC', num: '3', dow: 'Jue',
     port: 'Johannesburgo → Singapur', type: 'travel', typeLabel: 'Vuelo largo',
+    weather: { i: '⛈️', t: '26° / 15°', d: 'Verano en el Highveld, con tormentas eléctricas al caer la tarde' },
     activities: [
       {
         name: 'Vuelo SQ479 — Johannesburgo → Singapur', travel: true,
@@ -170,6 +179,7 @@ export const DAYS = [
   {
     month: 'DIC', num: '4', dow: 'Vie',
     port: 'Singapur → Maldivas', type: 'travel', typeLabel: 'Llegada a Maldivas',
+    weather: { i: '🌤️', t: '30° / 26°', d: 'Caluroso y húmedo, con el mar a unos 29°' },
     activities: [
       {
         name: 'Vuelo SQ432 — Singapur → Malé', travel: true,
@@ -194,6 +204,7 @@ export const DAYS = [
   {
     month: 'DIC', num: '5', dow: 'Sáb',
     port: 'Maldivas', type: 'city', typeLabel: 'Resort',
+    weather: { i: '🌤️', t: '30° / 26°', d: 'Caluroso y húmedo, con el mar a unos 29°' },
     activities: [
       {
         name: 'Día libre en Alila Kothaifaru',
@@ -206,6 +217,7 @@ export const DAYS = [
   {
     month: 'DIC', num: '6', dow: 'Dom',
     port: 'Maldivas', type: 'city', typeLabel: 'Resort',
+    weather: { i: '🌤️', t: '30° / 26°', d: 'Caluroso y húmedo, con el mar a unos 29°' },
     activities: [
       {
         name: 'Día libre en Alila Kothaifaru',
@@ -218,6 +230,7 @@ export const DAYS = [
   {
     month: 'DIC', num: '7', dow: 'Lun',
     port: 'Maldivas', type: 'city', typeLabel: 'Resort',
+    weather: { i: '🌤️', t: '30° / 26°', d: 'Caluroso y húmedo, con el mar a unos 29°' },
     activities: [
       {
         name: 'Día libre en Alila Kothaifaru',
@@ -230,6 +243,7 @@ export const DAYS = [
   {
     month: 'DIC', num: '8', dow: 'Mar',
     port: 'Maldivas', type: 'city', typeLabel: 'Resort',
+    weather: { i: '🌤️', t: '30° / 26°', d: 'Caluroso y húmedo, con el mar a unos 29°' },
     activities: [
       {
         name: 'Día libre en Alila Kothaifaru',
@@ -242,6 +256,7 @@ export const DAYS = [
   {
     month: 'DIC', num: '9', dow: 'Mié',
     port: 'Maldivas → Kuala Lumpur → Auckland', type: 'travel', typeLabel: 'Día de vuelos',
+    weather: { i: '🌤️', t: '30° / 26°', d: 'Caluroso y húmedo, con el mar a unos 29°' },
     activities: [
       {
         name: 'Check-out y salida de la isla', travel: true,
@@ -267,6 +282,7 @@ export const DAYS = [
     month: 'DIC', num: '10', dow: 'Jue',
     port: 'Llegada a Auckland', type: 'city', typeLabel: 'Llegada',
     mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-37.00655,174.79034&destination=-36.84335,174.76654&travelmode=driving',
+    weather: { i: '🌤️', t: '22° / 14°', d: 'Inicio del verano, con chubascos ocasionales' },
     activities: [
       {
         name: 'Vuelo MH145 — llegada a Auckland', travel: true,
@@ -290,6 +306,7 @@ export const DAYS = [
     month: 'DIC', num: '11', dow: 'Vie',
     port: 'Auckland', type: 'city', typeLabel: 'Waiheke Island',
     mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-36.84335,174.76654&destination=-36.78059,174.99168&travelmode=transit',
+    weather: { i: '🌤️', t: '22° / 14°', d: 'Inicio del verano, con chubascos ocasionales' },
     activities: [
       {
         name: 'Salida del hotel + ferry a Waiheke', travel: true,
@@ -316,6 +333,7 @@ export const DAYS = [
     month: 'DIC', num: '12', dow: 'Sáb',
     port: 'Auckland → Rotorua', type: 'travel', typeLabel: 'Día de traslado',
     mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-36.84835,174.75927&destination=-38.10875,176.24180&waypoints=-38.26087,175.10354%7C-38.03574,175.84193&travelmode=driving',
+    weather: { i: '🌦️', t: '21° / 12°', d: 'Diciembre es de los meses más lluviosos de Rotorua' },
     activities: [
       {
         name: 'Salida del hotel + recoger auto de alquiler (Divine Rentals)', travel: true,
@@ -351,6 +369,7 @@ export const DAYS = [
     month: 'DIC', num: '13', dow: 'Dom',
     port: 'Rotorua', type: 'adventure', typeLabel: 'Aventura',
     mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-38.10875,176.24180&destination=-38.17578,176.25323&waypoints=-38.05189,176.33803%7C-38.31539,176.37569&travelmode=driving',
+    weather: { i: '🌦️', t: '21° / 12°', d: 'Diciembre es de los meses más lluviosos de Rotorua' },
     activities: [
       {
         name: 'Jet Ski to Sacred Hot Pools on Lake Rotorua (Tandem)',
@@ -383,6 +402,7 @@ export const DAYS = [
     month: 'DIC', num: '14', dow: 'Lun',
     port: 'Rotorua', type: 'adventure', typeLabel: 'Aventura & Spa',
     mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-38.10875,176.24180&destination=-38.13798,176.25827&waypoints=-38.15858,176.27019%7C-38.01782,176.34348&travelmode=driving',
+    weather: { i: '🌦️', t: '21° / 12°', d: 'Diciembre es de los meses más lluviosos de Rotorua' },
     activities: [
       {
         name: 'Hike — Whakarewarewa Forest (The Redwoods)',
@@ -416,6 +436,7 @@ export const DAYS = [
     month: 'DIC', num: '15', dow: 'Mar',
     port: 'Rotorua → Auckland → Queenstown', type: 'travel', typeLabel: 'Día de traslado',
     mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-38.10875,176.24180&destination=-37.00655,174.79034&travelmode=driving',
+    weather: { i: '🌤️', t: '20° / 9°', d: 'Clima alpino y muy variable: conviene ir por capas' },
     activities: [
       {
         name: 'Salida de Rotorua hacia Auckland Airport', travel: true,
@@ -444,6 +465,7 @@ export const DAYS = [
     month: 'DIC', num: '16', dow: 'Mié',
     port: 'Milford Sound', type: 'adventure', typeLabel: 'Fiordos',
     mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-45.02487,168.74103&travelmode=driving',
+    weather: { i: '🌤️', t: '20° / 9°', d: 'Clima alpino y muy variable: conviene ir por capas' },
     activities: [
       {
         name: 'Milford Sound Flight and Cruise Tour',
@@ -464,6 +486,7 @@ export const DAYS = [
     month: 'DIC', num: '17', dow: 'Jue',
     port: 'Queenstown', type: 'adventure', typeLabel: 'Adrenalina & naturaleza',
     mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-45.13257,168.75789&waypoints=-45.03122,168.65970&travelmode=driving',
+    weather: { i: '🌤️', t: '20° / 9°', d: 'Clima alpino y muy variable: conviene ir por capas' },
     activities: [
       {
         name: 'NZONE Skydive — salto tándem',
@@ -491,6 +514,7 @@ export const DAYS = [
     month: 'DIC', num: '18', dow: 'Vie',
     port: 'The Nevis', type: 'adventure', typeLabel: 'Adrenalina',
     mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-45.03091,168.65965&destination=-45.06480,169.02888&travelmode=driving',
+    weather: { i: '🌤️', t: '20° / 9°', d: 'Clima alpino y muy variable: conviene ir por capas' },
     activities: [
       {
         name: 'Nevis Bungy & Swing Combo',
@@ -513,6 +537,7 @@ export const DAYS = [
     month: 'DIC', num: '19', dow: 'Sáb',
     port: 'Lake Tekapo', type: 'travel', typeLabel: 'Excursión privada',
     mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-44.00452,170.47773&travelmode=driving',
+    weather: { i: '🌤️', t: '20° / 9°', d: 'Clima alpino y muy variable: conviene ir por capas' },
     activities: [
       {
         name: 'Lake Tekapo Private Day Trip from Queenstown',
@@ -528,6 +553,7 @@ export const DAYS = [
     month: 'DIC', num: '20', dow: 'Dom',
     port: 'Queenstown', type: 'adventure', typeLabel: 'Jet boat & lago',
     mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-45.03247,168.65918&waypoints=-44.98713,168.67137&travelmode=driving',
+    weather: { i: '🌤️', t: '20° / 9°', d: 'Clima alpino y muy variable: conviene ir por capas' },
     activities: [
       {
         name: 'Shotover River Extreme Jet Boat Ride',
@@ -555,6 +581,7 @@ export const DAYS = [
     month: 'DIC', num: '21', dow: 'Lun',
     port: 'Queenstown → Sídney → Whitsundays', type: 'travel', typeLabel: 'Nueva Zelanda → Australia',
     mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-45.01930,168.74344&travelmode=driving',
+    weather: { i: '🌦️', t: '30° / 24°', d: 'Trópico húmedo: arranca la temporada de lluvias' },
     activities: [
       {
         name: 'Check-out y traslado al aeropuerto', travel: true,
@@ -583,6 +610,7 @@ export const DAYS = [
   {
     month: 'DIC', num: '22', dow: 'Mar',
     port: 'Whitsundays', type: 'city', typeLabel: 'Día libre',
+    weather: { i: '🌦️', t: '30° / 24°', d: 'Trópico húmedo: arranca la temporada de lluvias' },
     activities: [
       {
         name: 'Día libre en Whitsundays',
@@ -595,6 +623,7 @@ export const DAYS = [
   {
     month: 'DIC', num: '23', dow: 'Mié',
     port: 'Whitsundays', type: 'city', typeLabel: 'Día libre',
+    weather: { i: '🌦️', t: '30° / 24°', d: 'Trópico húmedo: arranca la temporada de lluvias' },
     activities: [
       {
         name: 'Día libre en Whitsundays',
@@ -607,6 +636,7 @@ export const DAYS = [
   {
     month: 'DIC', num: '24', dow: 'Jue',
     port: 'Whitsundays', type: 'city', typeLabel: 'Nochebuena',
+    weather: { i: '🌦️', t: '30° / 24°', d: 'Trópico húmedo: arranca la temporada de lluvias' },
     activities: [
       {
         name: 'Día libre en Whitsundays',
@@ -619,6 +649,7 @@ export const DAYS = [
   {
     month: 'DIC', num: '25', dow: 'Vie',
     port: 'Whitsundays → Sídney', type: 'travel', typeLabel: 'Navidad · traslado',
+    weather: { i: '☀️', t: '25° / 18°', d: 'Pleno verano, con el mar a unos 22°' },
     activities: [
       {
         name: 'Check-out y traslado a Hamilton Island', travel: true,
@@ -644,6 +675,7 @@ export const DAYS = [
   {
     month: 'DIC', num: '26', dow: 'Sáb',
     port: 'Sídney', type: 'city', typeLabel: 'Día libre',
+    weather: { i: '☀️', t: '25° / 18°', d: 'Pleno verano, con el mar a unos 22°' },
     activities: [
       {
         name: 'Día libre en Sídney',
@@ -656,6 +688,7 @@ export const DAYS = [
   {
     month: 'DIC', num: '27', dow: 'Dom',
     port: 'Sídney → Houston → Panamá', type: 'travel', typeLabel: 'Regreso a casa',
+    weather: { i: '☀️', t: '25° / 18°', d: 'Pleno verano, con el mar a unos 22°' },
     activities: [
       {
         name: 'Check-out — Pier One', travel: true,
