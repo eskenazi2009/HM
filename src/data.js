@@ -13,7 +13,6 @@ export const DAYS = [
       },
       {
         name: 'Vuelo UA1122 — Newark → Ciudad del Cabo', travel: true,
-        actionBadge: 'Corregir nombre',
         meetingTime: '8:35 p.m.', meetingPlace: 'Newark (EWR) → Cape Town (CPT)', startEnd: 'Llega 6:00 p.m. del 25 · 14 h 25 min',
         description: 'United Airlines UA1122, vuelo nocturno que aterriza en Ciudad del Cabo a las 6:00 p.m. del miércoles 25. Está cargado como DOS reservas separadas: ABW3PE (Rachelle) y MV4Q4R (Raymond). OJO: en la reserva MV4Q4R el nombre aparece como “Raymind Eskenazi Michaan” — hay que pedirle a Viviana que lo corrija antes de emitir.',
       },
@@ -169,7 +168,6 @@ export const DAYS = [
     activities: [
       {
         name: 'Vuelo SQ479 — Johannesburgo → Singapur', travel: true,
-        actionBadge: 'Falta Rachelle',
         meetingTime: '1:40 p.m.', meetingPlace: 'O.R. Tambo (JNB) → Singapur Changi (SIN)', startEnd: 'Llega 6:15 a.m. del 4 · 10 h 35 min',
         description: 'Singapore Airlines SQ479, vuelo nocturno. Localizador FBNPDT. PROBLEMA: en el itinerario oficial este segmento aparece Únicamente a nombre de Raymond — Rachelle no figura en el vuelo. Hay que verificarlo con Viviana con urgencia. Incluye asistencia en el aeropuerto a la salida.',
       },
@@ -183,13 +181,11 @@ export const DAYS = [
     activities: [
       {
         name: 'Vuelo SQ432 — Singapur → Malé', travel: true,
-        actionBadge: 'Confirmar fecha',
         meetingTime: '10:05 a.m.', meetingPlace: 'Singapur Changi (SIN) → Malé (MLE)', startEnd: 'Llega 11:40 a.m. · 4 h 35 min',
         description: 'Singapore Airlines SQ432. Localizador FBNPDT. OJO: el itinerario oficial lista este vuelo bajo el 3 de diciembre, pero el SQ479 no aterriza en Singapur hasta las 6:15 a.m. del 4 — así que la fecha correcta debería ser el 4. Hay que confirmarlo.',
       },
       {
         name: 'Traslado al resort', travel: true,
-        actionBadge: 'Falta traslado',
         meetingTime: 'Por confirmar', meetingPlace: 'Malé (MLE) → Kothaifaru, Raa Atoll', startEnd: '',
         description: 'El Raa Atoll se alcanza en hidroavión o vuelo doméstico más lancha. No hay ningún traslado reservado en el itinerario oficial — hay que confirmarlo con el resort o con Viviana.',
       },
@@ -260,7 +256,6 @@ export const DAYS = [
     activities: [
       {
         name: 'Check-out y salida de la isla', travel: true,
-        actionBadge: 'Revisar horario',
         meetingTime: 'Temprano', meetingPlace: 'Alila Kothaifaru → Malé (MLE)', startEnd: '',
         description: 'El check-out figura a las 12:00 p.m., pero el vuelo a Kuala Lumpur sale de Malé también a las 12:00 p.m. Como del Raa Atoll a Malé hay hidroavión o vuelo doméstico, tienen que salir de la isla temprano en la mañana. Hay que coordinar el check-out anticipado y el traslado.',
       },
@@ -271,7 +266,6 @@ export const DAYS = [
       },
       {
         name: 'Vuelo MH145 — Kuala Lumpur → Auckland', travel: true,
-        actionBadge: 'Conexión corta',
         meetingTime: '8:55 p.m.', meetingPlace: 'Kuala Lumpur (KUL) → Auckland (AKL)', startEnd: 'Llega 12:15 p.m. del 10 · 10 h 20 min',
         description: 'Malaysia Airlines MH145, mismo localizador DTH4EG. OJO: el MH484 aterriza en Kuala Lumpur a las 7:45 p.m. y este sale a las 8:55 p.m. — solo 1 hora 10 minutos de conexión. Van en la misma reserva, así que la aerolínea responde si se atrasa, pero es ajustada.',
       },
@@ -600,7 +594,6 @@ export const DAYS = [
       },
       {
         name: 'Check-in — Hotel Beach Club, Whitsundays', travel: true,
-        actionBadge: 'Penalidad 100%',
         meetingTime: '4:00 p.m.', meetingPlace: 'Hotel Beach Club, 9 Resort Dr, Whitsundays QLD', startEnd: '4 noches',
         description: 'Habitación Beach Club Room, cama King, del 21 al 25 de diciembre (check-out 11:00 a.m.). Confirmación SH30025471. Incluye desayuno y traslado gratuito desde el aeropuerto y el ferry, pero hay que contactar al hotel 24 horas antes para coordinarlo — no hay traslado reservado. OJO con la política de cancelación: la ventana con 20% de penalidad vencía el 22 de octubre a la 1:00 a.m. hora local del hotel; después de esa fecha cualquier cambio o cancelación cuesta el 100%.',
       },
@@ -653,19 +646,16 @@ export const DAYS = [
     activities: [
       {
         name: 'Check-out y traslado a Hamilton Island', travel: true,
-        actionBadge: 'Aeropuertos distintos',
         meetingTime: '11:00 a.m.', meetingPlace: 'Hotel Beach Club → Hamilton Island (HTI)', startEnd: '',
         description: 'OJO: llegaron por el aeropuerto de Proserpine (PPP) pero el vuelo de salida es desde Hamilton Island (HTI), que es otro aeropuerto — se llega en ferry. Además el check-out es a las 11:00 a.m. y el vuelo sale a las 11:55 a.m., así que el margen es muy corto. No hay ningún traslado reservado: hay que resolverlo con Viviana.',
       },
       {
         name: 'Vuelo QF579 — Hamilton Island → Sídney', travel: true,
-        actionBadge: 'Verificar boleto',
         meetingTime: '11:55 a.m.', meetingPlace: 'Hamilton Island (HTI) → Sydney (SYD)', startEnd: 'Llega 3:15 p.m. · 2 h 20 min',
         description: 'Qantas QF579. Localizador CBE5RE. Una pieza de equipaje por persona. Boletos: 081-7497103738 (Rachelle) y 081-749710373 (Raymond) — el de Raymond tiene un dígito menos que el de Rachelle, hay que verificarlo.',
       },
       {
         name: 'Check-in — Pier One Sydney Harbour', travel: true,
-        actionBadge: 'Corregir nombre',
         meetingTime: '3:00 p.m.', meetingPlace: 'Pier One, 11 Hickson Road, Walsh Bay', startEnd: 'Hasta el 27 dic',
         description: 'Habitación Partial Water View, cama King, en un muelle histórico debajo del Harbour Bridge. Confirmación 97130874. Teléfono 61 2-8298-9999. El huesped figura como “Raymond Eskenazi”, sin “Michaan”: conviene corregirlo. El itinerario tampoco imprime la fecha de check-out, solo la hora (11:00 a.m.).',
       },
@@ -692,13 +682,11 @@ export const DAYS = [
     activities: [
       {
         name: 'Check-out — Pier One', travel: true,
-        actionBadge: 'Revisar horario',
         meetingTime: 'Madrugada', meetingPlace: 'Pier One → Sydney (SYD)', startEnd: '',
         description: 'El vuelo sale a las 9:15 a.m., así que hay que salir del hotel de madrugada. El itinerario muestra el check-out a las 11:00 a.m. (sin fecha), lo cual no cuadra con el vuelo: hay que coordinar la salida temprana. No hay traslado reservado al aeropuerto.',
       },
       {
         name: 'Vuelo UA100 — Sídney → Houston', travel: true,
-        actionBadge: 'Falta boleto de Rachelle',
         meetingTime: '9:15 a.m.', meetingPlace: 'Sydney (SYD) → Houston (IAH)', startEnd: 'Llega 7:55 a.m. · 15 h 40 min',
         description: 'United Airlines UA100. Por cruzar la línea de cambio de fecha, llegan a Houston la mañana del mismo 27. Localizador ABX40E. Boleto de Raymond: 2302155054681. En el itinerario oficial no aparece el número de boleto de Rachelle en este tramo — hay que pedirlo.',
       },
