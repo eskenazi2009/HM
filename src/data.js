@@ -602,16 +602,17 @@ export const DAYS = [
   },
   {
     month: 'DIC', num: '22', dow: 'Mar',
-    port: 'Whitsundays', type: 'city', typeLabel: 'Día libre',
+    port: 'Whitsundays', type: 'adventure', typeLabel: 'Buceo',
     weather: { i: '🌦️', t: '30° / 25°', d: 'Trópico húmedo: calor, humedad y chubascos de tarde; mar a 27–28° (temporada de medusas: stinger suit)' },
     activities: [
       {
-        name: 'Día libre en Whitsundays',
-        meetingTime: 'Todo el día', meetingPlace: 'Hotel Beach Club', startEnd: '',
-        description: 'No hay nada reservado. Zona de la Gran Barrera de Coral: Whitehaven Beach, snorkel y salidas en barco son los planes habituales desde aquí.',
+        name: 'Scuba diving — Gran Barrera de Coral',
+        operator: 'Salida en barco · día completo',
+        meetingTime: '8:00 a.m.', meetingPlace: 'Salida desde Whitsundays', startEnd: 'Regreso 4:00 p.m. · ~8 h',
+        description: 'Día completo de buceo en la Gran Barrera de Coral. Salen a las 8:00 a.m. y vuelven a las 4:00 p.m. Es temporada de medusas: llevar o pedir stinger suit. Desayuno en el hotel antes de salir.',
       },
     ],
-    notes: 'Noche en Hotel Beach Club, Whitsundays.',
+    notes: 'Noche en Hotel Beach Club, Whitsundays. Día de buceo: salen 8:00 a.m. y regresan 4:00 p.m.',
   },
   {
     month: 'DIC', num: '23', dow: 'Mié',
