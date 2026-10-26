@@ -606,13 +606,14 @@ export const DAYS = [
     weather: { i: '🌦️', t: '30° / 25°', d: 'Trópico húmedo: calor, humedad y chubascos de tarde; mar a 27–28° (temporada de medusas: stinger suit)' },
     activities: [
       {
-        name: 'Scuba diving — Gran Barrera de Coral',
-        operator: 'Salida en barco · día completo',
-        meetingTime: '8:00 a.m.', meetingPlace: 'Salida desde Whitsundays', startEnd: 'Regreso 4:00 p.m. · ~8 h',
-        description: 'Día completo de buceo en la Gran Barrera de Coral. Salen a las 8:00 a.m. y vuelven a las 4:00 p.m. Es temporada de medusas: llevar o pedir stinger suit. Desayuno en el hotel antes de salir.',
+        name: 'Full Day Cert Dive the Great Barrier Reef — Hamilton Island',
+        operator: 'Explore Group · 2 buceos certificados · Reservado y pagado',
+        meetingTime: '7:45 a.m.', meetingPlace: 'Jetty A9/10, Hamilton Island Marina (frente al Explore Shop)', startEnd: 'Sale 8:00 a.m. · Regresa 4:00 p.m.',
+        description: 'Día completo de buceo certificado en la Gran Barrera de Coral con Explore Group, para 2 adultos. El barco sale a las 8:00 a.m. y regresa a las 4:00 p.m.; hay que estar en el Jetty A9/10 de la marina de Hamilton Island al menos 15 minutos antes. OJO: el tour sale ÚNICAMENTE desde Hamilton Island. Referencia 981276 · booking ref 292101. Pagado en full. ACCIÓN PENDIENTE: la reserva no queda confirmada hasta llenar el Diver Registration y el Medical Questionnaire (botón "Complete Dive Form" en el correo de confirmación de Explore del 25 de octubre). Llevar: traje de baño y toalla, protección solar, cámara, tarjeta (no aceptan efectivo), zapatos de suela plana, botella de agua y pastillas para el mareo si hacen falta. Cancelación gratis con más de 48 h de anticipación; entre 24 y 48 h cobran 50%; con menos de 24 h no hay reembolso. Si Explore cancela por clima, reprograman o devuelven todo; si el clima obliga a cambiar la ruta, ofrecen un crucero alterno de día completo con dos paradas en el arrecife interior.',
+        link: 'https://www.google.com/maps/search/?api=1&query=Hamilton+Island+Marina+Jetty+A9',
       },
     ],
-    notes: 'Noche en Hotel Beach Club, Whitsundays. Día de buceo: salen 8:00 a.m. y regresan 4:00 p.m.',
+    notes: 'Noche en Hotel Beach Club, Whitsundays. Día de buceo: salen 8:00 a.m. y regresan 4:00 p.m. Pendiente llenar el formulario médico de Explore.',
   },
   {
     month: 'DIC', num: '23', dow: 'Mié',
