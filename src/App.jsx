@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { DAYS, TODO } from './data.js'
+import { DAYS, TODO, OPCIONES } from './data.js'
 import heroImg from './assets/hero.jpg'
 
 const TODO_STORAGE_KEY = 'hm-todo-done-v1'
@@ -143,6 +143,50 @@ function TodoList() {
   )
 }
 
+function OptionGroup({ label, items }) {
+  return (
+    <div className="opt-group">
+      <div className="opt-label">{label}</div>
+      {items.length === 0 ? (
+        <div className="opt-empty">Sin opciones todavía</div>
+      ) : (
+        items.map((it, i) => (
+          <div className="opt-item" key={i}>
+            <div className="opt-name">{it.name}</div>
+            {it.note && <div className="opt-note">{it.note}</div>}
+            {it.link && (
+              <a className="opt-link" href={it.link} target="_blank" rel="noopener noreferrer">
+                Ver
+              </a>
+            )}
+          </div>
+        ))
+      )}
+    </div>
+  )
+}
+
+function Opciones() {
+  return (
+    <div className="todo-page">
+      <div className="todo-hero">
+        <div className="todo-title">Opciones</div>
+        <div className="todo-progress-label">
+          Lugares para comer y actividades posibles, por destino. Se va llenando sobre la marcha.
+        </div>
+      </div>
+
+      {OPCIONES.map((group) => (
+        <div className="todo-section" key={group.city}>
+          <div className="todo-section-title">{group.city}</div>
+          <OptionGroup label="Para comer" items={group.comer} />
+          <OptionGroup label="Actividades" items={group.actividades} />
+        </div>
+      ))}
+    </div>
+  )
+}
+
 function Modal({ activity, onClose }) {
   useEffect(() => {
     const onKey = (e) => e.key === 'Escape' && onClose()
@@ -223,6 +267,12 @@ export default function App() {
         >
           To Do List
         </button>
+        <button
+          className={'tab-btn' + (tab === 'opciones' ? ' tab-btn--active' : '')}
+          onClick={() => setTab('opciones')}
+        >
+          Opciones
+        </button>
       </div>
 
       {tab === 'itinerary' && (
@@ -249,6 +299,8 @@ export default function App() {
       )}
 
       {tab === 'todo' && <TodoList />}
+
+      {tab === 'opciones' && <Opciones />}
 
       {selected && <Modal activity={selected} onClose={() => setSelected(null)} />}
     </div>

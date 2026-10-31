@@ -762,3 +762,17 @@ export const TODO = [
     ],
   },
 ]
+
+// Opciones por lugar: restaurantes y actividades posibles, se van llenando.
+// Cada item: { name, note?, link? }
+export const OPCIONES = [
+  { city: 'Ciudad del Cabo (25–29 nov)', comer: [], actividades: [] },
+  { city: 'Safari · Ngala (29 nov–2 dic)', comer: [], actividades: [] },
+  { city: 'Johannesburgo (2–3 dic)', comer: [], actividades: [] },
+  { city: 'Maldivas (4–9 dic)', comer: [], actividades: [] },
+  { city: 'Auckland (10–12 dic)', comer: [], actividades: [] },
+  { city: 'Rotorua (12–15 dic)', comer: [], actividades: [] },
+  { city: 'Queenstown (15–21 dic)', comer: [], actividades: [] },
+  { city: 'Whitsundays (21–25 dic)', comer: [], actividades: [] },
+  { city: 'Sídney (25–27 dic)', comer: [], actividades: [] },
+]
