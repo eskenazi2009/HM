@@ -52,6 +52,9 @@ a{color:var(--blue)}
   padding:10px 12px;margin-bottom:8px}
 .opt-label{text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted);
   margin-bottom:4px;font-size:11px;font-weight:700}
+.opt-sub{padding:6px 0 2px}
+.opt-sub+.opt-sub{border-top:1px solid var(--pale2);margin-top:4px;padding-top:8px}
+.opt-sublabel{color:var(--blue);font-size:12.5px;font-weight:800;margin-bottom:1px}
 .opt-empty{color:var(--text-muted);font-size:13px;font-style:italic;opacity:.7}
 .opt-item{padding:7px 0}
 .opt-item+.opt-item{border-top:1px solid var(--pale-blue)}

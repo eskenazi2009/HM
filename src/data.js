@@ -764,28 +764,35 @@ export const TODO = [
 ]
 
 // Opciones por lugar: restaurantes y actividades posibles, se van llenando.
-// Cada item: { name, note?, link? }
+// comer se divide en brunch / almuerzo / cena / bar. Cada item: { name, note?, link? }
 export const OPCIONES = [
   {
     city: 'Ciudad del Cabo (25–29 nov)',
-    comer: [
-      { name: 'Time Out Market', note: 'Almuerzo · food hall en la Old Power Station, 19 Dock Road, V&A Waterfront. Abre 11:00 a.m.–10:00 p.m. (hasta 11:00 p.m. jue–sáb).' },
-      { name: 'Gigi Rooftop · Hotel Gorgeous George', note: 'Bar en la azotea del hotel (piso 6, 118 St Georges Mall, centro). Bonito para el sunset.' },
-      { name: 'Hacienda', note: 'Restaurante mexicano y bar de tequilas · 92 Bree Street, centro. Abre todos los días ~12:00–10:30 p.m.; happy hour de margaritas desde las 4:00 p.m.' },
-      { name: 'The Pot Luck Club', note: 'Almuerzo · tapas de autor en el último piso del Silo, Old Biscuit Mill, 373 Albert Road, Woodstock. Almuerzo desde las 12:30 p.m.; conviene reservar con anticipación. El sábado se combina con el Neighbourgoods Market, que está en el mismo lugar.' },
-      { name: 'Chinchilla', note: 'Bar en la azotea · 2.º piso de The Promenade, Victoria Road, Camps Bay. Vista a la playa y a los Doce Apóstoles; abre desde las 12:00 vie–dom y desde las 4:00 p.m. lun–jue.' },
-      { name: 'Figo', note: 'Cena · italiano en el piso 8 del hotel The Cole, 1 Church Road, Sea Point. Ventanales y terraza frente al Atlántico; conviene reservar mesa junto a la ventana.' },
-      { name: 'Baptiste Rooftop', note: 'Bar en la azotea del hotel The Marly, The Promenade, 201 Victoria Road, Camps Bay. Vista 360° al mar y los Doce Apóstoles, ideal para el sunset; abre ~12:00–8:00 p.m. (viernes desde las 4:00 p.m.). Está en el mismo edificio que Chinchilla.' },
-    ],
+    comer: {
+      brunch: [],
+      almuerzo: [
+        { name: 'Time Out Market', note: 'Food hall en la Old Power Station, 19 Dock Road, V&A Waterfront. Abre 11:00 a.m.–10:00 p.m. (hasta 11:00 p.m. jue–sáb).' },
+        { name: 'The Pot Luck Club', note: 'Tapas de autor en el último piso del Silo, Old Biscuit Mill, 373 Albert Road, Woodstock. Almuerzo desde las 12:30 p.m.; conviene reservar con anticipación. El sábado se combina con el Neighbourgoods Market, que está en el mismo lugar.' },
+      ],
+      cena: [
+        { name: 'Figo', note: 'Italiano en el piso 8 del hotel The Cole, 1 Church Road, Sea Point. Ventanales y terraza frente al Atlántico; conviene reservar mesa junto a la ventana.' },
+      ],
+      bar: [
+        { name: 'Gigi Rooftop · Hotel Gorgeous George', note: 'En la azotea del hotel (piso 6, 118 St Georges Mall, centro). Bonito para el sunset.' },
+        { name: 'Hacienda', note: 'Restaurante mexicano y bar de tequilas · 92 Bree Street, centro. Abre todos los días ~12:00–10:30 p.m.; happy hour de margaritas desde las 4:00 p.m. También sirve para cenar.' },
+        { name: 'Chinchilla', note: 'En la azotea · 2.º piso de The Promenade, Victoria Road, Camps Bay. Vista a la playa y a los Doce Apóstoles; abre desde las 12:00 vie–dom y desde las 4:00 p.m. lun–jue.' },
+        { name: 'Baptiste Rooftop', note: 'En la azotea del hotel The Marly, The Promenade, 201 Victoria Road, Camps Bay. Vista 360° al mar y los Doce Apóstoles, ideal para el sunset; abre ~12:00–8:00 p.m. (viernes desde las 4:00 p.m.). Está en el mismo edificio que Chinchilla.' },
+      ],
+    },
     actividades: [
       { name: 'Pasear por el wharf', note: 'V&A Waterfront: muelles, tiendas y el Time Out Market ahí mismo.' },
       { name: "Hike Lion's Head Trail", note: 'Subida de unas 2–3 h ida y vuelta con vistas a Table Mountain y Camps Bay; clásico al amanecer o al atardecer. Sin reserva.' },
     ],
   },
-  { city: 'Johannesburgo (2–3 dic)', comer: [], actividades: [] },
-  { city: 'Auckland (10–12 dic)', comer: [], actividades: [] },
-  { city: 'Rotorua (12–15 dic)', comer: [], actividades: [] },
-  { city: 'Queenstown (15–21 dic)', comer: [], actividades: [] },
-  { city: 'Whitsundays (21–25 dic)', comer: [], actividades: [] },
-  { city: 'Sídney (25–27 dic)', comer: [], actividades: [] },
+  { city: 'Johannesburgo (2–3 dic)', comer: { brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
+  { city: 'Auckland (10–12 dic)', comer: { brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
+  { city: 'Rotorua (12–15 dic)', comer: { brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
+  { city: 'Queenstown (15–21 dic)', comer: { brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
+  { city: 'Whitsundays (21–25 dic)', comer: { brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
+  { city: 'Sídney (25–27 dic)', comer: { brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
 ]

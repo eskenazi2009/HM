@@ -143,25 +143,47 @@ function TodoList() {
   )
 }
 
+const COMER_TIPOS = [
+  ['brunch', 'Brunch'],
+  ['almuerzo', 'Almuerzo'],
+  ['cena', 'Cena'],
+  ['bar', 'Bar'],
+]
+
+function OptionItems({ items }) {
+  if (items.length === 0) return <div className="opt-empty">Sin opciones todavía</div>
+  return items.map((it, i) => (
+    <div className="opt-item" key={i}>
+      <div className="opt-name">{it.name}</div>
+      {it.note && <div className="opt-note">{it.note}</div>}
+      {it.link && (
+        <a className="opt-link" href={it.link} target="_blank" rel="noopener noreferrer">
+          Ver
+        </a>
+      )}
+    </div>
+  ))
+}
+
 function OptionGroup({ label, items }) {
   return (
     <div className="opt-group">
       <div className="opt-label">{label}</div>
-      {items.length === 0 ? (
-        <div className="opt-empty">Sin opciones todavía</div>
-      ) : (
-        items.map((it, i) => (
-          <div className="opt-item" key={i}>
-            <div className="opt-name">{it.name}</div>
-            {it.note && <div className="opt-note">{it.note}</div>}
-            {it.link && (
-              <a className="opt-link" href={it.link} target="_blank" rel="noopener noreferrer">
-                Ver
-              </a>
-            )}
-          </div>
-        ))
-      )}
+      <OptionItems items={items} />
+    </div>
+  )
+}
+
+function ComerGroup({ comer }) {
+  return (
+    <div className="opt-group">
+      <div className="opt-label">Para comer</div>
+      {COMER_TIPOS.map(([key, label]) => (
+        <div className="opt-sub" key={key}>
+          <div className="opt-sublabel">{label}</div>
+          <OptionItems items={comer[key]} />
+        </div>
+      ))}
     </div>
   )
 }
@@ -179,7 +201,7 @@ function Opciones() {
       {OPCIONES.map((group) => (
         <div className="todo-section" key={group.city}>
           <div className="todo-section-title">{group.city}</div>
-          <OptionGroup label="Para comer" items={group.comer} />
+          <ComerGroup comer={group.comer} />
           <OptionGroup label="Actividades" items={group.actividades} />
         </div>
       ))}
