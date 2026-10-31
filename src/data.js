@@ -169,8 +169,14 @@ export const DAYS = [
         meetingTime: 'Al llegar', meetingPlace: 'City Lodge OR Tambo International Airport', startEnd: '1 noche',
         description: 'Habitación Standard con desayuno, dentro del aeropuerto. Una sola noche para conectar con el vuelo a Singapur del día siguiente.',
       },
+      {
+        name: 'Nine Yards',
+        operator: 'Parktown North · 167 Jan Smuts Avenue, esquina Chester Road',
+        meetingTime: '~5:00 p.m.', meetingPlace: '', startEnd: 'Abre hasta las 6:00 p.m.',
+        description: 'Precinto al aire libre abierto en 2026: nueve propiedades históricas unidas en un paseo peatonal entre bambú, con tiendas de diseño, galerías, cafés y restaurantes (Salvation Café, Platō Coffee, Ole Ole, Doppio Bistrot, Ti Amo Deli). Los listados dan horario de 7:00 a.m. a 6:00 p.m. todos los días, así que conviene salir del City Lodge hacia las 4:30 p.m.: son ~23 km (26 min sin tráfico, pero a esa hora es hora pico). Queda a 1 km de Marble (2–3 min en Uber) para seguir con el atardecer a las 6:46 p.m.',
+      },
     ],
-    notes: 'Noche en City Lodge OR Tambo, Johannesburgo.',
+    notes: 'Noche en City Lodge OR Tambo, Johannesburgo. Regreso al hotel en Uber: el Gautrain deja de operar a las 8:30 p.m.',
   },
   {
     month: 'DIC', num: '3', dow: 'Jue',
@@ -799,7 +805,21 @@ export const OPCIONES = [
       { name: "Hike Lion's Head Trail", note: 'Subida de unas 2–3 h ida y vuelta con vistas a Table Mountain y Camps Bay; clásico al amanecer o al atardecer. Sin reserva.' },
     ],
   },
-  { city: 'Johannesburgo (2–3 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
+  {
+    city: 'Johannesburgo (2–3 dic)',
+    comer: {
+      cafe: [],
+      brunch: [],
+      almuerzo: [],
+      cena: [
+        { name: 'Marble', note: 'Parrilla a la leña del chef David Higgs en la azotea de Trumpet on Keyes (esquina Keyes y Jellicoe), Rosebank, con vista al oeste hacia el Magaliesberg. Cena de 5:00 a 10:00 p.m.; reserva obligatoria (+27 10 594 5550, WhatsApp o DinePlan). Pedir mesa en el balcón o junto a la ventana para el atardecer (6:46 p.m. el 2 dic). El bar de la azotea abre de 12:00 a 10:00 p.m. sin reserva. A 1 km de Nine Yards.' },
+      ],
+      bar: [
+        { name: 'Alto234', note: 'Bar en el piso 57 de The Leonardo, 75 Maude Street, Sandton, con vista de 360°. Entrada de R390 por persona con una copa de Moët incluida; abre de martes a domingo y depende del clima (es al aire libre). Está a pocas cuadras de la estación Sandton del Gautrain, que va directo al aeropuerto.' },
+      ],
+    },
+    actividades: [],
+  },
   { city: 'Auckland (10–12 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
   { city: 'Rotorua (12–15 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
   { city: 'Queenstown (15–21 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
