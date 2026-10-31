@@ -144,6 +144,7 @@ function TodoList() {
 }
 
 const COMER_TIPOS = [
+  ['cafe', 'Café'],
   ['brunch', 'Brunch'],
   ['almuerzo', 'Almuerzo'],
   ['cena', 'Cena'],

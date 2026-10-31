@@ -764,18 +764,30 @@ export const TODO = [
 ]
 
 // Opciones por lugar: restaurantes y actividades posibles, se van llenando.
-// comer se divide en brunch / almuerzo / cena / bar. Cada item: { name, note?, link? }
+// comer se divide en cafe / brunch / almuerzo / cena / bar. Cada item: { name, note?, link? }
 export const OPCIONES = [
   {
     city: 'Ciudad del Cabo (25–29 nov)',
     comer: {
-      brunch: [],
+      cafe: [
+        { name: 'Cookie Co.', note: 'La más cercana: 16 Bree Street, a 4 min a pie del hotel. Lun–vie 7:00 a.m.–4:00 p.m., sáb 9:00–4:00, dom 9:00–1:00.' },
+        { name: 'Truth Coffee', note: '1 Somerset Road (esquina Buitengracht), Green Point · a 8 min a pie. Tostadores de culto de Ciudad del Cabo.' },
+        { name: 'Origin Coffee Roasting', note: '28 Hudson Street, De Waterkant · a 11 min a pie. Los pioneros del café de especialidad en la ciudad (desde 2006).' },
+        { name: 'Bootlegger Coffee Company', note: 'Somerset Road, De Waterkant · a 11 min a pie.' },
+        { name: 'Rosetta Roastery', note: '101 Bree Street (esquina Shortmarket) · a 11 min a pie. Lun–sáb 8:00 a.m.–4:00 p.m., dom 8:00–2:00.' },
+        { name: 'Espressolab', note: 'De Smidt Street, Green Point (junto a De Waterkant). Puesto 40 en la lista World’s 100 Best Coffee Shops 2026 (y 11 en 2025).' },
+      ],
+      brunch: [
+        { name: 'Jarryds', note: 'Menú de brunch todo el día · 90 Regent Road, Sea Point, a ~7 min en carro del hotel. No aceptan reservas.' },
+      ],
       almuerzo: [
         { name: 'Time Out Market', note: 'Food hall en la Old Power Station, 19 Dock Road, V&A Waterfront. Abre 11:00 a.m.–10:00 p.m. (hasta 11:00 p.m. jue–sáb).' },
         { name: 'The Pot Luck Club', note: 'Tapas de autor en el último piso del Silo, Old Biscuit Mill, 373 Albert Road, Woodstock. Almuerzo desde las 12:30 p.m.; conviene reservar con anticipación. El sábado se combina con el Neighbourgoods Market, que está en el mismo lugar.' },
+        { name: 'Chefs Warehouse at Tintswalo Atlantic', note: 'Para el jueves 26 nov (día del tour de Cape Point): está en Chapman’s Peak Drive, Hout Bay, en la misma ruta; hay que pedirle al guía la parada. Almuerzo todos los días 12:00–4:30 p.m. (último pedido de tapas 2:30 p.m.); reserva obligatoria, +27 21 541 0165. La sede de Bree Street cerró en julio de 2026. Alternativa en ruta: Chefs Warehouse at Beau Constantia (almuerzo desde las 12:00, último pedido 2:30 p.m., +27 21 794 8632).' },
       ],
       cena: [
         { name: 'Figo', note: 'Italiano en el piso 8 del hotel The Cole, 1 Church Road, Sea Point. Ventanales y terraza frente al Atlántico; conviene reservar mesa junto a la ventana.' },
+        { name: 'Nobu', note: 'Japonés-peruano en el hotel One&Only, Dock Road, V&A Waterfront · a 3 min en carro o ~20 min a pie del hotel. Todos los días 6:00–11:00 p.m.; reservar, +27 21 431 5888.' },
       ],
       bar: [
         { name: 'Gigi Rooftop · Hotel Gorgeous George', note: 'En la azotea del hotel (piso 6, 118 St Georges Mall, centro). Bonito para el sunset.' },
@@ -789,10 +801,10 @@ export const OPCIONES = [
       { name: "Hike Lion's Head Trail", note: 'Subida de unas 2–3 h ida y vuelta con vistas a Table Mountain y Camps Bay; clásico al amanecer o al atardecer. Sin reserva.' },
     ],
   },
-  { city: 'Johannesburgo (2–3 dic)', comer: { brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
-  { city: 'Auckland (10–12 dic)', comer: { brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
-  { city: 'Rotorua (12–15 dic)', comer: { brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
-  { city: 'Queenstown (15–21 dic)', comer: { brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
-  { city: 'Whitsundays (21–25 dic)', comer: { brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
-  { city: 'Sídney (25–27 dic)', comer: { brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
+  { city: 'Johannesburgo (2–3 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
+  { city: 'Auckland (10–12 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
+  { city: 'Rotorua (12–15 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
+  { city: 'Queenstown (15–21 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
+  { city: 'Whitsundays (21–25 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
+  { city: 'Sídney (25–27 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
 ]
