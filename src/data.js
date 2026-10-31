@@ -175,6 +175,12 @@ export const DAYS = [
         meetingTime: '~5:00 p.m.', meetingPlace: '', startEnd: 'Abre hasta las 6:00 p.m.',
         description: 'Precinto al aire libre abierto en 2026: nueve propiedades históricas unidas en un paseo peatonal entre bambú, con tiendas de diseño, galerías, cafés y restaurantes (Salvation Café, Platō Coffee, Ole Ole, Doppio Bistrot, Ti Amo Deli). Los listados dan horario de 7:00 a.m. a 6:00 p.m. todos los días, así que conviene salir del City Lodge hacia las 4:30 p.m.: son ~23 km (26 min sin tráfico, pero a esa hora es hora pico). Queda a 1 km de Marble (2–3 min en Uber) para seguir con el atardecer a las 6:46 p.m.',
       },
+      {
+        name: 'Cena en Marble',
+        operator: 'Rosebank · Trumpet on Keyes, esquina Keyes y Jellicoe',
+        meetingTime: '8:30 p.m.', meetingPlace: 'Marble', startEnd: 'Reservado',
+        description: 'Reserva confirmada a las 8:30 p.m. Parrilla a la leña del chef David Higgs en la azotea del Keyes Art Mile. El atardecer es a las 6:46 p.m., antes de la cena: el bar de la azotea de Marble abre hasta las 10:00 p.m. sin reserva, así que se puede llegar desde Nine Yards (a 1 km) para ver el sol y quedarse a cenar. Regreso al City Lodge en Uber (~26 min); el Gautrain ya no opera a esa hora.',
+      },
     ],
     notes: 'Noche en City Lodge OR Tambo, Johannesburgo. Regreso al hotel en Uber: el Gautrain deja de operar a las 8:30 p.m.',
   },
@@ -812,7 +818,7 @@ export const OPCIONES = [
       brunch: [],
       almuerzo: [],
       cena: [
-        { name: 'Marble', note: 'Parrilla a la leña del chef David Higgs en la azotea de Trumpet on Keyes (esquina Keyes y Jellicoe), Rosebank, con vista al oeste hacia el Magaliesberg. Cena de 5:00 a 10:00 p.m.; reserva obligatoria (+27 10 594 5550, WhatsApp o DinePlan). Pedir mesa en el balcón o junto a la ventana para el atardecer (6:46 p.m. el 2 dic). El bar de la azotea abre de 12:00 a 10:00 p.m. sin reserva. A 1 km de Nine Yards.' },
+        { name: 'Marble', note: 'Reservado: miércoles 2 dic a las 8:30 p.m. Parrilla a la leña del chef David Higgs en la azotea de Trumpet on Keyes (esquina Keyes y Jellicoe), Rosebank, con vista al oeste hacia el Magaliesberg. Cena de 5:00 a 10:00 p.m.; reserva obligatoria (+27 10 594 5550, WhatsApp o DinePlan). Pedir mesa en el balcón o junto a la ventana para el atardecer (6:46 p.m. el 2 dic). El bar de la azotea abre de 12:00 a 10:00 p.m. sin reserva. A 1 km de Nine Yards.' },
       ],
       bar: [
         { name: 'Alto234', note: 'Bar en el piso 57 de The Leonardo, 75 Maude Street, Sandton, con vista de 360°. Entrada de R390 por persona con una copa de Moët incluida; abre de martes a domingo y depende del clima (es al aire libre). Está a pocas cuadras de la estación Sandton del Gautrain, que va directo al aeropuerto.' },
