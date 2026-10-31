@@ -766,10 +766,19 @@ export const TODO = [
 // Opciones por lugar: restaurantes y actividades posibles, se van llenando.
 // Cada item: { name, note?, link? }
 export const OPCIONES = [
-  { city: 'Ciudad del Cabo (25–29 nov)', comer: [], actividades: [] },
-  { city: 'Safari · Ngala (29 nov–2 dic)', comer: [], actividades: [] },
+  {
+    city: 'Ciudad del Cabo (25–29 nov)',
+    comer: [
+      { name: 'Time Out Market', note: 'Almuerzo · food hall en la Old Power Station, 19 Dock Road, V&A Waterfront. Abre 11:00 a.m.–10:00 p.m. (hasta 11:00 p.m. jue–sáb).' },
+      { name: 'Gigi Rooftop · Hotel Gorgeous George', note: 'Bar en la azotea del hotel (piso 6, 118 St Georges Mall, centro). Bonito para el sunset.' },
+      { name: 'Hacienda', note: 'Restaurante mexicano y bar de tequilas · 92 Bree Street, centro. Abre todos los días ~12:00–10:30 p.m.; happy hour de margaritas desde las 4:00 p.m.' },
+    ],
+    actividades: [
+      { name: 'Pasear por el wharf', note: 'V&A Waterfront: muelles, tiendas y el Time Out Market ahí mismo.' },
+      { name: "Hike Lion's Head Trail", note: 'Subida de unas 2–3 h ida y vuelta con vistas a Table Mountain y Camps Bay; clásico al amanecer o al atardecer. Sin reserva.' },
+    ],
+  },
   { city: 'Johannesburgo (2–3 dic)', comer: [], actividades: [] },
-  { city: 'Maldivas (4–9 dic)', comer: [], actividades: [] },
   { city: 'Auckland (10–12 dic)', comer: [], actividades: [] },
   { city: 'Rotorua (12–15 dic)', comer: [], actividades: [] },
   { city: 'Queenstown (15–21 dic)', comer: [], actividades: [] },
