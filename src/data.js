@@ -76,12 +76,25 @@ export const DAYS = [
     weather: { i: '☀️', t: '24° / 13°', d: 'Primavera tardía: seco y soleado, con el viento del sureste («Cape Doctor»)' },
     activities: [
       {
-        name: 'Día libre en Ciudad del Cabo',
-        meetingTime: 'Todo el día', meetingPlace: '', startEnd: '',
-        description: 'No hay nada reservado este día en ninguno de los dos itinerarios. Queda libre para la ciudad: V&A Waterfront, Bo-Kaap, Robben Island o la playa de Camps Bay.',
+        name: 'Pasear por el mercado',
+        meetingTime: 'Mañana', meetingPlace: '', startEnd: '',
+        description: 'Sábado de mercados: Oranjezicht City Farm Market en el V&A Waterfront (Granger Bay, 8:00 a.m.–2:00 p.m., comida y productores locales) o Neighbourgoods Market en The Old Biscuit Mill, Woodstock (9:00 a.m.–3:00 p.m.). Sin reserva.',
+      },
+      {
+        name: 'Cheetah Outreach',
+        operator: 'Somerset West · De Beers Avenue, frente al Somerset Mall',
+        actionBadge: 'Por reservar',
+        meetingTime: 'Por definir', meetingPlace: '', startEnd: '',
+        description: 'Centro de conservación de guepardos a unos 45 min del hotel, en dirección a Stellenbosch. Abre todos los días de 10:00 a.m. a 5:00 p.m.; el encuentro con los guepardos se reserva con anticipación en cheetah.co.za (+27 82 623 9960). Llegar 15 min antes de la hora reservada.',
+      },
+      {
+        name: 'Four wheels (quads) · Dunas de Atlantis',
+        actionBadge: 'Por reservar',
+        meetingTime: 'Por definir', meetingPlace: '', startEnd: '',
+        description: 'Recorrido en quad de ~1 h (más briefing) por las dunas de Atlantis, a unos 45 min al norte de la ciudad; el permiso de entrada a las dunas se paga aparte al llegar. Queda en dirección opuesta a Cheetah Outreach, así que conviene hacer uno por la mañana y el otro por la tarde.',
       },
     ],
-    notes: 'Noche en Southern Sun The Cullinan, Ciudad del Cabo. Última noche en la ciudad.',
+    notes: 'Noche en Southern Sun The Cullinan, Ciudad del Cabo. Última noche en la ciudad. Si sobra tiempo: Bo-Kaap, Robben Island o la playa de Camps Bay.',
   },
   {
     month: 'NOV', num: '29', dow: 'Dom',
@@ -737,7 +750,9 @@ export const TODO = [
   {
     city: 'Cape Town',
     items: [
-      'Tour día libre (hot air balloon, four wheels)',
+      'Reservar Cheetah Outreach (28 nov)',
+      'Reservar four wheels en las dunas de Atlantis (28 nov)',
+      'Hot air balloon (idea para el día libre)',
     ],
   },
   {
