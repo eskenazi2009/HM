@@ -828,7 +828,23 @@ export const OPCIONES = [
   },
   { city: 'Auckland (10–12 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
   { city: 'Rotorua (12–15 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
-  { city: 'Queenstown (15–21 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
+  {
+    city: 'Queenstown (15–21 dic)',
+    comer: {
+      cafe: [],
+      brunch: [],
+      almuerzo: [],
+      cena: [],
+      bar: [
+        { name: 'The Sundeck (rooftop)', note: 'Bar en la azotea del edificio de Attiqa, 4 The Mall, en pleno centro: el primer rooftop con servicio completo de Queenstown, sol toda la tarde, cócteles y tapas mediterráneas, a veces con DJ. Normalmente sin reserva. A ~4 min a pie del Sofitel.' },
+      ],
+    },
+    actividades: [
+      { name: 'Skyline Queenstown · góndola y luge (los carritos)', note: 'La góndola sube a Bob’s Peak (vista sobre el lago Wakatipu y The Remarkables) y arriba se baja en los carritos del luge por pistas de cemento. La base está en Brecon Street, a ~6 min a pie del Sofitel. Abre todos los días; en verano el horario es largo, pero confirma en su web el día que vayan. Se compran paquetes de góndola + varias bajadas de luge.' },
+      { name: 'Alquilar carro para pasear', note: 'Rutas desde el Sofitel: Glenorchy por la orilla del lago (~46 km, 40 min), Arrowtown, pueblo minero histórico (~21 km, 25 min) y Wanaka por el Crown Range (~68 km, 1 h 15 min). Se maneja por la izquierda. OJO: si la licencia no está en inglés (la española o la panameña), hay que llevar además un Permiso Internacional de Conducir o una traducción aprobada por NZTA, junto con la licencia original.' },
+      { name: 'Pasear por el Queenstown Mall', note: 'La calle peatonal del centro (The Mall), con tiendas, cafés y bares, que baja hasta el lago. A ~4 min a pie del Sofitel.' },
+    ],
+  },
   { city: 'Whitsundays (21–25 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
   { city: 'Sídney (25–27 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
 ]
