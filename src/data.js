@@ -826,13 +826,7 @@ export const OPCIONES = [
     },
     actividades: [],
   },
-  {
-    city: 'Auckland (10–12 dic)',
-    comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] },
-    actividades: [
-      { name: 'Cathedral Cove (Coromandel)', note: 'Ojo: no está en Queenstown, sino en Hahei, en la península de Coromandel (Isla Norte). Desde Auckland son ~2 h 30–45 min en carro (~175 km) y desde Rotorua ~3 h, así que es un día completo, y el carro de Divine Rentals lo tienen a partir del 12 dic. Sendero del DOC de 5 km ida y vuelta (~1 h 30 min) hasta el famoso arco de roca; sin reserva. No hay parking en la entrada del sendero (Grange Road): se deja el carro gratis en el Hahei Visitor Car Park y se toma el shuttle o se caminan 30 min; también hay parking pagado en el Cathedral Cove Gateway Trail (150 Lees Road). Se puede llegar en kayak o bote desde Hahei o Whitianga. Ir con marea baja, llevar agua (no hay en el sendero) y zapatos con agarre. El DOC lo cierra con alerta naranja o roja de lluvia y pide no ir durante ni justo después de lluvia fuerte por riesgo de derrumbes.' },
-    ],
-  },
+  { city: 'Auckland (10–12 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
   { city: 'Rotorua (12–15 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
   {
     city: 'Queenstown (15–21 dic)',
