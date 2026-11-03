@@ -826,14 +826,24 @@ export const OPCIONES = [
     },
     actividades: [],
   },
-  { city: 'Auckland (10–12 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
+  {
+    city: 'Auckland (10–12 dic)',
+    comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] },
+    actividades: [
+      { name: 'Cathedral Cove (Coromandel)', note: 'Ojo: no está en Queenstown, sino en Hahei, en la península de Coromandel (Isla Norte). Desde Auckland son ~2 h 30–45 min en carro (~175 km) y desde Rotorua ~3 h, así que es un día completo, y el carro de Divine Rentals lo tienen a partir del 12 dic. Sendero del DOC de 5 km ida y vuelta (~1 h 30 min) hasta el famoso arco de roca; sin reserva. No hay parking en la entrada del sendero (Grange Road): se deja el carro gratis en el Hahei Visitor Car Park y se toma el shuttle o se caminan 30 min; también hay parking pagado en el Cathedral Cove Gateway Trail (150 Lees Road). Se puede llegar en kayak o bote desde Hahei o Whitianga. Ir con marea baja, llevar agua (no hay en el sendero) y zapatos con agarre. El DOC lo cierra con alerta naranja o roja de lluvia y pide no ir durante ni justo después de lluvia fuerte por riesgo de derrumbes.' },
+    ],
+  },
   { city: 'Rotorua (12–15 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
   {
     city: 'Queenstown (15–21 dic)',
     comer: {
       cafe: [],
-      brunch: [],
-      almuerzo: [],
+      brunch: [
+        { name: 'The Boat Shed Cafe', note: 'Brunch y almuerzo a orillas del lago Wakatipu, dentro de la antigua oficina naviera de los ferrocarriles (1869), en Frankton Marina, 847 Frankton Road. Vista a The Remarkables. Abre todos los días de 8:00 a.m. a 3:00 p.m.; recomiendan reservar (+64 3 441 4146). A ~10 min en carro del Sofitel, o ~1 h caminando por el sendero junto al lago (Frankton Track). Queda cerca del aeropuerto: sirve para almorzar al volver del vuelo a Milford Sound (16 dic).' },
+      ],
+      almuerzo: [
+        { name: 'Ayrburn', note: 'Complejo de restaurantes, bares y viñedo junto a Arrowtown (Ayr Avenue), a ~20–25 min en carro del Sofitel; parking gratis, o en taxi/Uber si van a tomar vino. Tiene varios lugares: The Woolshed (bistró, almuerzo y cena todos los días desde las 11:30 a.m.), Billy’s (cocina china moderna en la casona histórica, con un invernadero de vidrio), The Manure Room (vuelos de vino y platos para compartir, 12:00–11:00 p.m.), The Bakehouse (desde las 9:00 a.m.: desayuno, pizzas a la leña) y además The Burr Bar, The Vintners Bar (whisky) y The Dairy (helados y dulces). El horario cambia según el lugar; Woolshed, Billy’s, Manure Room y Bakehouse se reservan en ayrburn.com. Combina con el paseo a Arrowtown.' },
+      ],
       cena: [],
       bar: [
         { name: 'The Sundeck (rooftop)', note: 'Bar en la azotea del edificio de Attiqa, 4 The Mall, en pleno centro: el primer rooftop con servicio completo de Queenstown, sol toda la tarde, cócteles y tapas mediterráneas, a veces con DJ. Normalmente sin reserva. A ~4 min a pie del Sofitel.' },
