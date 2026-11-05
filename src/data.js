@@ -751,13 +751,6 @@ export const TODO = [
     ],
   },
   {
-    city: 'Posibles actividades',
-    items: [
-      'Tour en caballo — LightHorse Adventures (Dart Valley, Glenorchy · ~1 h de QT)',
-      'Sauna u Onsen Hot Pools',
-    ],
-  },
-  {
     city: 'Cape Town',
     items: [
       'Reservar Cheetah Outreach (28 nov)',
@@ -847,6 +840,8 @@ export const OPCIONES = [
       { name: 'Skyline Queenstown · góndola y luge (los carritos)', note: 'La góndola sube a Bob’s Peak (vista sobre el lago Wakatipu y The Remarkables) y arriba se baja en los carritos del luge por pistas de cemento. La base está en Brecon Street, a ~6 min a pie del Sofitel. Abre todos los días; en verano el horario es largo, pero confirma en su web el día que vayan. Se compran paquetes de góndola + varias bajadas de luge.' },
       { name: 'Alquilar carro para pasear', note: 'Rutas desde el Sofitel: Glenorchy por la orilla del lago (~46 km, 40 min), Arrowtown, pueblo minero histórico (~21 km, 25 min) y Wanaka por el Crown Range (~68 km, 1 h 15 min). Se maneja por la izquierda. Licencia: la de EE. UU. sirve tal cual porque está en inglés (NZTA: licencia extranjera vigente, hasta 12 meses); hay que llevarla siempre al manejar. No uses la española ni la panameña: esas sí piden Permiso Internacional o traducción aprobada.' },
       { name: 'Pasear por el Queenstown Mall', note: 'La calle peatonal del centro (The Mall), con tiendas, cafés y bares, que baja hasta el lago. A ~4 min a pie del Sofitel.' },
+      { name: 'Tour en caballo · LightHorse Adventures', note: 'Cabalgatas en el Dart Valley, Glenorchy, a ~1 h de Queenstown. Easy Rider dura 1 h 30 min y sirve de principiante a avanzado; River Wild son 2 h 30 min por la zona más salvaje. Se reserva en línea y depende del clima. Confirma el transporte al reservar: sin carro no se llega fácil.' },
+      { name: 'Sauna u Onsen Hot Pools', note: 'Onsen: piscinas privadas de cedro con vista a los Alpes, 60 min, en 160 Arthurs Point Road, a ~10 min en carro del Sofitel. Tienen shuttle gratis si lo piden al reservar (sujeto a disponibilidad). Abre todos los días de 9:00 a.m. a 11:00 p.m.; último turno a las 10:00 p.m. Tri-Bathing, para dos, suma vapor y piscina fría. Se llena con mucha anticipación, hay lista de espera. Traje de baño obligatorio; cancelar con 24 h de aviso.' },
     ],
   },
   { city: 'Whitsundays (21–25 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
