@@ -802,6 +802,7 @@ export const OPCIONES = [
     actividades: [
       { name: 'Pasear por el wharf', note: 'V&A Waterfront: muelles, tiendas y el Time Out Market ahí mismo.' },
       { name: "Hike Lion's Head Trail", note: 'Subida de unas 2–3 h ida y vuelta con vistas a Table Mountain y Camps Bay; clásico al amanecer o al atardecer. Sin reserva.' },
+      { name: 'Chapman’s Peak Drive', note: 'Carretera escénica de 9 km y 114 curvas entre Hout Bay y Noordhoek, tallada en el acantilado sobre el Atlántico, con miradores y zonas de picnic. Hout Bay está a ~25 min en carro del hotel y recorrerla toma ~30 min sin paradas. Es de peaje. Encaja el jueves 26 nov: pídele al guía del tour de Cape Point ir por aquí y confirma si el peaje está incluido. La cierran por viento fuerte, lluvia o limpieza de rocas, así que revisa el estado ese día en chapmanspeakdrive.co.za.' },
     ],
   },
   {
