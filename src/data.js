@@ -820,7 +820,13 @@ export const OPCIONES = [
     },
     actividades: [],
   },
-  { city: 'Auckland (10–12 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
+  {
+    city: 'Auckland (10–12 dic)',
+    comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] },
+    actividades: [
+      { name: 'Mount Eden (Maungawhau)', note: 'El volcán más alto de Auckland (196 m), con un cráter de 50 m de profundidad, una pasarela alrededor del borde y vista de 360° sobre la ciudad, los puertos y los otros volcanes. Gratis. A ~10 min en Uber del hotel; la cima es solo peatonal (no suben carros), así que se camina el último tramo. En verano abre de 7:00 a.m. a 8:30 p.m. y el atardecer es ~8:30 p.m., así que conviene subir hacia las 7:30 p.m. para la luz dorada. Encaja la tarde libre del 10 dic.' },
+    ],
+  },
   { city: 'Rotorua (12–15 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
   {
     city: 'Queenstown (15–21 dic)',
