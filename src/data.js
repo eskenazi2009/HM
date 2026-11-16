@@ -76,22 +76,22 @@ export const DAYS = [
     weather: { i: '☀️', t: '24° / 13°', d: 'Primavera tardía: seco y soleado, con el viento del sureste («Cape Doctor»)' },
     activities: [
       {
+        name: 'Quads en las dunas de Atlantis — WildX (tour privado)',
+        operator: 'WildX Adventures · Reservado',
+        meetingTime: '8:30 a.m.', meetingPlace: 'Witzands Aquifer Nature Reserve, Dassenberg Dr, Atlantis', startEnd: 'Salir del hotel 7:15 a.m. · ~1 h',
+        description: 'Tour privado de quads con guía por las dunas de Atlantis, solo para los dos (2 adultos), sábado 28 nov a las 8:30 a.m. Reserva Viator 1465047223 · confirmación del operador 2526475. Incluye quad, guía y equipo de seguridad; NO incluye el transporte ni el permiso de la reserva Witzands, que se paga al llegar. Salir del hotel a las 7:15 a.m.: son ~45 min en carro hacia el norte y la oficina de WildX está dentro de la reserva Witzands Aquifer. Llevar los pasaportes, porque hay que llenar en el lugar el formulario de exoneración de la ciudad; zapatos cerrados, lentes de sol y bandana o buff. No es reembolsable ni se puede cambiar. Contacto de WildX: +27 84 800 2336.',
+        link: 'reservas/quads-atlantis-28nov.pdf',
+      },
+      {
         name: 'Pasear por el mercado',
-        meetingTime: 'Mañana', meetingPlace: '', startEnd: '',
-        description: 'Sábado de mercados: Oranjezicht City Farm Market en el V&A Waterfront (Granger Bay, 8:00 a.m.–2:00 p.m., comida y productores locales) o Neighbourgoods Market en The Old Biscuit Mill, Woodstock (9:00 a.m.–3:00 p.m.). Sin reserva.',
+        meetingTime: '~11:00 a.m.', meetingPlace: '', startEnd: '',
+        description: 'Al volver de las dunas. Sábado de mercados: Oranjezicht City Farm Market en el V&A Waterfront (Granger Bay, 8:00 a.m.–2:00 p.m., comida y productores locales) o Neighbourgoods Market en The Old Biscuit Mill, Woodstock (9:00 a.m.–3:00 p.m.). Sin reserva.',
       },
       {
         name: 'Cheetah Outreach',
         operator: 'Somerset West · De Beers Avenue, frente al Somerset Mall',
-        actionBadge: 'Por reservar',
-        meetingTime: 'Por definir', meetingPlace: '', startEnd: '',
-        description: 'Centro de conservación de guepardos a unos 45 min del hotel, en dirección a Stellenbosch. Abre todos los días de 10:00 a.m. a 5:00 p.m.; el encuentro con los guepardos se reserva con anticipación en cheetah.co.za (+27 82 623 9960). Llegar 15 min antes de la hora reservada.',
-      },
-      {
-        name: 'Four wheels (quads) · Dunas de Atlantis',
-        actionBadge: 'Por reservar',
-        meetingTime: 'Por definir', meetingPlace: '', startEnd: '',
-        description: 'Recorrido en quad de ~1 h (más briefing) por las dunas de Atlantis, a unos 45 min al norte de la ciudad; el permiso de entrada a las dunas se paga aparte al llegar. Queda en dirección opuesta a Cheetah Outreach, así que conviene hacer uno por la mañana y el otro por la tarde.',
+        meetingTime: '3:30 p.m.', meetingPlace: 'Cheetah Outreach, De Beers Avenue, Somerset West', startEnd: 'Hasta 4:30 p.m. · llegar 3:10 p.m.',
+        description: 'Centro de conservación de guepardos a unos 45 min del V&A, en dirección a Stellenbosch. Encuentro con los guepardos de 3:30 a 4:30 p.m.; hay que llegar 20 minutos antes, a las 3:10 p.m., así que conviene salir del V&A hacia las 2:15 p.m. Contacto: cheetah.co.za (+27 82 623 9960).',
       },
     ],
     notes: 'Noche en Southern Sun The Cullinan, Ciudad del Cabo. Última noche en la ciudad. Si sobra tiempo: Bo-Kaap, Robben Island o la playa de Camps Bay.',
