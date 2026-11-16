@@ -618,6 +618,12 @@ export const DAYS = [
         description: 'Qantas QF5840, operado por Jetstar como JQ840. Sale de Sídney a las 11:45 a.m. y llega al aeropuerto de Whitsunday Coast (Proserpine) a la 1:15 p.m. Mismo localizador ADKP77 que el QF124, con unas 3 h 25 min de conexión en Sídney. 30 kg de equipaje por persona.',
       },
       {
+        name: 'Bus + ferry a Hamilton Island — Cruise Whitsundays', travel: true,
+        actionBadge: 'Comprar ferry',
+        meetingTime: '~1:45 p.m.', meetingPlace: 'Whitsunday Coast Airport (PPP) → Port of Airlie → Hamilton Island Marina', startEnd: 'Ferry directo 3:05 p.m. · llega 4:05 p.m.',
+        description: 'Todavía NO está comprado. El aeropuerto de Proserpine queda en tierra firme: hay que ir en bus hasta Port of Airlie (Airlie Beach) y de ahí en ferry a Hamilton Island. Cruise Whitsundays vende el traslado combinado bus + ferry desde el aeropuerto (Resort Connections); hay que reservarlo con al menos 12 horas de anticipación y el horario del bus lo confirman al reservar. Con el vuelo aterrizando a la 1:15 p.m., el ferry que calza es el directo de las 3:05 p.m. desde Port of Airlie, que llega a Hamilton Island Marina a las 4:05 p.m.; el de las 2:30 p.m. queda muy justo. Horario oficial vigente desde el 17 jun 2026, sujeto a cambios según los vuelos: confirmarlo al comprar. Hay que estar en la terminal 30 minutos antes. En la marina los recoge el traslado gratuito del Beach Club (avisar al hotel 24 horas antes).',
+      },
+      {
         name: 'Check-in — Hotel Beach Club, Whitsundays', travel: true,
         meetingTime: '4:00 p.m.', meetingPlace: 'Hotel Beach Club, 9 Resort Dr, Whitsundays QLD', startEnd: '4 noches',
         description: 'Habitación Beach Club Room, cama King, del 21 al 25 de diciembre (check-out 11:00 a.m.). Confirmación SH30025471. Incluye desayuno y traslado gratuito desde el aeropuerto y el ferry, pero hay que contactar al hotel 24 horas antes para coordinarlo — no hay traslado reservado. OJO con la política de cancelación: la ventana con 20% de penalidad vencía el 22 de octubre a la 1:00 a.m. hora local del hotel; después de esa fecha cualquier cambio o cancelación cuesta el 100%.',
