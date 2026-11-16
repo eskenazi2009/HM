@@ -854,6 +854,21 @@ export const OPCIONES = [
       { name: 'Sawpit Gully Trail (Arrowtown) · plan B de Lower Wye Creek', note: 'Caminata en circuito de 7,9 km, ~3 h, con ~350 m de subida constante; dificultad moderada. Sale del estacionamiento del Chinese Settlement de Arrowtown, a ~25 min en carro del Sofitel. Conviene hacerla en sentido contrario a las agujas del reloj, subiendo primero por el río Arrow, porque así la subida es más suave. Pasa por restos de las minas de oro y cruza varias veces un arroyo; la parte alta es abierta y en la bajada se ve todo el valle de Whakatipu. Cruza terreno privado: no salirse del sendero. Si llovió fuerte y el arroyo está crecido, no cruzar. Llevar capa abrigadora y chaqueta de lluvia. Plan B para el 17 dic si Lower Wye Creek está cerrado: saliendo a las 3:00 p.m. terminan ~6:00 p.m., cerca de Arrowtown y Ayrburn para cenar.', link: 'https://www.queenstownnz.co.nz/listing/sawpit-gully-trail/2040/' },
     ],
   },
-  { city: 'Whitsundays (21–25 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
+  {
+    city: 'Whitsundays (21–25 dic)',
+    comer: {
+      cafe: [],
+      brunch: [],
+      almuerzo: [],
+      cena: [
+        { name: 'Catseye Pool Club', note: 'El restaurante de The Sundays, el hotel nuevo de Hamilton Island, con menú de Josh y Julie Niland (los de Saint Peter en Sídney). Cocina australiana de temporada para compartir y cócteles con ingredientes de Queensland; no es un restaurante de mariscos, pero Josh es famoso por cómo cocina el pescado entero. Frente a Catseye Bay, con vista al mar de Coral. Chef Hat de la Australian Good Food Guide 2026. Almuerzo de 12:00 a 2:00 p.m. y cena de 5:00 a 9:00 p.m.; abierto a todos aunque no se hospeden ahí (el desayuno es solo para huéspedes). Las reservas abren con 6 meses de anticipación y en diciembre se llena: conviene reservar ya. A ~6 min a pie del Beach Club.', link: 'https://www.hamiltonisland.com.au/the-sundays-restaurant' },
+        { name: 'The Palms', note: 'BBQ ahumado al aire libre en el jardín del Marina Tavern, en la marina: tablas para compartir con carnes ahumadas en casa, tragos y música en vivo algunas noches. Casual y sin reservas (solo walk-in). Bar de 4:30 a 9:30 p.m. y cena de 5:00 a 9:00 p.m. (horario de noviembre; confirmar en la app de Hamilton Island). A ~12 min a pie del Beach Club.', link: 'https://www.hamiltonisland.com.au/the-palms' },
+      ],
+      bar: [
+        { name: 'One Tree Hill (sunset cocktails)', note: 'El mirador más famoso de Hamilton Island para ver el atardecer sobre las islas Whitsunday con un trago en la mano: vino, tablas de quesos y la van de margaritas de Casamigos (3:00 a 7:00 p.m.). El bar abre desde las 2:00 p.m. hasta el atardecer; martes, viernes y domingo hay música en vivo de 4:00 a 7:00 p.m. (en su estadía cae el martes 22 dic). El atardecer es ~6:45 p.m., así que conviene llegar hacia las 6:00. No se reserva. A ~15–20 min a pie del Beach Club, de subida, o en buggy. Cobran 10% extra los domingos y 15% en feriados; revisar cambios de horario en la app de Hamilton Island.', link: 'https://www.hamiltonisland.com.au/one-tree-hill' },
+      ],
+    },
+    actividades: [],
+  },
   { city: 'Sídney (25–27 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
 ]
