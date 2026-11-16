@@ -859,7 +859,9 @@ export const OPCIONES = [
     comer: {
       cafe: [],
       brunch: [],
-      almuerzo: [],
+      almuerzo: [
+        { name: 'Marina Tavern', note: 'Pub relajado frente a la marina de Hamilton Island, con mesas adentro o en la terraza. Comida de pub en porciones generosas: steak, schnitzel y ensaladas frescas; arriba hay un bar de deportes. Sirve almuerzo y cena: abre desde las 11:30 a.m. y la cocina cierra a las 9:00 p.m. No toma reservas (solo walk-in). En su jardín está The Palms. A ~12 min a pie del Beach Club. Cobran 10% extra los domingos y 15% en feriados.', link: 'https://www.hamiltonisland.com.au/bars-and-clubs/marina-tavern' },
+      ],
       cena: [
         { name: 'Catseye Pool Club', note: 'El restaurante de The Sundays, el hotel nuevo de Hamilton Island, con menú de Josh y Julie Niland (los de Saint Peter en Sídney). Cocina australiana de temporada para compartir y cócteles con ingredientes de Queensland; no es un restaurante de mariscos, pero Josh es famoso por cómo cocina el pescado entero. Frente a Catseye Bay, con vista al mar de Coral. Chef Hat de la Australian Good Food Guide 2026. Almuerzo de 12:00 a 2:00 p.m. y cena de 5:00 a 9:00 p.m.; abierto a todos aunque no se hospeden ahí (el desayuno es solo para huéspedes). Las reservas abren con 6 meses de anticipación y en diciembre se llena: conviene reservar ya. A ~6 min a pie del Beach Club.', link: 'https://www.hamiltonisland.com.au/the-sundays-restaurant' },
         { name: 'The Palms', note: 'BBQ ahumado al aire libre en el jardín del Marina Tavern, en la marina: tablas para compartir con carnes ahumadas en casa, tragos y música en vivo algunas noches. Casual y sin reservas (solo walk-in). Bar de 4:30 a 9:30 p.m. y cena de 5:00 a 9:00 p.m. (horario de noviembre; confirmar en la app de Hamilton Island). A ~12 min a pie del Beach Club.', link: 'https://www.hamiltonisland.com.au/the-palms' },
