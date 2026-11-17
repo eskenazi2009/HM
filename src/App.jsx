@@ -145,6 +145,7 @@ function TodoList() {
 
 const COMER_TIPOS = [
   ['cafe', 'Café'],
+  ['casual', 'Casual · panadería · helado · froyo'],
   ['brunch', 'Brunch'],
   ['almuerzo', 'Almuerzo'],
   ['cena', 'Cena'],
@@ -152,7 +153,7 @@ const COMER_TIPOS = [
 ]
 
 function OptionItems({ items }) {
-  if (items.length === 0) return <div className="opt-empty">Sin opciones todavía</div>
+  if (!items || items.length === 0) return <div className="opt-empty">Sin opciones todavía</div>
   return items.map((it, i) => (
     <div className="opt-item" key={i}>
       <div className="opt-name">{it.name}</div>
@@ -179,7 +180,7 @@ function ComerGroup({ comer }) {
   return (
     <div className="opt-group">
       <div className="opt-label">Para comer</div>
-      {COMER_TIPOS.map(([key, label]) => (
+      {COMER_TIPOS.filter(([key]) => key !== 'casual' || (comer.casual && comer.casual.length > 0)).map(([key, label]) => (
         <div className="opt-sub" key={key}>
           <div className="opt-sublabel">{label}</div>
           <OptionItems items={comer[key]} />
