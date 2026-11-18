@@ -254,7 +254,6 @@ export const DAYS = [
       {
         name: 'Scuba diving — Euro-Divers Alila Kothaifaru',
         operator: 'Euro-Divers · centro de buceo del resort (PADI 5 Estrellas)',
-        actionBadge: 'Confirmar con Euro-Divers',
         meetingTime: '8:00 a.m.', meetingPlace: 'Centro de buceo Euro-Divers, en la playa del resort', startEnd: 'Hasta 12:00 p.m.',
         description: 'Salida de la mañana en dhoni (barco tradicional maldivo), dos tanques. Es la salida que el centro usa para ir a ver mantas: Sola Corner, una estación de limpieza a 15–20 minutos del resort, o Maafaru Thila, a 45 minutos; en diciembre empieza la temporada, pero no está garantizado. Como son Open Water, el límite es 18 m; las mantas suelen estar a 10–15 m. En los thilas puede haber corriente fuerte. Obligatorio: seguro de buceo (el centro vende el DAN de corto plazo), boya de superficie y computadora (se alquilan junto con el equipo). Nitrox gratis para buzos certificados. Llevar las tarjetas de certificación. Pueden volar en el hidroavión del 9 sin problema: pasan más de 24 horas. Contacto: alila@euro-divers.com · +960 777 1245.',
         link: 'https://www.euro-divers.com/alila-maldives-dive-water-sports-centre/',
@@ -669,13 +668,21 @@ export const DAYS = [
   },
   {
     month: 'DIC', num: '24', dow: 'Jue',
-    port: 'Whitsundays', type: 'city', typeLabel: 'Nochebuena',
+    port: 'Whitsundays', type: 'adventure', typeLabel: 'Nochebuena · Hill Inlet',
     weather: { i: '🌦️', t: '30° / 25°', d: 'Trópico húmedo: calor, humedad y chubascos de tarde; mar a 27–28° (temporada de medusas: stinger suit)' },
     activities: [
       {
-        name: 'Día libre en Whitsundays',
-        meetingTime: 'Todo el día', meetingPlace: 'Hotel Beach Club', startEnd: '',
-        description: 'Nochebuena. No hay nada reservado — si quieren cena especial en el hotel conviene reservarla con tiempo.',
+        name: 'Hill Inlet y Whitehaven Beach — Explore Half Day (mañana)',
+        operator: 'Explore Group · salida desde Hamilton Island',
+        actionBadge: 'Confirmar',
+        meetingTime: '~7:45 a.m.', meetingPlace: 'Explore Shop, Front Street, Hamilton Island Marina', startEnd: 'Sale ~8:00 a.m. · Regresa ~12:00 p.m.',
+        description: 'Medio día en barco a Whitsunday Island: caminata guiada al mirador de Hill Inlet y tiempo libre en la arena de Whitehaven Beach. La hora de salida depende de la marea, así que hay que confirmarla con Explore. OJO: el 24 la marea alta es cerca de las 10:47 a.m., así que desde el mirador se verá más agua y menos remolinos de arena que en marea baja. Temporada de medusas: usar stinger suit si se meten al agua.',
+        link: 'https://www.exploregroup.com.au/',
+      },
+      {
+        name: 'Tarde libre en Whitsundays',
+        meetingTime: 'Desde 12:00 p.m.', meetingPlace: 'Hotel Beach Club', startEnd: '',
+        description: 'Nochebuena. Si quieren cena especial en el hotel conviene reservarla con tiempo.',
       },
     ],
     notes: 'Noche en Hotel Beach Club, Whitsundays. Última noche en las islas.',
