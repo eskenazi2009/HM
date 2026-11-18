@@ -228,7 +228,7 @@ export const DAYS = [
       {
         name: 'Día libre en Alila Kothaifaru',
         meetingTime: 'Todo el día', meetingPlace: 'Raa Atoll', startEnd: '',
-        description: 'Día libre en el resort. Pendiente averiguar las opciones de buceo.',
+        description: 'Día libre en el resort.',
       },
     ],
     notes: 'Noche en Alila Kothaifaru Maldives.',
@@ -772,12 +772,6 @@ export const TODO = [
       'Reservar Cheetah Outreach (28 nov)',
       'Reservar four wheels en las dunas de Atlantis (28 nov)',
       'Hot air balloon (idea para el día libre)',
-    ],
-  },
-  {
-    city: 'Maldivas',
-    items: [
-      'Averiguar diving',
     ],
   },
 ]
