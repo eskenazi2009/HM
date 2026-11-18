@@ -769,8 +769,6 @@ export const TODO = [
   {
     city: 'Cape Town',
     items: [
-      'Reservar Cheetah Outreach (28 nov)',
-      'Reservar four wheels en las dunas de Atlantis (28 nov)',
       'Hot air balloon (idea para el día libre)',
     ],
   },
