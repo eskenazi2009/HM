@@ -766,12 +766,6 @@ export const TODO = [
       'Confirmar vuelo Auckland → Queenstown (15 dic)',
     ],
   },
-  {
-    city: 'Cape Town',
-    items: [
-      'Hot air balloon (idea para el día libre)',
-    ],
-  },
 ]
 
 // Opciones por lugar: restaurantes y actividades posibles, se van llenando.
