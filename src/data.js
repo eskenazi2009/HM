@@ -700,18 +700,95 @@ export const DAYS = [
         meetingTime: '3:00 p.m.', meetingPlace: 'Pier One, 11 Hickson Road, Walsh Bay', startEnd: 'Hasta el 27 dic',
         description: 'Habitación Partial Water View, cama King, en un muelle histórico debajo del Harbour Bridge. Confirmación 97130874. Teléfono 61 2-8298-9999. El huesped figura como “Raymond Eskenazi”, sin “Michaan”: conviene corregirlo. El itinerario tampoco imprime la fecha de check-out, solo la hora (11:00 a.m.).',
       },
+      {
+        name: 'Café en Surry Hills — bills',
+        actionBadge: 'Confirmar que abre',
+        meetingTime: '4:35 p.m.', meetingPlace: 'bills Surry Hills, 359 Crown St', startEnd: '~15 min en Uber desde el hotel',
+        description: 'Normalmente abre todos los días de 7:00 a.m. a 10:00 p.m., pero en Navidades anteriores cerró el 25 y no encontré confirmación para este año: llamar antes al (02) 9360 4762. Los otros cafés conocidos de Surry Hills cierran más temprano (Shuk, a las 4:00 p.m.).',
+        link: 'https://www.bills.com.au/',
+      },
+      {
+        name: 'Pasear por el Opera House y Circular Quay',
+        meetingTime: '5:45 p.m.', meetingPlace: 'Sydney Opera House', startEnd: '',
+        description: 'Por fuera: las escalinatas, la explanada y el paseo de Circular Quay. El 25 no hay funciones ni tours, pero el paseo es libre.',
+      },
+      {
+        name: "Royal Botanic Garden y Mrs Macquarie's Chair",
+        meetingTime: '6:15 p.m.', meetingPlace: 'Royal Botanic Garden Sydney (entrada junto a la Ópera)', startEnd: 'Cierra 8:00 p.m.',
+        description: "Abre todos los días; en diciembre, de 7:00 a.m. a 8:00 p.m. Cruzar el jardín hasta Mrs Macquarie's Chair, la punta con la vista clásica de la Ópera con el Harbour Bridge detrás.",
+        link: 'https://www.botanicgardens.org.au/royal-botanic-garden-sydney',
+      },
+      {
+        name: 'Cruzar el Harbour Bridge a pie al atardecer',
+        meetingTime: '7:30 p.m.', meetingPlace: 'Escaleras del puente en Cumberland St, The Rocks', startEnd: 'Puesta de sol ~8:05 p.m.',
+        description: "La acera peatonal es gratis y está abierta siempre. Desde Mrs Macquarie's Chair son ~10 min en Uber hasta The Rocks. Cruzar hasta la mitad y volver, o seguir hasta Milsons Point (~25 min) y regresar en Uber.",
+      },
+      {
+        name: 'Cena — Sushi E',
+        actionBadge: 'Por reservar',
+        meetingTime: '8:45 p.m.', meetingPlace: 'Sushi E, Establishment, 252 George St', startEnd: '',
+        description: 'La reservan ustedes; en Navidad se llena, así que mejor cuanto antes. Los viernes normalmente abre para cenar de 6:00 a 10:30 p.m., pero hay que confirmar el horario del 25: (02) 9240 3000. Ojo con los platos con mariscos. Si no hay mesa, Nobu sí abre el 25 (ver Opciones).',
+        link: 'https://www.broadsheet.com.au/sydney/cbd/restaurants/sushi-e',
+      },
+      {
+        name: 'Tragos — JAM Record Bar',
+        meetingTime: '10:30 p.m.', meetingPlace: 'Ivy, 320 George St (a 3 min de Sushi E)', startEnd: '',
+        description: 'Bar de vinilos al estilo de Tokio, del mismo grupo que Sushi E, con 15.000 discos y unas 40 sillas; no aceptan reservas. Normalmente abre de lunes a sábado hasta la medianoche; no está confirmado que abra en Navidad.',
+        link: 'https://www.broadsheet.com.au/sydney/bars/jam-record-bar',
+      },
     ],
     notes: 'Navidad en Sídney. Noche en Pier One Sydney Harbour.',
   },
   {
     month: 'DIC', num: '26', dow: 'Sáb',
-    port: 'Sídney', type: 'city', typeLabel: 'Día libre',
+    port: 'Sídney', type: 'city', typeLabel: 'Bondi y ciudad',
     weather: { i: '☀️', t: '26° / 18°', d: 'Pleno verano: soleado, con el mar a 21–22°' },
     activities: [
       {
-        name: 'Día libre en Sídney',
-        meetingTime: 'Todo el día', meetingPlace: 'Sídney', startEnd: '',
-        description: 'Único día completo en Sídney y no hay nada reservado. El hotel está en Walsh Bay, a pasos del Harbour Bridge y The Rocks; la Ópera queda cruzando Circular Quay.',
+        name: 'Brunch — Blackwood Bondi',
+        actionBadge: 'Por reservar',
+        meetingTime: '9:15 a.m.', meetingPlace: 'Blackwood, Bondi Beach', startEnd: 'Salir del hotel 8:45 a.m. · Uber ~25 min',
+        description: 'Lo reservan ustedes. Ojo con los platos con bacon.',
+        link: 'https://www.timeout.com/sydney/restaurants/blackwood-bondi',
+      },
+      {
+        name: 'Caminar por Bondi Beach',
+        meetingTime: '10:45 a.m.', meetingPlace: 'Bondi Beach', startEnd: '',
+        description: 'Caminar la playa y, si quieren, seguir el sendero de la costa hasta Tamarama, ~15–20 min con muy buena vista. Luego tiendas en Gould St, Hall St y Campbell Parade.',
+      },
+      {
+        name: "Café — Harry's Bondi + Yo-Chi",
+        meetingTime: '12:00 p.m.', meetingPlace: "Harry's Bondi · Yo-Chi en Campbell Parade", startEnd: '',
+        description: 'La guía oficial de Bondi lo da como el mejor café de 2026. Los sábados abre hasta ~4:00 p.m.; el horario de Boxing Day no está publicado (02 9130 2180). Después, frozen yogurt en Yo-Chi, en Campbell Parade.',
+        link: 'https://www.visitbondibeach.com/bondi-eat-and-drink/venues/harrys-bondi',
+      },
+      {
+        name: 'Compras en el centro — QVB, Westfield Sydney y The Galeries',
+        meetingTime: '1:00 p.m.', meetingPlace: 'George St / Pitt St Mall', startEnd: 'Uber ~25 min desde Bondi',
+        description: 'Boxing Day es el día de las grandes rebajas en Sídney: los malls abren temprano y se llenan. Los tres quedan a 5 min a pie uno del otro. El QVB (Queen Victoria Building) es una galería comercial histórica, no un mercado.',
+      },
+      {
+        name: 'Paddington — Oxford St, William St y Paddington Markets',
+        meetingTime: '3:30 p.m.', meetingPlace: 'Paddington Markets, 395 Oxford St', startEnd: 'Uber ~10 min desde el centro',
+        description: 'Boutiques y tiendas independientes en Oxford St y William St. El mercado de los sábados abre de 10:00 a.m. a 4:00 p.m., así que solo quedan ~30 min, y en feriados el horario puede cambiar.',
+        link: 'https://www.sydney.com/destinations/sydney/inner-sydney/paddington/events/paddington-markets',
+      },
+      {
+        name: 'Happy hour — Restaurant Hubert',
+        meetingTime: '5:00 p.m.', meetingPlace: 'Restaurant Hubert, 15 Bligh St (Bar Pincer)', startEnd: 'Hasta 6:00 p.m.',
+        description: 'Happy hour de 5:00 a 6:00 p.m. en el Bar Pincer, sin reserva; jazz en vivo todos los días. El horario de Boxing Day no está confirmado.',
+        link: 'https://swillhouse.com/venues/restaurant-hubert/',
+      },
+      {
+        name: 'Cena — por decidir',
+        meetingTime: 'Noche', meetingPlace: 'Ver Opciones de Sídney', startEnd: '',
+        description: 'Abren el 26 y quedan a pocos minutos a pie del hotel: 6HEAD (steakhouse de wagyu en The Rocks, de 12:00 a 10:30 p.m.) o Grappa (italiano en The Rocks). Hay que reservar.',
+      },
+      {
+        name: 'Tragos — Opera Bar',
+        meetingTime: 'Después de cenar', meetingPlace: 'Opera Bar, Sydney Opera House (Lower Concourse)', startEnd: '',
+        description: 'Abre todos los días de 11:00 a.m. a medianoche; las mesas de afuera son sin reserva. Reabrió en noviembre de 2026 con nuevos dueños.',
+        link: 'https://operabar.com.au/',
       },
     ],
     notes: 'Noche en Pier One Sydney Harbour.',
@@ -885,5 +962,41 @@ export const OPCIONES = [
     },
     actividades: [],
   },
-  { city: 'Sídney (25–27 dic)', comer: { cafe: [], brunch: [], almuerzo: [], cena: [], bar: [] }, actividades: [] },
+  {
+    city: 'Sídney (25–27 dic)',
+    comer: {
+      cafe: [
+        { name: 'Shuk (Surry Hills, The Rocks y Bondi)', note: 'Panadería-café de estilo israelí, famosa por sus donas de mermelada. Abre en Navidad con horario normal, pero cierra hacia las 4:00 p.m.', link: 'https://www.broadsheet.com.au/sydney/north-bondi/cafes/shuk' },
+        { name: 'bills Surry Hills', note: 'Normalmente abre todos los días de 7:00 a.m. a 10:00 p.m., en 359 Crown St. En Navidades anteriores cerró el 25.', link: 'https://www.bills.com.au/' },
+      ],
+      casual: [
+        { name: 'Butterboy', note: 'Galletas gruesas; la tienda principal, en Manly, tiene soft serve (se llega en ferry desde Circular Quay). La más cercana al hotel está en el mall Broadway.', link: 'https://concreteplayground.com/australia/food-drink/now-open-butterboy-broadway-sydney' },
+        { name: 'Yo-Chi Bondi', note: 'Frozen yogurt y açaí de autoservicio en Campbell Parade.', link: 'https://www.visitbondibeach.com/bondi-eat-and-drink/venues/yo-chi-bondi-beach' },
+      ],
+      brunch: [
+        { name: 'Pocket (Bondi)', note: 'De la lista de ustedes; también sirve para almorzar.' },
+        { name: "Harry's Bondi", note: 'De la lista de ustedes; la guía de Bondi lo da como el mejor café de 2026. Sábados hasta ~4:00 p.m.', link: 'https://www.visitbondibeach.com/bondi-eat-and-drink/venues/harrys-bondi' },
+      ],
+      almuerzo: [
+        { name: 'Ibushi (Prefecture 48)', note: 'Robata japonés con atún sobre arroz crujiente, en la línea de Paperfish y Umi. Cocina halal, así que no tiene cerdo; solo 36 puestos. Un sábado normal, almuerzo de 12:00 a 3:00 p.m.', link: 'https://p48.com.au/venues-ibushi/' },
+      ],
+      cena: [
+        { name: 'Nobu Sydney (Crown Barangaroo)', note: 'Abre el 25 para almuerzo y cena, según su página de Navidad 2026: carta normal más especiales navideños. A ~7 min en taxi. Ojo con el pulpo y el calamar. Plan B si no hay mesa en Sushi E.', link: 'https://www.crownsydney.com.au/whats-on/christmas/offers/nobu' },
+        { name: '6HEAD (The Rocks)', note: "Steakhouse de wagyu en Campbell's Cove, a 10 min a pie del hotel. Abre el 26 de 12:00 a 10:30 p.m. Hay que reservar.", link: 'https://6head.com.au/sydney-restaurant/' },
+        { name: 'Grappa (The Rocks)', note: 'Italiano nuevo (abrió en mayo de 2026), con pizza a la leña y pasta fresca, en la línea de Serafina. Abre el 26; 107–109 George St, a 7 min a pie.', link: 'https://grappa.com.au/the-rocks-home' },
+      ],
+      bar: [
+        { name: 'Opera Bar', note: 'Frente a la bahía, debajo de la Ópera. Abre todos los días de 11:00 a.m. a medianoche; afuera es sin reserva. Históricamente cerraba el 25; con los nuevos dueños no está publicado.', link: 'https://operabar.com.au/' },
+        { name: 'JAM Record Bar', note: 'Bar de vinilos al estilo de Tokio en el Ivy (320 George St), del mismo grupo que Sushi E. Sin reservas; lunes a sábado hasta la medianoche.', link: 'https://www.broadsheet.com.au/sydney/bars/jam-record-bar' },
+        { name: 'Restaurant Hubert', note: 'Happy hour de 5:00 a 6:00 p.m. en el Bar Pincer, sin reserva; jazz en vivo todos los días. 15 Bligh St.', link: 'https://swillhouse.com/venues/restaurant-hubert/' },
+      ],
+    },
+    actividades: [
+      { name: 'Paseo por la bahía', note: 'Crucero turístico de Captain Cook desde Circular Quay (1–1,5 h), o el ferry público a Manly (30 min por trayecto), más barato, con vista a la Ópera y el puente, y de paso Butterboy en Manly. El 25 solo opera el crucero-almuerzo de Navidad (12:00–3:00).', link: 'https://www.captaincook.com.au' },
+      { name: 'Luna Park', note: 'Parque de diversiones al otro lado del Harbour Bridge, en Milsons Point. No ha publicado el horario del 25 y el 26.', link: 'https://tickets.lunaparksydney.com/events_hours' },
+      { name: 'The Rocks Markets', note: 'Mercado de puestos a pasos del hotel, sábados y domingos de 10:00 a.m. a 5:00 p.m. No está confirmado que abra en Boxing Day (sábado 26).', link: 'https://secretsydney.com/the-rocks-markets-sydney/' },
+      { name: 'Westfield Bondi Junction', note: 'Mall grande cerca de Bondi; en Boxing Day se llena muchísimo.' },
+      { name: 'Birkenhead Point (outlet)', note: 'El outlet más grande de Sídney, en Drummoyne, a ~20 min del centro. En Rose Bay no hay outlets.', link: 'https://www.sydney.com/articles/outlet-shopping-in-sydney' },
+    ],
+  },
 ]
