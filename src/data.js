@@ -871,6 +871,7 @@ export const OPCIONES = [
       ],
       almuerzo: [
         { name: 'Time Out Market', note: 'Food hall en la Old Power Station, 19 Dock Road, V&A Waterfront. Abre 11:00 a.m.–10:00 p.m. (hasta 11:00 p.m. jue–sáb).' },
+        { name: 'The Bungalow by Kove Collection', note: 'Mediterráneo con sushi y carnes, en una terraza sobre el mar · Glen Country Club, 3 Victoria Road, Clifton, a ~10 min en carro del hotel. Abre todos los días de 12:00 a 11:00 p.m. (la cocina cierra a las 10:00 p.m.); conviene reservar, +27 21 438 2018 o DinePlan. La carta tiene muchos mariscos: pedir sushi de pescado, pescado o carnes.' },
         { name: 'The Pot Luck Club', note: 'Tapas de autor en el último piso del Silo, Old Biscuit Mill, 373 Albert Road, Woodstock. Almuerzo desde las 12:30 p.m.; conviene reservar con anticipación. El sábado se combina con el Neighbourgoods Market, que está en el mismo lugar.' },
         { name: 'Chefs Warehouse at Tintswalo Atlantic', note: 'Para el jueves 26 nov (día del tour de Cape Point): está en Chapman’s Peak Drive, Hout Bay, en la misma ruta; hay que pedirle al guía la parada. Almuerzo todos los días 12:00–4:30 p.m. (último pedido de tapas 2:30 p.m.); reserva obligatoria, +27 21 541 0165. La sede de Bree Street cerró en julio de 2026. Alternativa en ruta: Chefs Warehouse at Beau Constantia (almuerzo desde las 12:00, último pedido 2:30 p.m., +27 21 794 8632).' },
       ],
