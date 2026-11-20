@@ -199,7 +199,7 @@ export const DAYS = [
   },
   {
     month: 'DIC', num: '4', dow: 'Vie',
-    port: 'Singapur → Maldivas', type: 'travel', typeLabel: 'Llegada a Maldivas',
+    port: 'Singapur → Maldivas', type: 'travel', typeLabel: 'Llegada a Maldivas · 🕎 Día 1',
     weather: { i: '🌦️', t: '30° / 26°', d: 'Caluroso y húmedo, con chubascos tropicales breves (~12 días al mes); mar a 28–29°' },
     activities: [
       {
@@ -222,7 +222,7 @@ export const DAYS = [
   },
   {
     month: 'DIC', num: '5', dow: 'Sáb',
-    port: 'Maldivas', type: 'city', typeLabel: 'Resort',
+    port: 'Maldivas', type: 'city', typeLabel: 'Resort · 🕎 Día 2',
     weather: { i: '🌦️', t: '30° / 26°', d: 'Caluroso y húmedo, con chubascos tropicales breves (~12 días al mes); mar a 28–29°' },
     activities: [
       {
@@ -235,7 +235,7 @@ export const DAYS = [
   },
   {
     month: 'DIC', num: '6', dow: 'Dom',
-    port: 'Maldivas', type: 'city', typeLabel: 'Resort',
+    port: 'Maldivas', type: 'city', typeLabel: 'Resort · 🕎 Día 3',
     weather: { i: '🌦️', t: '30° / 26°', d: 'Caluroso y húmedo, con chubascos tropicales breves (~12 días al mes); mar a 28–29°' },
     activities: [
       {
@@ -248,7 +248,7 @@ export const DAYS = [
   },
   {
     month: 'DIC', num: '7', dow: 'Lun',
-    port: 'Maldivas', type: 'city', typeLabel: 'Resort',
+    port: 'Maldivas', type: 'city', typeLabel: 'Resort · 🕎 Día 4',
     weather: { i: '🌦️', t: '30° / 26°', d: 'Caluroso y húmedo, con chubascos tropicales breves (~12 días al mes); mar a 28–29°' },
     activities: [
       {
@@ -268,7 +268,7 @@ export const DAYS = [
   },
   {
     month: 'DIC', num: '8', dow: 'Mar',
-    port: 'Maldivas', type: 'city', typeLabel: 'Resort',
+    port: 'Maldivas', type: 'city', typeLabel: 'Resort · 🕎 Día 5',
     weather: { i: '🌦️', t: '30° / 26°', d: 'Caluroso y húmedo, con chubascos tropicales breves (~12 días al mes); mar a 28–29°' },
     activities: [
       {
@@ -281,7 +281,7 @@ export const DAYS = [
   },
   {
     month: 'DIC', num: '9', dow: 'Mié',
-    port: 'Maldivas → Kuala Lumpur → Auckland', type: 'travel', typeLabel: 'Día de vuelos',
+    port: 'Maldivas → Kuala Lumpur → Auckland', type: 'travel', typeLabel: 'Día de vuelos · 🕎 Día 6',
     weather: { i: '🌦️', t: '30° / 26°', d: 'Caluroso y húmedo, con chubascos tropicales breves (~12 días al mes); mar a 28–29°' },
     activities: [
       {
@@ -304,7 +304,7 @@ export const DAYS = [
   },
   {
     month: 'DIC', num: '10', dow: 'Jue',
-    port: 'Llegada a Auckland', type: 'city', typeLabel: 'Llegada',
+    port: 'Llegada a Auckland', type: 'city', typeLabel: 'Llegada · 🕎 Día 7',
     mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-37.00655,174.79034&destination=-36.84335,174.76654&travelmode=driving',
     weather: { i: '🌤️', t: '22° / 15°', d: 'Inicio del verano: templado, húmedo y cambiante, con chubascos ocasionales' },
     activities: [
@@ -328,7 +328,7 @@ export const DAYS = [
   },
   {
     month: 'DIC', num: '11', dow: 'Vie',
-    port: 'Auckland', type: 'city', typeLabel: 'Waiheke Island',
+    port: 'Auckland', type: 'city', typeLabel: 'Waiheke Island · 🕎 Día 8',
     mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-36.84335,174.76654&destination=-36.78059,174.99168&travelmode=transit',
     weather: { i: '🌤️', t: '22° / 15°', d: 'Inicio del verano: templado, húmedo y cambiante, con chubascos ocasionales' },
     activities: [
