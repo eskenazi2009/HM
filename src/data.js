@@ -770,10 +770,10 @@ export const DAYS = [
         description: 'Caminar la playa y, si quieren, seguir el sendero de la costa hasta Tamarama, ~15–20 min con muy buena vista. Luego tiendas en Gould St, Hall St y Campbell Parade.',
       },
       {
-        name: "Café — Harry's Bondi + Yo-Chi",
-        meetingTime: '12:00 p.m.', meetingPlace: "Harry's Bondi · Yo-Chi en Campbell Parade", startEnd: '',
-        description: 'La guía oficial de Bondi lo da como el mejor café de 2026. Los sábados abre hasta ~4:00 p.m.; el horario de Boxing Day no está publicado (02 9130 2180). Después, frozen yogurt en Yo-Chi, en Campbell Parade.',
-        link: 'https://www.visitbondibeach.com/bondi-eat-and-drink/venues/harrys-bondi',
+        name: 'Café — Skittle Lane Coffee + Yo-Chi',
+        meetingTime: '12:00 p.m.', meetingPlace: 'Skittle Lane, 135 Curlewis Street, Bondi Beach · Yo-Chi en Campbell Parade', startEnd: '',
+        description: 'Tostadores de café de especialidad con local en Bondi. Los sábados abre de 7:00 a.m. a 3:00 p.m.; en feriados ha tenido horario reducido (en Semana Santa cerró al mediodía) y el de Boxing Day no está publicado: confirmar antes al +61 448 887 728. Después, frozen yogurt en Yo-Chi, en Campbell Parade.',
+        link: 'https://www.google.com/maps/search/?api=1&query=Skittle+Lane+135+Curlewis+Street+Bondi+Beach',
       },
       {
         name: 'Compras en el centro — QVB, Westfield Sydney y The Galeries',
