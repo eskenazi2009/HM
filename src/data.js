@@ -43,6 +43,12 @@ export const DAYS = [
     weather: { i: '☀️', t: '24° / 13°', d: 'Primavera tardía: seco y soleado, con el viento del sureste («Cape Doctor»)' },
     activities: [
       {
+        name: "Hike Lion's Head",
+        meetingTime: '5:30 a.m.', meetingPlace: "Inicio del sendero, Signal Hill Road (parqueo de Lion's Head)", startEnd: '~2–3 h ida y vuelta',
+        description: 'Subida de unas 2–3 horas ida y vuelta, con vista a Table Mountain, Camps Bay y el Atlántico. No requiere reserva ni entrada. El último tramo tiene cadenas y escaleras de metal; hay una ruta alterna sin cadenas. Llevar agua, zapatos con buen agarre y una capa para el viento. OJO: el mismo día es el tour privado de Cape Point; hay que confirmar la hora de pickup para estar de vuelta en el hotel a tiempo.',
+        link: 'https://www.google.com/maps/search/?api=1&query=Lion%27s+Head+Trailhead+Cape+Town',
+      },
+      {
         name: 'Tour privado de día completo — Cape Point y Boulders Beach',
         operator: '&Beyond · Vehículo y guía privados',
         meetingTime: 'Día completo', meetingPlace: 'Pickup en el hotel', startEnd: '',
