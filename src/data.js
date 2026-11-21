@@ -930,6 +930,7 @@ export const OPCIONES = [
       ],
       almuerzo: [
         { name: 'Ayrburn', note: 'Complejo de restaurantes, bares y viñedo junto a Arrowtown (Ayr Avenue), a ~20–25 min en carro del Sofitel; parking gratis, o en taxi/Uber si van a tomar vino. Tiene varios lugares: The Woolshed (bistró, almuerzo y cena todos los días desde las 11:30 a.m.), Billy’s (cocina china moderna en la casona histórica, con un invernadero de vidrio), The Manure Room (vuelos de vino y platos para compartir, 12:00–11:00 p.m.), The Bakehouse (desde las 9:00 a.m.: desayuno, pizzas a la leña) y además The Burr Bar, The Vintners Bar (whisky) y The Dairy (helados y dulces). El horario cambia según el lugar; Woolshed, Billy’s, Manure Room y Bakehouse se reservan en ayrburn.com. Combina con el paseo a Arrowtown.' },
+        { name: 'Firebird (Wanaka)', note: 'Food truck de pollo frito estilo Nashville: sándwiches, tenders y «hot boxes» con nivel de picante a elegir · 42 Brownston Street, Wanaka, a ~1 h en carro de Queenstown por la Crown Range. Abre todos los días de 12:00 a 8:00 p.m. según la guía oficial de Wanaka; confirmar antes de ir. Todo es pollo, sin cerdo ni mariscos. Es el casual tipo Anti Burger del paseo a Wanaka.' },
       ],
       cena: [],
       bar: [
