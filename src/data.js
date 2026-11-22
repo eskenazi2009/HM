@@ -711,7 +711,8 @@ export const DAYS = [
       {
         name: 'Check-in — Pier One Sydney Harbour', travel: true,
         meetingTime: '3:00 p.m.', meetingPlace: 'Pier One, 11 Hickson Road, Walsh Bay', startEnd: 'Hasta el 27 dic',
-        description: 'Habitación Partial Water View, cama King, en un muelle histórico debajo del Harbour Bridge. Confirmación 97130874. Teléfono 61 2-8298-9999. El huesped figura como “Raymond Eskenazi”, sin “Michaan”: conviene corregirlo. El itinerario tampoco imprime la fecha de check-out, solo la hora (11:00 a.m.).',
+        description: 'Habitación Partial Water View, cama King, en un muelle histórico debajo del Harbour Bridge. Confirmación 97130874. Teléfono 61 2-8298-9999. El huesped figura como “Raymond Eskenazi”, sin “Michaan”: conviene corregirlo. Check-out el domingo 27 de diciembre a las 11:00 a.m. Cancelación gratis hasta el miércoles 23 de diciembre a las 11:59 p.m., hora del hotel.',
+        link: 'reservas/pier-one-25dic.pdf',
       },
       {
         name: 'Café en Surry Hills — bills',
