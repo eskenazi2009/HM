@@ -988,6 +988,7 @@ export const OPCIONES = [
       casual: [
         { name: 'Butterboy', note: 'Galletas gruesas; la tienda principal, en Manly, tiene soft serve (se llega en ferry desde Circular Quay). La más cercana al hotel está en el mall Broadway.', link: 'https://concreteplayground.com/australia/food-drink/now-open-butterboy-broadway-sydney' },
         { name: 'Yo-Chi Bondi', note: 'Frozen yogurt y açaí de autoservicio en Campbell Parade.', link: 'https://www.visitbondibeach.com/bondi-eat-and-drink/venues/yo-chi-bondi-beach' },
+        { name: 'Common Supply (Bondi)', note: 'Batidos, café y comida fresca en un local de onda saludable · 182 Campbell Parade, Bondi Beach, en el mismo paseo que Yo-Chi. No encontré el horario publicado: confirmar antes de ir, sobre todo en Boxing Day.' },
       ],
       brunch: [
         { name: 'Pocket (Bondi)', note: 'De la lista de ustedes; también sirve para almorzar.' },
