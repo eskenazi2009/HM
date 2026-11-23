@@ -582,7 +582,7 @@ export const DAYS = [
         operator: 'Lighthorse Adventures · Reservado',
         meetingTime: '8:30 a.m.', meetingPlace: 'Lighthorse Adventures, 2 Swamp Road, Glenorchy', startEnd: 'Sale 9:00 a.m. · ~1.5 h',
         description: 'Cabalgata al paso (solo caminando) por los ríos y el valle de Glenorchy, con las montañas de fondo, para los dos. Hay que llegar a las 8:30 a.m., 30 minutos antes de la salida de las 9:00 a.m., para el check-in y el equipo: si llegan tarde pierden la cabalgata y no hay reembolso. Son ~1.5 h en total: 30–40 min de introducción, conocer al caballo y equiparse, y 50–60 min montando. Incluye paquete de 20 fotos. Orden R8BFLFV. El cruce de ríos depende del clima y la cabalgata se puede cancelar el mismo día por seguridad. Cambios o cancelación: 10% de cargo hasta 48 h antes, 50% entre 48 y 24 h, y sin reembolso con menos de 24 h. Contacto: +64 21 766 437 · bookings@lighthorseadventures.com.',
-        link: 'https://lighthorseadventures.rezdy.com/420341/easy-rider',
+        link: 'reservas/caballos-glenorchy-19dic.pdf',
       },
       {
         name: 'Lake Tekapo Private Day Trip from Queenstown',
