@@ -736,7 +736,7 @@ export const DAYS = [
       {
         name: 'Cena — Manta Ray',
         operator: 'Reservado',
-        meetingTime: 'Noche', meetingPlace: 'Manta Ray, frente a la marina de Hamilton Island', startEnd: 'Hora según la reserva',
+        meetingTime: '8:00 p.m.', meetingPlace: 'Manta Ray, frente a la marina de Hamilton Island', startEnd: 'Salir del hotel ~7:45 p.m. · ~12 min a pie',
         description: 'Cocina de inspiración griega frente a la marina: meze, pescado fresco y el menú Feed Me del chef para compartir. A ~12 min a pie del Beach Club. Ojo: en la cocina griega abundan el pulpo, el calamar y los mariscos. IMPORTANTE: si al final no van, hay que cancelar la reserva con un día de anticipación.',
         link: 'https://www.hamiltonisland.com.au/restaurants/manta-ray',
       },
@@ -763,10 +763,9 @@ export const DAYS = [
     activities: [
       {
         name: 'Hill Inlet y Whitehaven Beach — Explore Half Day (mañana)',
-        operator: 'Explore Group · salida desde Hamilton Island',
-        actionBadge: 'Confirmar',
+        operator: 'Explore Group · salida desde Hamilton Island · Confirmado',
         meetingTime: '~7:45 a.m.', meetingPlace: 'Explore Shop, Front Street, Hamilton Island Marina', startEnd: 'Sale ~8:00 a.m. · Regresa ~12:00 p.m.',
-        description: 'Medio día en barco a Whitsunday Island: caminata guiada al mirador de Hill Inlet y tiempo libre en la arena de Whitehaven Beach. La hora de salida depende de la marea, así que hay que confirmarla con Explore. OJO: el 24 la marea alta es cerca de las 10:47 a.m., así que desde el mirador se verá más agua y menos remolinos de arena que en marea baja. Temporada de medusas: usar stinger suit si se meten al agua.',
+        description: 'Confirmado. Medio día en barco a Whitsunday Island: caminata guiada al mirador de Hill Inlet y tiempo libre en la arena de Whitehaven Beach. La hora de salida depende de la marea: revisar en la confirmación de Explore la hora exacta. OJO: el 24 la marea alta es cerca de las 10:47 a.m., así que desde el mirador se verá más agua y menos remolinos de arena que en marea baja. Temporada de medusas: usar stinger suit si se meten al agua.',
         link: 'https://www.exploregroup.com.au/',
       },
       {
@@ -822,15 +821,14 @@ export const DAYS = [
         description: "La acera peatonal es gratis y está abierta siempre. Desde Mrs Macquarie's Chair son ~10 min en Uber hasta The Rocks. Cruzar hasta la mitad y volver, o seguir hasta Milsons Point (~25 min) y regresar en Uber.",
       },
       {
-        name: 'Cena — Sushi E',
-        actionBadge: 'Por reservar',
-        meetingTime: '8:45 p.m.', meetingPlace: 'Sushi E, Establishment, 252 George St', startEnd: '',
-        description: 'La reservan ustedes; en Navidad se llena, así que mejor cuanto antes. Los viernes normalmente abre para cenar de 6:00 a 10:30 p.m., pero hay que confirmar el horario del 25: (02) 9240 3000. Ojo con los platos con mariscos. Si no hay mesa, Nobu sí abre el 25 (ver Opciones).',
-        link: 'https://www.broadsheet.com.au/sydney/cbd/restaurants/sushi-e',
+        name: 'Cena — restaurante pendiente',
+        actionBadge: 'Pendiente',
+        meetingTime: '8:45 p.m.', meetingPlace: 'Por decidir', startEnd: '',
+        description: 'Sushi E está cerrado el 25, así que el restaurante está por decidir. Nobu (Crown Barangaroo) sí abre el 25 para cenar; más ideas en Opciones de Sídney. En Navidad todo se llena: reservar cuanto antes. Ojo con los platos con mariscos y cerdo.',
       },
       {
         name: 'Tragos — JAM Record Bar',
-        meetingTime: '10:30 p.m.', meetingPlace: 'Ivy, 320 George St (a 3 min de Sushi E)', startEnd: '',
+        meetingTime: '10:30 p.m.', meetingPlace: 'Ivy, 320 George St', startEnd: '',
         description: 'Bar de vinilos al estilo de Tokio, del mismo grupo que Sushi E, con 15.000 discos y unas 40 sillas; no aceptan reservas. Normalmente abre de lunes a sábado hasta la medianoche; no está confirmado que abra en Navidad.',
         link: 'https://www.broadsheet.com.au/sydney/bars/jam-record-bar',
       },
@@ -844,9 +842,8 @@ export const DAYS = [
     activities: [
       {
         name: 'Brunch — Blackwood Bondi',
-        actionBadge: 'Por reservar',
         meetingTime: '9:15 a.m.', meetingPlace: 'Blackwood, Bondi Beach', startEnd: 'Salir del hotel 8:45 a.m. · Uber ~25 min',
-        description: 'Lo reservan ustedes. Ojo con los platos con bacon.',
+        description: 'Sin reserva: se llega directo, así que conviene llegar temprano. Ojo con los platos con bacon.',
         link: 'https://www.timeout.com/sydney/restaurants/blackwood-bondi',
       },
       {
