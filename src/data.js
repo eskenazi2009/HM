@@ -605,11 +605,10 @@ export const DAYS = [
         description: 'A 42 min de Bennett\'s Bluff. Parada para la foto de los reflejos de las montañas en el lago; queda a 8 min de Arrowtown.',
       },
       {
-        name: 'Arrowtown — almuerzo, Buckingham Street y Chinese Settlement',
-        actionBadge: 'Por reservar',
-        meetingTime: '1:20 p.m.', meetingPlace: 'Buckingham Street, Arrowtown', startEnd: 'Hasta ~3:30 p.m.',
-        description: 'Almuerzo en Aosta (18 Buckingham St; almuerzo de 11:00 a.m. a 3:00 p.m.; Bib Gourmand Michelin 2026, italiano del norte del chef Ben Bayly; ojo con el prosciutto). Su sistema de reservas en línea está fallando: reservar por teléfono o texto al +64 29 0200 0019 o por email a info@aosta.nz. Alternativa sin reserva: Provisions (65 Buckingham St), famoso por los sticky buns; la cocina cierra a las 3:00 p.m. y el café a las 4:00 p.m. Después: Buckingham Street, el pueblo minero de la fiebre del oro con sus casas históricas, el Chinese Settlement y caminar el pueblo.',
-        link: 'https://aosta.nz/',
+        name: 'Arrowtown — brunch en Dishery, Buckingham Street y Chinese Settlement',
+        meetingTime: '1:20 p.m.', meetingPlace: 'Dishery, 4 Buckingham St, Arrowtown', startEnd: 'Hasta ~3:30 p.m.',
+        description: 'Brunch en Dishery (Dudley\'s Cottage Precinct, 4 Buckingham St): mesas afuera bajo una magnolia histórica, junto al Arrow River Reserve, y un salón muy luminoso. Menú de todo el día: huevos turcos con labneh de ajo negro, Village Benedict, French toast de matcha o burger de wagyu a la parrilla; buenos cócteles y DJs los fines de semana. Sábados de 8:00 a.m. a 6:00 p.m.; se puede reservar en su web. De paso, un sticky bun para llevar en Provisions (65 Buckingham St; cierra a las 4:00 p.m.). Después: Buckingham Street, el pueblo minero de la fiebre del oro con sus casas históricas, el Chinese Settlement y caminar el pueblo.',
+        link: 'https://www.dishery.co.nz/bookings',
       },
       {
         name: 'Crown Range Road — lupinos',
