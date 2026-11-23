@@ -567,8 +567,8 @@ export const DAYS = [
   },
   {
     month: 'DIC', num: '19', dow: 'Sáb',
-    port: 'Glenorchy', type: 'adventure', typeLabel: 'Cabalgata en Glenorchy',
-    mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-44.80017,168.37191&travelmode=driving',
+    port: 'Glenorchy → Arrowtown → Wanaka', type: 'adventure', typeLabel: 'Cabalgata y road trip',
+    mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-45.03115,168.65901&waypoints=-44.80017,168.37191%7C-44.85152,168.38152%7C-45.02884,168.43857%7C-44.97013,168.82441%7C-44.94056,168.83508%7C-44.88152,169.00338%7C-44.69835,169.11756%7C-44.68324,169.18726%7C-44.69547,169.13650&travelmode=driving',
     weather: { i: '🌤️', t: '22° / 10°', d: 'Clima alpino y muy variable: mañanas frescas, tardes templadas; conviene ir por capas' },
     activities: [
       {
@@ -585,6 +585,65 @@ export const DAYS = [
         link: 'reservas/caballos-glenorchy-19dic.pdf',
       },
       {
+        name: 'Glenorchy: muelle, cobertizo rojo y los sauces',
+        meetingTime: '10:45 a.m.', meetingPlace: 'Glenorchy Wharf', startEnd: '~30 min',
+        description: 'A ~10 min de Lighthorse. El cobertizo rojo es el antiguo depósito de los vapores del lago, justo frente al muelle: la foto clásica de Glenorchy. Los famosos sauces («Sister Trees») están junto al muelle, a la derecha. Se puede estacionar en el mismo muelle.',
+      },
+      {
+        name: 'Picar algo — Mrs Woolly\'s General Store',
+        meetingTime: '11:15 a.m.', meetingPlace: '64 Oban St, Glenorchy', startEnd: '~30 min',
+        description: 'Café y almacén del pueblo, famoso por sus pies (pedirlos de res o cordero, no de cerdo) y su café. Sábados de 8:30 a.m. a 6:00 p.m.',
+      },
+      {
+        name: 'Mirador Bennett\'s Bluff',
+        meetingTime: '12:05 p.m.', meetingPlace: 'Carretera Glenorchy–Queenstown', startEnd: '~10 min',
+        description: 'A 19 min de Glenorchy, de camino a Queenstown. El mirador más famoso de la carretera, sobre el lago Wakatipu.',
+      },
+      {
+        name: 'Lake Hayes',
+        meetingTime: '12:55 p.m.', meetingPlace: 'Lake Hayes (Waiwhakaata), camino a Arrowtown', startEnd: '~15 min',
+        description: 'A 42 min de Bennett\'s Bluff. Parada para la foto de los reflejos de las montañas en el lago; queda a 8 min de Arrowtown.',
+      },
+      {
+        name: 'Arrowtown — almuerzo, Buckingham Street y Chinese Settlement',
+        actionBadge: 'Por reservar',
+        meetingTime: '1:20 p.m.', meetingPlace: 'Buckingham Street, Arrowtown', startEnd: 'Hasta ~3:30 p.m.',
+        description: 'Almuerzo en Aosta (18 Buckingham St; almuerzo de 11:00 a.m. a 3:00 p.m.; Bib Gourmand Michelin 2026, italiano del norte del chef Ben Bayly; ojo con el prosciutto). Su sistema de reservas en línea está fallando: reservar por teléfono o texto al +64 29 0200 0019 o por email a info@aosta.nz. Alternativa sin reserva: Provisions (65 Buckingham St), famoso por los sticky buns; la cocina cierra a las 3:00 p.m. y el café a las 4:00 p.m. Después: Buckingham Street, el pueblo minero de la fiebre del oro con sus casas históricas, el Chinese Settlement y caminar el pueblo.',
+        link: 'https://aosta.nz/',
+      },
+      {
+        name: 'Crown Range Road — lupinos',
+        meetingTime: '3:30 p.m.', meetingPlace: 'Crown Range Road (Arrowtown → Cardrona)', startEnd: '',
+        description: 'La carretera de montaña hacia Wanaka. En la subida suele haber lupinos, sobre todo amarillos. Parar solo en los miradores o donde haya espacio para orillarse, porque tiene muchas curvas.',
+      },
+      {
+        name: 'Cardrona Hotel',
+        meetingTime: '~4:30 p.m.', meetingPlace: 'Cardrona Valley Road, Cardrona', startEnd: '~30 min',
+        description: 'Pub histórico de 1863, de la época de la fiebre del oro. Tomar algo en el jardín; el menú del bar es desde las 11:00 a.m.',
+      },
+      {
+        name: 'That Wanaka Tree',
+        meetingTime: '5:25 p.m.', meetingPlace: 'Roys Bay, orilla del lago Wanaka', startEnd: '~20 min',
+        description: 'A 24 min de Cardrona. El árbol solo dentro del lago, la foto más famosa de Wanaka.',
+      },
+      {
+        name: 'Desvío a Albert Town — lupinos morados',
+        meetingTime: '~5:55 p.m.', meetingPlace: 'Albert Town, carretera hacia Lake Hawea', startEnd: '~25 min',
+        description: 'A 10 min de That Wanaka Tree. Las guías mencionan lupinos morados y rosados a la orilla del camino por Albert Town, rumbo a Lake Hawea. No hay un campo fijo: el municipio a veces los fumiga y los mejores campos suelen estar en terreno privado, así que verlos desde el camino y parar solo donde haya espacio. De ahí son 7 min al centro de Wanaka.',
+      },
+      {
+        name: 'Cena — Kika',
+        actionBadge: 'Por reservar',
+        meetingTime: '6:30 p.m.', meetingPlace: '2 Dunmore St, Wanaka', startEnd: 'Hasta ~8:00 p.m.',
+        description: 'Platos para compartir; «Casual Dining of the Year» de Cuisine. Cena todos los días de 5:30 a 9:00 p.m. No está claro si toma reservas: llamar al 03 443 6536 o revisar kika.nz. Ojo: tiene scampi, que es marisco.',
+        link: 'https://kika.nz',
+      },
+      {
+        name: 'Regreso a Queenstown', travel: true,
+        meetingTime: '8:00 p.m.', meetingPlace: 'Wanaka → Sofitel Queenstown', startEnd: '~1 h 20 min',
+        description: 'Por la Crown Range, ~69 km. Llegan hacia las 9:20 p.m.; el atardecer es a las 9:30 p.m., así que cruzan la montaña todavía con luz.',
+      },
+      {
         name: 'Lake Tekapo Private Day Trip from Queenstown',
         operator: 'Viator · Tour privado · Reservado',
         actionBadge: 'Por cancelar',
@@ -593,7 +652,7 @@ export const DAYS = [
         link: 'https://www.viator.com/tours/Queenstown/Lake-Tekapo-Private-Day-Trip-from-Queenstown-TravelnGo/d407-5590256P5?pid=P00001955&uid=U00767249&mcid=58086&currency=USD',
       },
     ],
-    notes: 'Noche en Sofitel Queenstown Hotel & Spa. La cabalgata termina hacia las 10:30 a.m.; el resto del día queda libre en Glenorchy y Queenstown.',
+    notes: 'Noche en Sofitel Queenstown Hotel & Spa. Día largo de carretera: ~4 h 30 min de manejo en total. Se maneja por la izquierda.',
   },
   {
     month: 'DIC', num: '20', dow: 'Dom',
