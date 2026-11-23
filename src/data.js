@@ -875,9 +875,10 @@ export const DAYS = [
         link: 'https://swillhouse.com/venues/restaurant-hubert/',
       },
       {
-        name: 'Cena — por decidir',
-        meetingTime: 'Noche', meetingPlace: 'Ver Opciones de Sídney', startEnd: '',
-        description: 'Abren el 26 y quedan a pocos minutos a pie del hotel: 6HEAD (steakhouse de wagyu en The Rocks, de 12:00 a 10:30 p.m.) o Grappa (italiano en The Rocks). Hay que reservar.',
+        name: 'Cena — Bar Totti\'s CBD',
+        operator: 'Reservado · 2 personas',
+        meetingTime: '8:30 p.m.', meetingPlace: 'Bar Totti\'s, Shop 4, 330 George St (ivy)', startEnd: '',
+        description: 'Reserva #BTOT-85U969HL7VZE, para 2. Italiano de Merivale, hermano de Totti\'s Bondi, dentro del precinto ivy y con entrada por su propio callejón. Ojo con los embutidos de cerdo (prosciutto, salami) y los mariscos. IMPORTANTE: si al final no van, hay que cancelar la reserva al menos 3 horas antes.',
       },
       {
         name: 'Tragos — Opera Bar',
@@ -886,7 +887,7 @@ export const DAYS = [
         link: 'https://operabar.com.au/',
       },
     ],
-    notes: 'Noche en Pier One Sydney Harbour.',
+    notes: 'Noche en Pier One Sydney Harbour. Cena en Bar Totti's a las 8:30 p.m.: si no van, cancelar al menos 3 horas antes.',
   },
   {
     month: 'DIC', num: '27', dow: 'Dom',
