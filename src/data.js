@@ -709,9 +709,9 @@ export const DAYS = [
       },
       {
         name: 'Bus + ferry a Hamilton Island — Cruise Whitsundays', travel: true,
-        actionBadge: 'Comprar ferry',
+        operator: 'Cruise Whitsundays · Resort Connections · Comprado',
         meetingTime: '~1:45 p.m.', meetingPlace: 'Whitsunday Coast Airport (PPP) → Port of Airlie → Hamilton Island Marina', startEnd: 'Ferry directo 3:05 p.m. · llega 4:05 p.m.',
-        description: 'Todavía NO está comprado. El aeropuerto de Proserpine queda en tierra firme: hay que ir en bus hasta Port of Airlie (Airlie Beach) y de ahí en ferry a Hamilton Island. Cruise Whitsundays vende el traslado combinado bus + ferry desde el aeropuerto (Resort Connections); hay que reservarlo con al menos 12 horas de anticipación y el horario del bus lo confirman al reservar. Con el vuelo aterrizando a la 1:15 p.m., el ferry que calza es el directo de las 3:05 p.m. desde Port of Airlie, que llega a Hamilton Island Marina a las 4:05 p.m.; el de las 2:30 p.m. queda muy justo. Horario oficial vigente desde el 17 jun 2026, sujeto a cambios según los vuelos: confirmarlo al comprar. Hay que estar en la terminal 30 minutos antes. En la marina los recoge el traslado gratuito del Beach Club (avisar al hotel 24 horas antes).',
+        description: 'Ya está comprado. El aeropuerto de Proserpine queda en tierra firme: se va en bus hasta Port of Airlie (Airlie Beach) y de ahí en ferry a Hamilton Island, con el traslado combinado bus + ferry de Cruise Whitsundays. Con el vuelo aterrizando a la 1:15 p.m., el ferry que calza es el directo de las 3:05 p.m. desde Port of Airlie, que llega a Hamilton Island Marina a las 4:05 p.m.: confirmar en el boleto la hora del bus y del ferry. Hay que estar en la terminal 30 minutos antes. En la marina los recoge el traslado gratuito del Beach Club (avisar al hotel 24 horas antes).',
       },
       {
         name: 'Check-in — Hotel Beach Club, Whitsundays', travel: true,
@@ -733,8 +733,15 @@ export const DAYS = [
         description: 'Día completo de buceo certificado en la Gran Barrera de Coral con Explore Group, para 2 adultos. El barco sale a las 8:00 a.m. y regresa a las 4:00 p.m.; hay que estar en el Jetty A9/10 de la marina de Hamilton Island al menos 15 minutos antes. OJO: el tour sale ÚNICAMENTE desde Hamilton Island. Referencia 981276 · booking ref 292101. Pagado en full. ACCIÓN PENDIENTE: la reserva no queda confirmada hasta llenar el Diver Registration y el Medical Questionnaire (botón "Complete Dive Form" en el correo de confirmación de Explore del 25 de octubre). Llevar: traje de baño y toalla, protección solar, cámara, tarjeta (no aceptan efectivo), zapatos de suela plana, botella de agua y pastillas para el mareo si hacen falta. Cancelación gratis con más de 48 h de anticipación; entre 24 y 48 h cobran 50%; con menos de 24 h no hay reembolso. Si Explore cancela por clima, reprograman o devuelven todo; si el clima obliga a cambiar la ruta, ofrecen un crucero alterno de día completo con dos paradas en el arrecife interior.',
         link: 'https://www.google.com/maps/search/?api=1&query=Hamilton+Island+Marina+Jetty+A9',
       },
+      {
+        name: 'Cena — Manta Ray',
+        operator: 'Reservado',
+        meetingTime: 'Noche', meetingPlace: 'Manta Ray, frente a la marina de Hamilton Island', startEnd: 'Hora según la reserva',
+        description: 'Cocina de inspiración griega frente a la marina: meze, pescado fresco y el menú Feed Me del chef para compartir. A ~12 min a pie del Beach Club. Ojo: en la cocina griega abundan el pulpo, el calamar y los mariscos. IMPORTANTE: si al final no van, hay que cancelar la reserva con un día de anticipación.',
+        link: 'https://www.hamiltonisland.com.au/restaurants/manta-ray',
+      },
     ],
-    notes: 'Noche en Hotel Beach Club, Whitsundays. Día de buceo: salen 8:00 a.m. y regresan 4:00 p.m. Pendiente llenar el formulario médico de Explore.',
+    notes: 'Noche en Hotel Beach Club, Whitsundays. Día de buceo: salen 8:00 a.m. y regresan 4:00 p.m. Pendiente llenar el formulario médico de Explore. Cena en Manta Ray: si no van, cancelar con un día de anticipación.',
   },
   {
     month: 'DIC', num: '23', dow: 'Mié',
