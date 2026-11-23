@@ -89,9 +89,9 @@ export const DAYS = [
         link: 'reservas/quads-atlantis-28nov.pdf',
       },
       {
-        name: 'Pasear por el mercado',
-        meetingTime: '~11:00 a.m.', meetingPlace: '', startEnd: '',
-        description: 'Al volver de las dunas. Sábado de mercados: Oranjezicht City Farm Market en el V&A Waterfront (Granger Bay, 8:00 a.m.–2:00 p.m., comida y productores locales) o Neighbourgoods Market en The Old Biscuit Mill, Woodstock (9:00 a.m.–3:00 p.m.). Sin reserva.',
+        name: 'Pasear por el Waterfront y shops',
+        meetingTime: '~11:00 a.m.', meetingPlace: 'V&A Waterfront', startEnd: '',
+        description: 'Al volver de las dunas. Paseo y compras por el V&A Waterfront, con parada en SKINS – Cape Town (belleza y fragancias de lujo): Victoria Wharf Mall, nivel superior, local 6214; abre todos los días de 9:00 a.m. a 9:00 p.m.; tel. 021 065 0331. Si quieren mercado, es sábado: Oranjezicht City Farm Market en el V&A Waterfront (Granger Bay, 8:00 a.m.–2:00 p.m., comida y productores locales) o Neighbourgoods Market en The Old Biscuit Mill, Woodstock (9:00 a.m.–3:00 p.m.). Sin reserva.',
       },
       {
         name: 'Cheetah Outreach',
