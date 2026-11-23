@@ -567,19 +567,33 @@ export const DAYS = [
   },
   {
     month: 'DIC', num: '19', dow: 'Sáb',
-    port: 'Lake Tekapo', type: 'travel', typeLabel: 'Excursión privada',
-    mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-44.00452,170.47773&travelmode=driving',
+    port: 'Glenorchy', type: 'adventure', typeLabel: 'Cabalgata en Glenorchy',
+    mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-44.80017,168.37191&travelmode=driving',
     weather: { i: '🌤️', t: '22° / 10°', d: 'Clima alpino y muy variable: mañanas frescas, tardes templadas; conviene ir por capas' },
     activities: [
       {
+        name: 'Recoger el carro', travel: true,
+        actionBadge: 'Por confirmar',
+        meetingTime: '7:00 a.m.', meetingPlace: 'Por confirmar', startEnd: '',
+        description: 'Recoger el carro de alquiler para manejar a Glenorchy. Compañía, lugar y hora por confirmar. Son unos 57 km por la carretera escénica que bordea el lago Wakatipu, ~47 min de manejo: salir de Queenstown a más tardar a las 7:35 a.m. para estar en Lighthorse a las 8:30 a.m.',
+      },
+      {
+        name: 'Cabalgata Easy Rider — Lighthorse Adventures',
+        operator: 'Lighthorse Adventures · Reservado',
+        meetingTime: '8:30 a.m.', meetingPlace: 'Lighthorse Adventures, 2 Swamp Road, Glenorchy', startEnd: 'Sale 9:00 a.m. · ~1.5 h',
+        description: 'Cabalgata al paso (solo caminando) por los ríos y el valle de Glenorchy, con las montañas de fondo, para los dos. Hay que llegar a las 8:30 a.m., 30 minutos antes de la salida de las 9:00 a.m., para el check-in y el equipo: si llegan tarde pierden la cabalgata y no hay reembolso. Son ~1.5 h en total: 30–40 min de introducción, conocer al caballo y equiparse, y 50–60 min montando. Incluye paquete de 20 fotos. Orden R8BFLFV. El cruce de ríos depende del clima y la cabalgata se puede cancelar el mismo día por seguridad. Cambios o cancelación: 10% de cargo hasta 48 h antes, 50% entre 48 y 24 h, y sin reembolso con menos de 24 h. Contacto: +64 21 766 437 · bookings@lighthorseadventures.com.',
+        link: 'https://lighthorseadventures.rezdy.com/420341/easy-rider',
+      },
+      {
         name: 'Lake Tekapo Private Day Trip from Queenstown',
         operator: 'Viator · Tour privado · Reservado',
+        actionBadge: 'Por cancelar',
         meetingTime: '8:00 a.m.', meetingPlace: 'Pickup en recepción del Sofitel', startEnd: 'Hasta 7:00 p.m. · 11 h',
-        description: 'Excursión privada a Lake Tekapo de 8:00 a.m. a 7:00 p.m.: son 11 horas, el día más largo del viaje. El pickup es en la recepción del hotel y hay que estar listos 5 a 10 minutos antes. Confirmación 1833837917 · referencia BR-1451819055. Pendiente revisar con Viviana la ruta y las paradas para aprovecharlo al máximo — en el camino suelen incluirse Lindis Pass, Lake Pukaki con vista al Mt Cook y la Church of the Good Shepherd.',
+        description: 'POR CANCELAR: el 19 ahora es la cabalgata en Glenorchy. Cancelación gratis hasta 24 horas antes, es decir antes de las 8:00 a.m. del 18 de diciembre (hora de Nueva Zelanda). Excursión privada a Lake Tekapo de 8:00 a.m. a 7:00 p.m.: son 11 horas, el día más largo del viaje. El pickup es en la recepción del hotel y hay que estar listos 5 a 10 minutos antes. Confirmación 1833837917 · referencia BR-1451819055. Pendiente revisar con Viviana la ruta y las paradas para aprovecharlo al máximo — en el camino suelen incluirse Lindis Pass, Lake Pukaki con vista al Mt Cook y la Church of the Good Shepherd.',
         link: 'https://www.viator.com/tours/Queenstown/Lake-Tekapo-Private-Day-Trip-from-Queenstown-TravelnGo/d407-5590256P5?pid=P00001955&uid=U00767249&mcid=58086&currency=USD',
       },
     ],
-    notes: 'Noche en Sofitel Queenstown Hotel & Spa. Día muy largo: salen 8:00 a.m. y regresan 7:00 p.m.',
+    notes: 'Noche en Sofitel Queenstown Hotel & Spa. La cabalgata termina hacia las 10:30 a.m.; el resto del día queda libre en Glenorchy y Queenstown.',
   },
   {
     month: 'DIC', num: '20', dow: 'Dom',
