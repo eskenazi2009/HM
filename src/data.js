@@ -887,7 +887,7 @@ export const DAYS = [
         link: 'https://operabar.com.au/',
       },
     ],
-    notes: 'Noche en Pier One Sydney Harbour. Cena en Bar Totti's a las 8:30 p.m.: si no van, cancelar al menos 3 horas antes.',
+    notes: 'Noche en Pier One Sydney Harbour. Cena en Bar Totti\'s a las 8:30 p.m.: si no van, cancelar al menos 3 horas antes.',
   },
   {
     month: 'DIC', num: '27', dow: 'Dom',
