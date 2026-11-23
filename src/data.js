@@ -568,7 +568,7 @@ export const DAYS = [
   {
     month: 'DIC', num: '19', dow: 'Sáb',
     port: 'Glenorchy → Arrowtown → Wanaka', type: 'adventure', typeLabel: 'Cabalgata y road trip',
-    mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-45.03115,168.65901&waypoints=-44.80017,168.37191%7C-44.85152,168.38152%7C-45.02884,168.43857%7C-44.97013,168.82441%7C-44.94056,168.83508%7C-44.88152,169.00338%7C-44.69835,169.11756%7C-44.68324,169.18726%7C-44.69547,169.13650&travelmode=driving',
+    mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-45.03115,168.65901&waypoints=-44.80017,168.37191%7C-44.85152,168.38152%7C-45.02884,168.43857%7C-44.97013,168.82441%7C-44.94056,168.83508%7C-44.88152,169.00338%7C-44.68324,169.18726%7C-44.69402,169.13876%7C-44.69835,169.11756&travelmode=driving',
     weather: { i: '🌤️', t: '22° / 10°', d: 'Clima alpino y muy variable: mañanas frescas, tardes templadas; conviene ir por capas' },
     activities: [
       {
@@ -621,26 +621,31 @@ export const DAYS = [
         description: 'Pub histórico de 1863, de la época de la fiebre del oro. Tomar algo en el jardín; el menú del bar es desde las 11:00 a.m.',
       },
       {
-        name: 'That Wanaka Tree',
-        meetingTime: '5:25 p.m.', meetingPlace: 'Roys Bay, orilla del lago Wanaka', startEnd: '~20 min',
-        description: 'A 24 min de Cardrona. El árbol solo dentro del lago, la foto más famosa de Wanaka.',
+        name: 'Desvío a Albert Town — lupinos morados',
+        meetingTime: '~5:25 p.m.', meetingPlace: 'Albert Town, carretera hacia Lake Hawea', startEnd: '~25 min',
+        description: 'Lo primero al llegar a Wanaka: a 24 min del Cardrona Hotel. Las guías mencionan lupinos morados y rosados a la orilla del camino por Albert Town, rumbo a Lake Hawea. No hay un campo fijo: el municipio a veces los fumiga y los mejores campos suelen estar en terreno privado, así que verlos desde el camino y parar solo donde haya espacio. De ahí son 6 min a Ardmore Street.',
       },
       {
-        name: 'Desvío a Albert Town — lupinos morados',
-        meetingTime: '~5:55 p.m.', meetingPlace: 'Albert Town, carretera hacia Lake Hawea', startEnd: '~25 min',
-        description: 'A 10 min de That Wanaka Tree. Las guías mencionan lupinos morados y rosados a la orilla del camino por Albert Town, rumbo a Lake Hawea. No hay un campo fijo: el municipio a veces los fumiga y los mejores campos suelen estar en terreno privado, así que verlos desde el camino y parar solo donde haya espacio. De ahí son 7 min al centro de Wanaka.',
+        name: 'Pasear por Ardmore Street',
+        meetingTime: '~5:55 p.m.', meetingPlace: 'Ardmore Street, Wanaka (frente al lago)', startEnd: '~1 h',
+        description: 'La calle principal de Wanaka, frente al lago, con tiendas, cafés y bares, y la orilla del lago con su playa de piedritas al lado. Estacionar por aquí y caminar.',
+      },
+      {
+        name: 'That Wanaka Tree',
+        meetingTime: '~7:00 p.m.', meetingPlace: 'Roys Bay, orilla del lago Wanaka', startEnd: '~20 min',
+        description: 'El árbol solo dentro del lago, la foto más famosa de Wanaka. A 5 min en carro de Ardmore Street, o ~25 min caminando por la orilla del lago. De ahí son 4 min en carro a Kika.',
       },
       {
         name: 'Cena — Kika',
         actionBadge: 'Por reservar',
-        meetingTime: '6:30 p.m.', meetingPlace: '2 Dunmore St, Wanaka', startEnd: 'Hasta ~8:00 p.m.',
+        meetingTime: '7:30 p.m.', meetingPlace: '2 Dunmore St, Wanaka', startEnd: 'Hasta ~9:00 p.m. (cierra a las 9)',
         description: 'Platos para compartir; «Casual Dining of the Year» de Cuisine. Cena todos los días de 5:30 a 9:00 p.m. No está claro si toma reservas: llamar al 03 443 6536 o revisar kika.nz. Ojo: tiene scampi, que es marisco.',
         link: 'https://kika.nz',
       },
       {
         name: 'Regreso a Queenstown', travel: true,
-        meetingTime: '8:00 p.m.', meetingPlace: 'Wanaka → Sofitel Queenstown', startEnd: '~1 h 20 min',
-        description: 'Por la Crown Range, ~69 km. Llegan hacia las 9:20 p.m.; el atardecer es a las 9:30 p.m., así que cruzan la montaña todavía con luz.',
+        meetingTime: '~9:00 p.m.', meetingPlace: 'Wanaka → Sofitel Queenstown', startEnd: '~1 h 20 min',
+        description: 'Por la Crown Range, ~69 km: llegan hacia las 10:20 p.m. El atardecer es a las 9:27 p.m., así que buena parte de la Crown Range se cruza ya de noche. Es una carretera de montaña con muchas curvas: manejar con calma y sin alcohol.',
       },
       {
         name: 'Lake Tekapo Private Day Trip from Queenstown',
@@ -651,7 +656,7 @@ export const DAYS = [
         link: 'https://www.viator.com/tours/Queenstown/Lake-Tekapo-Private-Day-Trip-from-Queenstown-TravelnGo/d407-5590256P5?pid=P00001955&uid=U00767249&mcid=58086&currency=USD',
       },
     ],
-    notes: 'Noche en Sofitel Queenstown Hotel & Spa. Día largo de carretera: ~4 h 30 min de manejo en total. Se maneja por la izquierda.',
+    notes: 'Noche en Sofitel Queenstown Hotel & Spa. Día largo de carretera: ~4 h 30 min de manejo en total, con el regreso de noche por la Crown Range. Se maneja por la izquierda.',
   },
   {
     month: 'DIC', num: '20', dow: 'Dom',
