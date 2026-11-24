@@ -1017,6 +1017,7 @@ export const OPCIONES = [
       ],
       almuerzo: [
         { name: 'Ayrburn', note: 'Complejo de restaurantes, bares y viñedo junto a Arrowtown; cada lugar se reserva aparte.' },
+        { name: 'The Lodge Bar · Rodd & Gunn', note: 'Cocina neozelandesa y vinos dentro de la tienda Rodd & Gunn, frente al lago en el centro; conviene reservar.' },
         { name: 'Fergburger', note: 'La hamburguesa más famosa de Nueva Zelanda, en el centro (Shotover Street); siempre hay fila.' },
         { name: 'Firebird (Wanaka)', note: 'Food truck de pollo frito picante en Wanaka; casual, confirmar horario.' },
       ],
