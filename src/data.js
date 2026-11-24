@@ -567,19 +567,16 @@ export const DAYS = [
   },
   {
     month: 'DIC', num: '19', dow: 'Sáb',
-    port: 'Lake Tekapo', type: 'travel', typeLabel: 'Excursión privada',
-    mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-44.00452,170.47773&travelmode=driving',
+    port: 'Queenstown', type: 'city', typeLabel: 'Día libre',
     weather: { i: '🌤️', t: '22° / 10°', d: 'Clima alpino y muy variable: mañanas frescas, tardes templadas; conviene ir por capas' },
     activities: [
       {
-        name: 'Lake Tekapo Private Day Trip from Queenstown',
-        operator: 'Viator · Tour privado · Reservado',
-        meetingTime: '8:00 a.m.', meetingPlace: 'Pickup en recepción del Sofitel', startEnd: 'Hasta 7:00 p.m. · 11 h',
-        description: 'Excursión privada a Lake Tekapo de 8:00 a.m. a 7:00 p.m.: son 11 horas, el día más largo del viaje. El pickup es en la recepción del hotel y hay que estar listos 5 a 10 minutos antes. Confirmación 1833837917 · referencia BR-1451819055. Pendiente revisar con Viviana la ruta y las paradas para aprovecharlo al máximo — en el camino suelen incluirse Lindis Pass, Lake Pukaki con vista al Mt Cook y la Church of the Good Shepherd.',
-        link: 'https://www.viator.com/tours/Queenstown/Lake-Tekapo-Private-Day-Trip-from-Queenstown-TravelnGo/d407-5590256P5?pid=P00001955&uid=U00767249&mcid=58086&currency=USD',
+        name: 'Día libre en Queenstown',
+        meetingTime: 'Todo el día', meetingPlace: 'Sofitel Queenstown Hotel & Spa', startEnd: '',
+        description: 'No hay nada reservado. Ideas en la pestaña Opciones de Queenstown.',
       },
     ],
-    notes: 'Noche en Sofitel Queenstown Hotel & Spa. Día muy largo: salen 8:00 a.m. y regresan 7:00 p.m.',
+    notes: 'Noche en Sofitel Queenstown Hotel & Spa.',
   },
   {
     month: 'DIC', num: '20', dow: 'Dom',
@@ -853,7 +850,6 @@ export const TODO = [
       'Definir actividad de la tarde del 18 dic',
       'Reservar NZONE Skydive — mañana (17 dic)',
       'Reservar Lake Wakatipu cruise 2:00 p.m. (20 dic)',
-      'Revisar con Viviana la ruta y paradas del Lake Tekapo (19 dic)',
       'Confirmar vuelo Auckland → Queenstown (15 dic)',
     ],
   },
