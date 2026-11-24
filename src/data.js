@@ -562,6 +562,13 @@ export const DAYS = [
         meetingTime: 'Tarde', meetingPlace: '', startEnd: '',
         description: 'Tarde libre por definir. Al regresar del Nevis cerca de las 12:40 p.m. queda toda la tarde. Opciones: Onsen Hot Pools (60 min, ideal después del bungy), Skyline Gondola + Luge (1–2 h desde el centro), o la caminata a Lake Alta en The Remarkables (1.5 h ida y vuelta).',
       },
+      {
+        name: 'Sauna privado — Watershed Saunas',
+        operator: 'Watershed Saunas · Sesión privada · Reservado',
+        meetingTime: '5:45 p.m.', meetingPlace: 'Watershed Saunas, 110 Beach Street (St Omer Wharf), Queenstown', startEnd: 'Hasta 7:00 p.m. · 75 min',
+        description: 'Sesión privada de 75 minutos para los dos: sauna con piscina fría propia y cuarto de descanso, con vista al lago Wakatipu. Reserva #392930296. Antes de ir hay que llenar el check-in previo que mandan por correo (salud y seguridad). Llevar traje de baño y botella de agua; dan toallas y hay lockers. No hay parqueo en el muelle: queda a 3 minutos a pie del centro, o se puede estacionar gratis en Lake Esplanade o pagando en Man Street Car Park (5 min a pie). Cancelación o cambio de fecha con 24 horas de aviso; cambios el mismo día, con 12 horas. Teléfono +64 3 777 4300.',
+        link: 'reservas/watershed-sauna-18dic.pdf',
+      },
     ],
     notes: 'Noche en Sofitel Queenstown Hotel & Spa.',
   },
