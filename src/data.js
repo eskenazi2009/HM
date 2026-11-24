@@ -89,9 +89,9 @@ export const DAYS = [
         link: 'reservas/quads-atlantis-28nov.pdf',
       },
       {
-        name: 'Pasear por el mercado',
-        meetingTime: '~11:00 a.m.', meetingPlace: '', startEnd: '',
-        description: 'Al volver de las dunas. Sábado de mercados: Oranjezicht City Farm Market en el V&A Waterfront (Granger Bay, 8:00 a.m.–2:00 p.m., comida y productores locales) o Neighbourgoods Market en The Old Biscuit Mill, Woodstock (9:00 a.m.–3:00 p.m.). Sin reserva.',
+        name: 'Pasear por el Waterfront y shops',
+        meetingTime: '~11:00 a.m.', meetingPlace: 'V&A Waterfront', startEnd: '',
+        description: 'Al volver de las dunas. Paseo y compras por el V&A Waterfront, con parada en SKINS – Cape Town (belleza y fragancias de lujo): Victoria Wharf Mall, nivel superior, local 6214; abre todos los días de 9:00 a.m. a 9:00 p.m.; tel. 021 065 0331. Si quieren mercado, es sábado: Oranjezicht City Farm Market en el V&A Waterfront (Granger Bay, 8:00 a.m.–2:00 p.m., comida y productores locales) o Neighbourgoods Market en The Old Biscuit Mill, Woodstock (9:00 a.m.–3:00 p.m.). Sin reserva.',
       },
       {
         name: 'Cheetah Outreach',
@@ -567,16 +567,88 @@ export const DAYS = [
   },
   {
     month: 'DIC', num: '19', dow: 'Sáb',
-    port: 'Queenstown', type: 'city', typeLabel: 'Día libre',
+    port: 'Glenorchy → Arrowtown → Wanaka', type: 'adventure', typeLabel: 'Cabalgata y road trip',
+    mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-45.03115,168.65901&waypoints=-44.80017,168.37191%7C-44.85152,168.38152%7C-45.02884,168.43857%7C-44.97013,168.82441%7C-44.94056,168.83508%7C-44.88152,169.00338%7C-44.68324,169.18726%7C-44.69402,169.13876%7C-44.69835,169.11756&travelmode=driving',
     weather: { i: '🌤️', t: '22° / 10°', d: 'Clima alpino y muy variable: mañanas frescas, tardes templadas; conviene ir por capas' },
     activities: [
       {
-        name: 'Día libre en Queenstown',
-        meetingTime: 'Todo el día', meetingPlace: 'Sofitel Queenstown Hotel & Spa', startEnd: '',
-        description: 'No hay nada reservado. Ideas en la pestaña Opciones de Queenstown.',
+        name: 'Recoger el carro', travel: true,
+        actionBadge: 'Por confirmar',
+        meetingTime: '7:00 a.m.', meetingPlace: 'Por confirmar', startEnd: '',
+        description: 'Recoger el carro de alquiler para manejar a Glenorchy. Compañía, lugar y hora por confirmar. Son unos 57 km por la carretera escénica que bordea el lago Wakatipu, ~47 min de manejo: salir de Queenstown a más tardar a las 7:35 a.m. para estar en Lighthorse a las 8:30 a.m.',
+      },
+      {
+        name: 'Cabalgata Easy Rider — Lighthorse Adventures',
+        operator: 'Lighthorse Adventures · Reservado',
+        meetingTime: '8:30 a.m.', meetingPlace: 'Lighthorse Adventures, 2 Swamp Road, Glenorchy', startEnd: 'Sale 9:00 a.m. · ~1.5 h',
+        description: 'Cabalgata al paso (solo caminando) por los ríos y el valle de Glenorchy, con las montañas de fondo, para los dos. Hay que llegar a las 8:30 a.m., 30 minutos antes de la salida de las 9:00 a.m., para el check-in y el equipo: si llegan tarde pierden la cabalgata y no hay reembolso. Son ~1.5 h en total: 30–40 min de introducción, conocer al caballo y equiparse, y 50–60 min montando. Incluye paquete de 20 fotos. Orden R8BFLFV. El cruce de ríos depende del clima y la cabalgata se puede cancelar el mismo día por seguridad. Cambios o cancelación: 10% de cargo hasta 48 h antes, 50% entre 48 y 24 h, y sin reembolso con menos de 24 h. Contacto: +64 21 766 437 · bookings@lighthorseadventures.com.',
+        link: 'reservas/caballos-glenorchy-19dic.pdf',
+      },
+      {
+        name: 'Glenorchy: muelle, cobertizo rojo y los sauces',
+        meetingTime: '10:45 a.m.', meetingPlace: 'Glenorchy Wharf', startEnd: '~30 min',
+        description: 'A ~10 min de Lighthorse. El cobertizo rojo es el antiguo depósito de los vapores del lago, justo frente al muelle: la foto clásica de Glenorchy. Los famosos sauces («Sister Trees») están junto al muelle, a la derecha. Se puede estacionar en el mismo muelle.',
+      },
+      {
+        name: 'Picar algo — Mrs Woolly\'s General Store',
+        meetingTime: '11:15 a.m.', meetingPlace: '64 Oban St, Glenorchy', startEnd: '~30 min',
+        description: 'Café y almacén del pueblo, famoso por sus pies (pedirlos de res o cordero, no de cerdo) y su café. Sábados de 8:30 a.m. a 6:00 p.m.',
+      },
+      {
+        name: 'Mirador Bennett\'s Bluff',
+        meetingTime: '12:05 p.m.', meetingPlace: 'Carretera Glenorchy–Queenstown', startEnd: '~10 min',
+        description: 'A 19 min de Glenorchy, de camino a Queenstown. El mirador más famoso de la carretera, sobre el lago Wakatipu.',
+      },
+      {
+        name: 'Lake Hayes',
+        meetingTime: '12:55 p.m.', meetingPlace: 'Lake Hayes (Waiwhakaata), camino a Arrowtown', startEnd: '~15 min',
+        description: 'A 42 min de Bennett\'s Bluff. Parada para la foto de los reflejos de las montañas en el lago; queda a 8 min de Arrowtown.',
+      },
+      {
+        name: 'Arrowtown — brunch en Dishery, Buckingham Street y Chinese Settlement',
+        meetingTime: '1:20 p.m.', meetingPlace: 'Dishery, 4 Buckingham St, Arrowtown', startEnd: 'Hasta ~3:30 p.m.',
+        description: 'Brunch en Dishery (Dudley\'s Cottage Precinct, 4 Buckingham St): mesas afuera bajo una magnolia histórica, junto al Arrow River Reserve, y un salón muy luminoso. Menú de todo el día: huevos turcos con labneh de ajo negro, Village Benedict, French toast de matcha o burger de wagyu a la parrilla; buenos cócteles y DJs los fines de semana. Sábados de 8:00 a.m. a 6:00 p.m.; se puede reservar en su web. De paso, un sticky bun para llevar en Provisions (65 Buckingham St; cierra a las 4:00 p.m.). Después: Buckingham Street, el pueblo minero de la fiebre del oro con sus casas históricas, el Chinese Settlement y caminar el pueblo.',
+        link: 'https://www.dishery.co.nz/bookings',
+      },
+      {
+        name: 'Crown Range Road — lupinos',
+        meetingTime: '3:30 p.m.', meetingPlace: 'Crown Range Road (Arrowtown → Cardrona)', startEnd: '',
+        description: 'La carretera de montaña hacia Wanaka. En la subida suele haber lupinos, sobre todo amarillos. Parar solo en los miradores o donde haya espacio para orillarse, porque tiene muchas curvas.',
+      },
+      {
+        name: 'Cardrona Hotel',
+        meetingTime: '~4:30 p.m.', meetingPlace: 'Cardrona Valley Road, Cardrona', startEnd: '~30 min',
+        description: 'Pub histórico de 1863, de la época de la fiebre del oro. Tomar algo en el jardín; el menú del bar es desde las 11:00 a.m.',
+      },
+      {
+        name: 'Desvío a Albert Town — lupinos morados',
+        meetingTime: '~5:25 p.m.', meetingPlace: 'Albert Town, carretera hacia Lake Hawea', startEnd: '~25 min',
+        description: 'Lo primero al llegar a Wanaka: a 24 min del Cardrona Hotel. Las guías mencionan lupinos morados y rosados a la orilla del camino por Albert Town, rumbo a Lake Hawea. No hay un campo fijo: el municipio a veces los fumiga y los mejores campos suelen estar en terreno privado, así que verlos desde el camino y parar solo donde haya espacio. De ahí son 6 min a Ardmore Street.',
+      },
+      {
+        name: 'Pasear por Ardmore Street',
+        meetingTime: '~5:55 p.m.', meetingPlace: 'Ardmore Street, Wanaka (frente al lago)', startEnd: '~1 h',
+        description: 'La calle principal de Wanaka, frente al lago, con tiendas, cafés y bares, y la orilla del lago con su playa de piedritas al lado. Estacionar por aquí y caminar.',
+      },
+      {
+        name: 'That Wanaka Tree',
+        meetingTime: '~7:00 p.m.', meetingPlace: 'Roys Bay, orilla del lago Wanaka', startEnd: '~20 min',
+        description: 'El árbol solo dentro del lago, la foto más famosa de Wanaka. A 5 min en carro de Ardmore Street, o ~25 min caminando por la orilla del lago. De ahí son 4 min en carro a Kika.',
+      },
+      {
+        name: 'Cena — Kika',
+        actionBadge: 'Por reservar',
+        meetingTime: '7:30 p.m.', meetingPlace: '2 Dunmore St, Wanaka', startEnd: 'Hasta ~9:00 p.m. (cierra a las 9)',
+        description: 'Platos para compartir; «Casual Dining of the Year» de Cuisine. Cena todos los días de 5:30 a 9:00 p.m. No está claro si toma reservas: llamar al 03 443 6536 o revisar kika.nz. Ojo: tiene scampi, que es marisco.',
+        link: 'https://kika.nz',
+      },
+      {
+        name: 'Regreso a Queenstown', travel: true,
+        meetingTime: '~9:00 p.m.', meetingPlace: 'Wanaka → Sofitel Queenstown', startEnd: '~1 h 20 min',
+        description: 'Por la Crown Range, ~69 km: llegan hacia las 10:20 p.m. El atardecer es a las 9:27 p.m., así que buena parte de la Crown Range se cruza ya de noche. Es una carretera de montaña con muchas curvas: manejar con calma y sin alcohol.',
       },
     ],
-    notes: 'Noche en Sofitel Queenstown Hotel & Spa.',
+    notes: 'Noche en Sofitel Queenstown Hotel & Spa. Día largo de carretera: ~4 h 30 min de manejo en total, con el regreso de noche por la Crown Range. Se maneja por la izquierda.',
   },
   {
     month: 'DIC', num: '20', dow: 'Dom',
@@ -629,9 +701,9 @@ export const DAYS = [
       },
       {
         name: 'Bus + ferry a Hamilton Island — Cruise Whitsundays', travel: true,
-        actionBadge: 'Comprar ferry',
+        operator: 'Cruise Whitsundays · Resort Connections · Comprado',
         meetingTime: '~1:45 p.m.', meetingPlace: 'Whitsunday Coast Airport (PPP) → Port of Airlie → Hamilton Island Marina', startEnd: 'Ferry directo 3:05 p.m. · llega 4:05 p.m.',
-        description: 'Todavía NO está comprado. El aeropuerto de Proserpine queda en tierra firme: hay que ir en bus hasta Port of Airlie (Airlie Beach) y de ahí en ferry a Hamilton Island. Cruise Whitsundays vende el traslado combinado bus + ferry desde el aeropuerto (Resort Connections); hay que reservarlo con al menos 12 horas de anticipación y el horario del bus lo confirman al reservar. Con el vuelo aterrizando a la 1:15 p.m., el ferry que calza es el directo de las 3:05 p.m. desde Port of Airlie, que llega a Hamilton Island Marina a las 4:05 p.m.; el de las 2:30 p.m. queda muy justo. Horario oficial vigente desde el 17 jun 2026, sujeto a cambios según los vuelos: confirmarlo al comprar. Hay que estar en la terminal 30 minutos antes. En la marina los recoge el traslado gratuito del Beach Club (avisar al hotel 24 horas antes).',
+        description: 'Ya está comprado. El aeropuerto de Proserpine queda en tierra firme: se va en bus hasta Port of Airlie (Airlie Beach) y de ahí en ferry a Hamilton Island, con el traslado combinado bus + ferry de Cruise Whitsundays. Con el vuelo aterrizando a la 1:15 p.m., el ferry que calza es el directo de las 3:05 p.m. desde Port of Airlie, que llega a Hamilton Island Marina a las 4:05 p.m.: confirmar en el boleto la hora del bus y del ferry. Hay que estar en la terminal 30 minutos antes. En la marina los recoge el traslado gratuito del Beach Club (avisar al hotel 24 horas antes).',
       },
       {
         name: 'Check-in — Hotel Beach Club, Whitsundays', travel: true,
@@ -653,8 +725,15 @@ export const DAYS = [
         description: 'Día completo de buceo certificado en la Gran Barrera de Coral con Explore Group, para 2 adultos. El barco sale a las 8:00 a.m. y regresa a las 4:00 p.m.; hay que estar en el Jetty A9/10 de la marina de Hamilton Island al menos 15 minutos antes. OJO: el tour sale ÚNICAMENTE desde Hamilton Island. Referencia 981276 · booking ref 292101. Pagado en full. ACCIÓN PENDIENTE: la reserva no queda confirmada hasta llenar el Diver Registration y el Medical Questionnaire (botón "Complete Dive Form" en el correo de confirmación de Explore del 25 de octubre). Llevar: traje de baño y toalla, protección solar, cámara, tarjeta (no aceptan efectivo), zapatos de suela plana, botella de agua y pastillas para el mareo si hacen falta. Cancelación gratis con más de 48 h de anticipación; entre 24 y 48 h cobran 50%; con menos de 24 h no hay reembolso. Si Explore cancela por clima, reprograman o devuelven todo; si el clima obliga a cambiar la ruta, ofrecen un crucero alterno de día completo con dos paradas en el arrecife interior.',
         link: 'https://www.google.com/maps/search/?api=1&query=Hamilton+Island+Marina+Jetty+A9',
       },
+      {
+        name: 'Cena — Manta Ray',
+        operator: 'Reservado',
+        meetingTime: '8:00 p.m.', meetingPlace: 'Manta Ray, frente a la marina de Hamilton Island', startEnd: 'Salir del hotel ~7:45 p.m. · ~12 min a pie',
+        description: 'Cocina de inspiración griega frente a la marina: meze, pescado fresco y el menú Feed Me del chef para compartir. A ~12 min a pie del Beach Club. Ojo: en la cocina griega abundan el pulpo, el calamar y los mariscos. IMPORTANTE: si al final no van, hay que cancelar la reserva con un día de anticipación.',
+        link: 'https://www.hamiltonisland.com.au/restaurants/manta-ray',
+      },
     ],
-    notes: 'Noche en Hotel Beach Club, Whitsundays. Día de buceo: salen 8:00 a.m. y regresan 4:00 p.m. Pendiente llenar el formulario médico de Explore.',
+    notes: 'Noche en Hotel Beach Club, Whitsundays. Día de buceo: salen 8:00 a.m. y regresan 4:00 p.m. Pendiente llenar el formulario médico de Explore. Cena en Manta Ray: si no van, cancelar con un día de anticipación.',
   },
   {
     month: 'DIC', num: '23', dow: 'Mié',
@@ -676,10 +755,9 @@ export const DAYS = [
     activities: [
       {
         name: 'Hill Inlet y Whitehaven Beach — Explore Half Day (mañana)',
-        operator: 'Explore Group · salida desde Hamilton Island',
-        actionBadge: 'Confirmar',
+        operator: 'Explore Group · salida desde Hamilton Island · Confirmado',
         meetingTime: '~7:45 a.m.', meetingPlace: 'Explore Shop, Front Street, Hamilton Island Marina', startEnd: 'Sale ~8:00 a.m. · Regresa ~12:00 p.m.',
-        description: 'Medio día en barco a Whitsunday Island: caminata guiada al mirador de Hill Inlet y tiempo libre en la arena de Whitehaven Beach. La hora de salida depende de la marea, así que hay que confirmarla con Explore. OJO: el 24 la marea alta es cerca de las 10:47 a.m., así que desde el mirador se verá más agua y menos remolinos de arena que en marea baja. Temporada de medusas: usar stinger suit si se meten al agua.',
+        description: 'Confirmado. Medio día en barco a Whitsunday Island: caminata guiada al mirador de Hill Inlet y tiempo libre en la arena de Whitehaven Beach. La hora de salida depende de la marea: revisar en la confirmación de Explore la hora exacta. OJO: el 24 la marea alta es cerca de las 10:47 a.m., así que desde el mirador se verá más agua y menos remolinos de arena que en marea baja. Temporada de medusas: usar stinger suit si se meten al agua.',
         link: 'https://www.exploregroup.com.au/',
       },
       {
@@ -735,15 +813,14 @@ export const DAYS = [
         description: "La acera peatonal es gratis y está abierta siempre. Desde Mrs Macquarie's Chair son ~10 min en Uber hasta The Rocks. Cruzar hasta la mitad y volver, o seguir hasta Milsons Point (~25 min) y regresar en Uber.",
       },
       {
-        name: 'Cena — Sushi E',
-        actionBadge: 'Por reservar',
-        meetingTime: '8:45 p.m.', meetingPlace: 'Sushi E, Establishment, 252 George St', startEnd: '',
-        description: 'La reservan ustedes; en Navidad se llena, así que mejor cuanto antes. Los viernes normalmente abre para cenar de 6:00 a 10:30 p.m., pero hay que confirmar el horario del 25: (02) 9240 3000. Ojo con los platos con mariscos. Si no hay mesa, Nobu sí abre el 25 (ver Opciones).',
-        link: 'https://www.broadsheet.com.au/sydney/cbd/restaurants/sushi-e',
+        name: 'Cena — restaurante pendiente',
+        actionBadge: 'Pendiente',
+        meetingTime: '8:45 p.m.', meetingPlace: 'Por decidir', startEnd: '',
+        description: 'Sushi E está cerrado el 25, así que el restaurante está por decidir. Nobu (Crown Barangaroo) sí abre el 25 para cenar; más ideas en Opciones de Sídney. En Navidad todo se llena: reservar cuanto antes. Ojo con los platos con mariscos y cerdo.',
       },
       {
         name: 'Tragos — JAM Record Bar',
-        meetingTime: '10:30 p.m.', meetingPlace: 'Ivy, 320 George St (a 3 min de Sushi E)', startEnd: '',
+        meetingTime: '10:30 p.m.', meetingPlace: 'Ivy, 320 George St', startEnd: '',
         description: 'Bar de vinilos al estilo de Tokio, del mismo grupo que Sushi E, con 15.000 discos y unas 40 sillas; no aceptan reservas. Normalmente abre de lunes a sábado hasta la medianoche; no está confirmado que abra en Navidad.',
         link: 'https://www.broadsheet.com.au/sydney/bars/jam-record-bar',
       },
@@ -757,9 +834,8 @@ export const DAYS = [
     activities: [
       {
         name: 'Brunch — Blackwood Bondi',
-        actionBadge: 'Por reservar',
         meetingTime: '9:15 a.m.', meetingPlace: 'Blackwood, Bondi Beach', startEnd: 'Salir del hotel 8:45 a.m. · Uber ~25 min',
-        description: 'Lo reservan ustedes. Ojo con los platos con bacon.',
+        description: 'Sin reserva: se llega directo, así que conviene llegar temprano. Ojo con los platos con bacon.',
         link: 'https://www.timeout.com/sydney/restaurants/blackwood-bondi',
       },
       {
@@ -791,9 +867,10 @@ export const DAYS = [
         link: 'https://swillhouse.com/venues/restaurant-hubert/',
       },
       {
-        name: 'Cena — por decidir',
-        meetingTime: 'Noche', meetingPlace: 'Ver Opciones de Sídney', startEnd: '',
-        description: 'Abren el 26 y quedan a pocos minutos a pie del hotel: 6HEAD (steakhouse de wagyu en The Rocks, de 12:00 a 10:30 p.m.) o Grappa (italiano en The Rocks). Hay que reservar.',
+        name: 'Cena — Bar Totti\'s CBD',
+        operator: 'Reservado · 2 personas',
+        meetingTime: '8:30 p.m.', meetingPlace: 'Bar Totti\'s, Shop 4, 330 George St (ivy)', startEnd: '',
+        description: 'Reserva #BTOT-85U969HL7VZE, para 2. Italiano de Merivale, hermano de Totti\'s Bondi, dentro del precinto ivy y con entrada por su propio callejón. Ojo con los embutidos de cerdo (prosciutto, salami) y los mariscos. IMPORTANTE: si al final no van, hay que cancelar la reserva al menos 3 horas antes.',
       },
       {
         name: 'Tragos — Opera Bar',
@@ -802,7 +879,7 @@ export const DAYS = [
         link: 'https://operabar.com.au/',
       },
     ],
-    notes: 'Noche en Pier One Sydney Harbour.',
+    notes: 'Noche en Pier One Sydney Harbour. Cena en Bar Totti\'s a las 8:30 p.m.: si no van, cancelar al menos 3 horas antes.',
   },
   {
     month: 'DIC', num: '27', dow: 'Dom',
