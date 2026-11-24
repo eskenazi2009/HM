@@ -1011,9 +1011,11 @@ export const OPCIONES = [
       ],
       almuerzo: [
         { name: 'Ayrburn', note: 'Complejo de restaurantes, bares y viñedo junto a Arrowtown; cada lugar se reserva aparte.' },
+        { name: 'Fergburger', note: 'La hamburguesa más famosa de Nueva Zelanda, en el centro (Shotover Street); siempre hay fila.' },
         { name: 'Firebird (Wanaka)', note: 'Food truck de pollo frito picante en Wanaka; casual, confirmar horario.' },
       ],
       cena: [
+        { name: 'Sundays', note: 'Mediterráneo-italiano dentro de una iglesia de los años 30, en Frankton; cierra lunes y martes.' },
         { name: 'Roki Collection', note: 'Essence: alta cocina europea con dos estrellas Michelin (splurge); The Terrace es de mariscos, evitarlo.' },
       ],
       bar: [
