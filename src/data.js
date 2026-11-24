@@ -682,6 +682,12 @@ export const DAYS = [
         description: 'Crucero escénico de 90 minutos por Lake Wakatipu, de 2:00 a 3:30 p.m., saliendo del muelle en 50 Beach Street. Confirmación 1833840517 · referencia BR-1451821679. Tiene cubierta al aire libre, cabina con calefacción y bar a bordo.',
         link: 'https://www.viator.com/tours/Queenstown/Million-Dollar-Cruise/d407-71002P1?pid=P00001955&uid=U00767249&mcid=58086&currency=USD',
       },
+      {
+        name: 'Cena — The Terrace by ROKI Collection',
+        operator: 'ROKI Collection Queenstown · Reservado',
+        meetingTime: '8:15 p.m.', meetingPlace: 'The Terrace Restaurant, hotel ROKI Collection Queenstown', startEnd: '',
+        description: 'Mesa para 2 a nombre de Raymond Eskenazi. Reserva #74NTLFUU5HF. OJO: hay que cancelar al menos 24 horas antes, es decir antes de las 8:15 p.m. del sábado 19 de diciembre. La carta se inclina a los mariscos: pedir pescado o carnes y avisar al mesero que no comen mariscos ni cerdo.',
+      },
     ],
     notes: 'Noche en Sofitel Queenstown Hotel & Spa. Última noche en Queenstown — mañana salen temprano hacia Sídney.',
   },
@@ -1016,7 +1022,7 @@ export const OPCIONES = [
       ],
       cena: [
         { name: 'Sundays', note: 'Mediterráneo-italiano dentro de una iglesia de los años 30, en Frankton; cierra lunes y martes.' },
-        { name: 'Roki Collection', note: 'Essence: alta cocina europea con dos estrellas Michelin (splurge); The Terrace es de mariscos, evitarlo.' },
+        { name: 'Roki Collection', note: 'The Terrace reservado el 20 dic a las 8:15 p.m. (carta con muchos mariscos); Essence es alta cocina con dos estrellas Michelin.' },
       ],
       bar: [
         { name: 'The Sundeck (rooftop)', note: 'Rooftop en pleno centro con cócteles y tapas mediterráneas; sin reserva.' },
