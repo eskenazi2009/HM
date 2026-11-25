@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { DAYS, TODO, OPCIONES } from './data.js'
+import { DAYS, TODO, OPCIONES, FAVORITOS } from './data.js'
 import heroImg from './assets/hero.jpg'
 
 const TODO_STORAGE_KEY = 'hm-todo-done-v1'
@@ -211,6 +211,31 @@ function Opciones() {
   )
 }
 
+function Favoritos() {
+  return (
+    <div className="todo-page">
+      <div className="todo-hero">
+        <div className="todo-title">Favoritos</div>
+        <div className="todo-progress-label">
+          Restaurantes y bares donde fuimos y nos gustaron, para recomendar.
+        </div>
+      </div>
+
+      {FAVORITOS.length === 0 && (
+        <div className="todo-section">
+          <div className="opt-empty">Todavía no hay lugares.</div>
+        </div>
+      )}
+      {FAVORITOS.map((group) => (
+        <div className="todo-section" key={group.city}>
+          <div className="todo-section-title">{group.city}</div>
+          <OptionItems items={group.items} />
+        </div>
+      ))}
+    </div>
+  )
+}
+
 function Modal({ activity, onClose }) {
   useEffect(() => {
     const onKey = (e) => e.key === 'Escape' && onClose()
@@ -297,6 +322,12 @@ export default function App() {
         >
           Opciones
         </button>
+        <button
+          className={'tab-btn' + (tab === 'favoritos' ? ' tab-btn--active' : '')}
+          onClick={() => setTab('favoritos')}
+        >
+          Favoritos
+        </button>
       </div>
 
       {tab === 'itinerary' && (
@@ -325,6 +356,8 @@ export default function App() {
       {tab === 'todo' && <TodoList />}
 
       {tab === 'opciones' && <Opciones />}
+
+      {tab === 'favoritos' && <Favoritos />}
 
       {selected && <Modal activity={selected} onClose={() => setSelected(null)} />}
     </div>

@@ -1111,3 +1111,6 @@ export const OPCIONES = [
     ],
   },
 ]
+
+// Restaurantes y bares donde fueron y les gustaron, por ciudad: { name, note }
+export const FAVORITOS = []
