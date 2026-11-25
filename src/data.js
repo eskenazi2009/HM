@@ -1118,6 +1118,7 @@ export const FAVORITOS = [
     city: 'Ciudad del Cabo',
     items: [
       { name: 'Sevruga · V&A Waterfront · 8/10', note: 'Cena frente al agua. Pedimos sushi, carne y burrata; de vino, el Baroness Nadine Chardonnay.' },
+      { name: 'Unframed Ice Cream · V&A Waterfront · 10/10', note: 'Helados artesanales con sabores originales. Pedimos salted caramel y coconut lime.' },
     ],
   },
 ]
