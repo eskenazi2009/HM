@@ -1113,4 +1113,11 @@ export const OPCIONES = [
 ]
 
 // Restaurantes y bares donde fueron y les gustaron, por ciudad: { name, note }
-export const FAVORITOS = []
+export const FAVORITOS = [
+  {
+    city: 'Ciudad del Cabo',
+    items: [
+      { name: 'Sevruga · V&A Waterfront · 8/10', note: 'Cena frente al agua. Pedimos sushi, carne y burrata; de vino, el Baroness Nadine Chardonnay.' },
+    ],
+  },
+]
