@@ -1011,7 +1011,9 @@ export const OPCIONES = [
   {
     city: 'Queenstown (15–21 dic)',
     comer: {
-      cafe: [],
+      cafe: [
+        { name: 'The Coffee Shack (Wanaka)', note: 'Café de especialidad para llevar en un garaje convertido, en el centro de Wanaka; cierra a la 1:00 p.m.' },
+      ],
       brunch: [
         { name: 'The Boat Shed Cafe', note: 'Brunch a orillas del lago con vista a The Remarkables; cierra a las 3:00 p.m., reservar.' },
       ],
