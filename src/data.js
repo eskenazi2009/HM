@@ -1120,6 +1120,7 @@ export const FAVORITOS = [
       { name: 'Sevruga · V&A Waterfront · 8/10', note: 'Cena frente al agua. Pedimos sushi, carne y burrata; de vino, el Baroness Nadine Chardonnay.' },
       { name: 'Unframed Ice Cream · V&A Waterfront · 10/10', note: 'Helados artesanales con sabores originales. Pedimos salted caramel y coconut lime.' },
       { name: 'Harbour House · Kalk Bay · 8.5/10', note: 'Pescado fresco con vista al mar, sobre el puerto de Kalk Bay. Pedimos yellowtail y sea bass.' },
+      { name: 'Marble · V&A Waterfront · 10/10', note: 'Parrilla a la leña. Pedimos risotto de maíz, coliflor, T-bone steak, churros y tiramisú.' },
     ],
   },
 ]
