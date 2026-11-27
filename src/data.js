@@ -612,10 +612,15 @@ export const DAYS = [
         description: 'A 42 min de Bennett\'s Bluff. Parada para la foto de los reflejos de las montañas en el lago; queda a 8 min de Arrowtown.',
       },
       {
-        name: 'Arrowtown — brunch en Dishery, Buckingham Street y Chinese Settlement',
-        meetingTime: '1:20 p.m.', meetingPlace: 'Dishery, 4 Buckingham St, Arrowtown', startEnd: 'Hasta ~3:30 p.m.',
-        description: 'Brunch en Dishery (Dudley\'s Cottage Precinct, 4 Buckingham St): mesas afuera bajo una magnolia histórica, junto al Arrow River Reserve, y un salón muy luminoso. Menú de todo el día: huevos turcos con labneh de ajo negro, Village Benedict, French toast de matcha o burger de wagyu a la parrilla; buenos cócteles y DJs los fines de semana. Sábados de 8:00 a.m. a 6:00 p.m.; se puede reservar en su web. De paso, un sticky bun para llevar en Provisions (65 Buckingham St; cierra a las 4:00 p.m.). Después: Buckingham Street, el pueblo minero de la fiebre del oro con sus casas históricas, el Chinese Settlement y caminar el pueblo.',
+        name: 'Arrowtown — brunch en Dishery y Buckingham Street',
+        meetingTime: '1:20 p.m.', meetingPlace: 'Dishery, 4 Buckingham St, Arrowtown', startEnd: 'Hasta ~3:00 p.m.',
+        description: 'Brunch en Dishery (Dudley\'s Cottage Precinct, 4 Buckingham St): mesas afuera bajo una magnolia histórica, junto al Arrow River Reserve, y un salón muy luminoso. Menú de todo el día: huevos turcos con labneh de ajo negro, Village Benedict, French toast de matcha o burger de wagyu a la parrilla; buenos cócteles y DJs los fines de semana. Sábados de 8:00 a.m. a 6:00 p.m.; se puede reservar en su web. De paso, un sticky bun para llevar en Provisions (65 Buckingham St; cierra a las 4:00 p.m.). Después: Buckingham Street, el pueblo minero de la fiebre del oro con sus casas históricas, y caminar el pueblo.',
         link: 'https://www.dishery.co.nz/bookings',
+      },
+      {
+        name: 'Ayrburn — fotos en el jardín de Billy\'s',
+        meetingTime: '~3:05 p.m.', meetingPlace: 'Billy\'s, Ayrburn, Ayr Avenue (junto a Arrowtown)', startEnd: '~25 min',
+        description: 'A ~5 min en carro de Arrowtown. Billy\'s es el restaurante de la casona histórica de Ayrburn, con un invernadero de vidrio y jardines: parada para fotos en el jardín. Parking gratis. De ahí se sigue a la Crown Range.',
       },
       {
         name: 'Crown Range Road — lupinos',
