@@ -575,7 +575,7 @@ export const DAYS = [
   {
     month: 'DIC', num: '19', dow: 'Sáb',
     port: 'Glenorchy → Arrowtown → Wanaka', type: 'adventure', typeLabel: 'Cabalgata y road trip',
-    mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-45.03115,168.65901&waypoints=-44.80017,168.37191%7C-44.85152,168.38152%7C-45.02884,168.43857%7C-44.97013,168.82441%7C-44.94056,168.83508%7C-44.88152,169.00338%7C-44.68324,169.18726%7C-44.69402,169.13876%7C-44.69835,169.11756&travelmode=driving',
+    mapsUrl: 'https://www.google.com/maps/dir/?api=1&origin=-45.03115,168.65901&destination=-45.03115,168.65901&waypoints=-44.80017,168.37191%7C-44.85152,168.38152%7C-45.02884,168.43857%7C-44.97013,168.82441%7C-44.94056,168.83508%7C-44.88152,169.00338%7C-44.68324,169.18726%7C-44.69835,169.11756%7C-44.69402,169.13876&travelmode=driving',
     weather: { i: '🌤️', t: '22° / 10°', d: 'Clima alpino y muy variable: mañanas frescas, tardes templadas; conviene ir por capas' },
     activities: [
       {
@@ -609,18 +609,18 @@ export const DAYS = [
       {
         name: 'Lake Hayes',
         meetingTime: '12:55 p.m.', meetingPlace: 'Lake Hayes (Waiwhakaata), camino a Arrowtown', startEnd: '~15 min',
-        description: 'A 42 min de Bennett\'s Bluff. Parada para la foto de los reflejos de las montañas en el lago; queda a 8 min de Arrowtown.',
-      },
-      {
-        name: 'Arrowtown — brunch en Dishery y Buckingham Street',
-        meetingTime: '1:20 p.m.', meetingPlace: 'Dishery, 4 Buckingham St, Arrowtown', startEnd: 'Hasta ~3:00 p.m.',
-        description: 'Brunch en Dishery (Dudley\'s Cottage Precinct, 4 Buckingham St): mesas afuera bajo una magnolia histórica, junto al Arrow River Reserve, y un salón muy luminoso. Menú de todo el día: huevos turcos con labneh de ajo negro, Village Benedict, French toast de matcha o burger de wagyu a la parrilla; buenos cócteles y DJs los fines de semana. Sábados de 8:00 a.m. a 6:00 p.m.; se puede reservar en su web. De paso, un sticky bun para llevar en Provisions (65 Buckingham St; cierra a las 4:00 p.m.). Después: Buckingham Street, el pueblo minero de la fiebre del oro con sus casas históricas, y caminar el pueblo.',
-        link: 'https://www.dishery.co.nz/bookings',
+        description: 'A 42 min de Bennett\'s Bluff. Parada para la foto de los reflejos de las montañas en el lago; queda a ~5 min de Ayrburn y a 8 min de Arrowtown.',
       },
       {
         name: 'Ayrburn — fotos en el jardín de Billy\'s',
-        meetingTime: '~3:05 p.m.', meetingPlace: 'Billy\'s, Ayrburn, Ayr Avenue (junto a Arrowtown)', startEnd: '~25 min',
-        description: 'A ~5 min en carro de Arrowtown. Billy\'s es el restaurante de la casona histórica de Ayrburn, con un invernadero de vidrio y jardines: parada para fotos en el jardín. Parking gratis. De ahí se sigue a la Crown Range.',
+        meetingTime: '~1:15 p.m.', meetingPlace: 'Billy\'s, Ayrburn, Ayr Avenue (junto a Arrowtown)', startEnd: '~25 min',
+        description: 'A ~5 min de Lake Hayes, de camino a Arrowtown. Billy\'s es el restaurante de la casona histórica de Ayrburn, con un invernadero de vidrio y jardines: parada para fotos en el jardín. Parking gratis. De ahí son ~5 min a Arrowtown.',
+      },
+      {
+        name: 'Arrowtown — brunch en Dishery y Buckingham Street',
+        meetingTime: '~1:45 p.m.', meetingPlace: 'Dishery, 4 Buckingham St, Arrowtown', startEnd: 'Hasta ~3:20 p.m.',
+        description: 'Brunch en Dishery (Dudley\'s Cottage Precinct, 4 Buckingham St): mesas afuera bajo una magnolia histórica, junto al Arrow River Reserve, y un salón muy luminoso. Menú de todo el día: huevos turcos con labneh de ajo negro, Village Benedict, French toast de matcha o burger de wagyu a la parrilla; buenos cócteles y DJs los fines de semana. Sábados de 8:00 a.m. a 6:00 p.m.; se puede reservar en su web. De paso, un sticky bun para llevar en Provisions (65 Buckingham St; cierra a las 4:00 p.m.). Después: Buckingham Street, el pueblo minero de la fiebre del oro con sus casas históricas, y caminar el pueblo.',
+        link: 'https://www.dishery.co.nz/bookings',
       },
       {
         name: 'Crown Range Road — lupinos',
@@ -635,17 +635,17 @@ export const DAYS = [
       {
         name: 'Desvío a Albert Town — lupinos morados',
         meetingTime: '~5:25 p.m.', meetingPlace: 'Albert Town, carretera hacia Lake Hawea', startEnd: '~25 min',
-        description: 'Lo primero al llegar a Wanaka: a 24 min del Cardrona Hotel. Las guías mencionan lupinos morados y rosados a la orilla del camino por Albert Town, rumbo a Lake Hawea. No hay un campo fijo: el municipio a veces los fumiga y los mejores campos suelen estar en terreno privado, así que verlos desde el camino y parar solo donde haya espacio. De ahí son 6 min a Ardmore Street.',
-      },
-      {
-        name: 'Pasear por Ardmore Street',
-        meetingTime: '~5:55 p.m.', meetingPlace: 'Ardmore Street, Wanaka (frente al lago)', startEnd: '~1 h',
-        description: 'La calle principal de Wanaka, frente al lago, con tiendas, cafés y bares, y la orilla del lago con su playa de piedritas al lado. Estacionar por aquí y caminar.',
+        description: 'Lo primero al llegar a Wanaka: a 24 min del Cardrona Hotel. Las guías mencionan lupinos morados y rosados a la orilla del camino por Albert Town, rumbo a Lake Hawea. No hay un campo fijo: el municipio a veces los fumiga y los mejores campos suelen estar en terreno privado, así que verlos desde el camino y parar solo donde haya espacio. De ahí son ~10 min a That Wanaka Tree.',
       },
       {
         name: 'That Wanaka Tree',
-        meetingTime: '~7:00 p.m.', meetingPlace: 'Roys Bay, orilla del lago Wanaka', startEnd: '~20 min',
-        description: 'El árbol solo dentro del lago, la foto más famosa de Wanaka. A 5 min en carro de Ardmore Street, o ~25 min caminando por la orilla del lago. De ahí son 4 min en carro a Kika.',
+        meetingTime: '~6:00 p.m.', meetingPlace: 'Roys Bay, orilla del lago Wanaka', startEnd: '~20 min',
+        description: 'El árbol solo dentro del lago, la foto más famosa de Wanaka. De ahí son 5 min en carro a Ardmore Street.',
+      },
+      {
+        name: 'Pasear por Ardmore Street',
+        meetingTime: '~6:25 p.m.', meetingPlace: 'Ardmore Street, Wanaka (frente al lago)', startEnd: '~1 h',
+        description: 'La calle principal de Wanaka, frente al lago, con tiendas, cafés y bares, y la orilla del lago con su playa de piedritas al lado. Estacionar por aquí una sola vez y caminar; Kika queda a pocas cuadras a pie.',
       },
       {
         name: 'Cena — Kika',
