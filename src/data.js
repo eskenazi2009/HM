@@ -1120,7 +1120,7 @@ export const FAVORITOS = [
     city: 'Ciudad del Cabo',
     items: [
       { name: 'Sevruga · V&A Waterfront · 8/10', note: 'Cena frente al agua. Pedimos sushi, carne y burrata; de vino, el Baroness Nadine Chardonnay.' },
-      { name: 'Unframed Ice Cream · V&A Waterfront · 10/10', note: 'Helados artesanales con sabores originales. Pedimos salted caramel y coconut lime.' },
+      { name: 'Unframed Ice Cream · V&A Waterfront · 10/10', note: 'Helados artesanales con sabores originales. Pedimos salted caramel y coconut lime, y el waffle con helado (10/10).' },
       { name: 'Harbour House · Kalk Bay · 8.5/10', note: 'Pescado fresco con vista al mar, sobre el puerto de Kalk Bay. Pedimos yellowtail y sea bass.' },
       { name: 'Marble · V&A Waterfront · 10/10', note: 'Parrilla a la leña. Pedimos risotto de maíz, coliflor, T-bone steak, churros y tiramisú.' },
       { name: 'Nobu · V&A Waterfront · 9/10', note: 'Japonés-peruano en el One&Only. Pedimos nigiris, yellowtail crudo, tuna roll, edamame spicy, hand roll de salmón y aguacate, y beef tobanyaki.' },
